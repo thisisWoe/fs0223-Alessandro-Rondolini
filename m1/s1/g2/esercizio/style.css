@@ -48,3 +48,7 @@ footer {
 aside {
     margin-right: 10%;
 }
+
+table {
+    border: black;
+}
