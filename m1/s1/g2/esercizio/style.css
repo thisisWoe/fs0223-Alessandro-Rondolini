@@ -5,13 +5,41 @@ img {
 header {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #01a1a1, #ff00c8);
 }
 
 nav {
+    margin-right: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .voci-nav {
     padding: 10%;
+}
+
+.main-aside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    color: white;
+}
+
+footer {
+    margin-top: 10%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #01a1a1, #ff00c8);
+    display: flex;
+    justify-content: space-between;
+}
+
+.titoli {
+    color: white;
+}
+
+.news1 {
+    color: white;
 }
