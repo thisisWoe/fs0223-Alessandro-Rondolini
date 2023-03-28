@@ -49,6 +49,7 @@ aside {
     margin-right: 10%;
 }
 
-table {
-    border: black;
+tr, th {
+    border: 1px; black;
 }
+
