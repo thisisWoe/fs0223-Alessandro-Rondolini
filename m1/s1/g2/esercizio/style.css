@@ -29,7 +29,7 @@ nav {
 }
 
 footer {
-    margin-top: 10%;
+    margin-bottom: 0%;
     width: 100%;
     background-image: linear-gradient(to bottom, #01a1a1, #ff00c8);
     display: flex;
