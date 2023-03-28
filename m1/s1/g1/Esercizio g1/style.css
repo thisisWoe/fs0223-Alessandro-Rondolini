@@ -1,0 +1,34 @@
+#Chi-sono {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hobby {
+    padding-bottom: 0;
+}
+
+.foto-aereo {
+    width: 50%;
+    margin-right: 0;
+}
+
+.commento {
+    margin-left: 0;
+    display: flex;
+}
+
+.tutte-le-competenze {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+#foto-tabella {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#immagine {
+    margin-top: 1vh;
+}
