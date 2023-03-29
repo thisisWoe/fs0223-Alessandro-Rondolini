@@ -1,3 +1,9 @@
+body{
+    font-family: 'Lora', serif;
+}
+
+h1,
+
 header{
     display: flex;
     flex-direction: column;
@@ -21,6 +27,7 @@ header img {
 
 h2 span {
     font-weight: 700;
+    color: rgb(2, 107, 98);
 }
 
 main {
@@ -31,6 +38,9 @@ main {
 
 article h1 {
     text-align: center;
+    font-size: 2.7em;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 
 article {
@@ -42,8 +52,52 @@ article {
 
 article img{
     width: 55em;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 5px #141414;
 }
 
 article p{
     font-size: 1.2em;
+}
+
+article figcaption{
+    margin-top: 1.3em;
+    font-size: 1.3em;
+    color: rgb(139, 142, 145);
+}
+
+#article-footer{
+    border-left: 1.75px outset rgb(255, 196, 0);
+    padding-left: 20px;  
+    color: rgb(173, 52, 7);  
+}
+
+section {
+    width: 880px;
+}
+
+section>h2 {
+    border-bottom: 2px outset rgba(3, 255, 242, 0.295);
+    padding-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.ingredients>h3, .method>h3{
+    font-size: 1.3em;
+}
+
+li{
+    padding: 0.3em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 880px;
+    margin-left: 20px;
+}
+
+a{
+    color: rgb(6, 146, 134);
 }
