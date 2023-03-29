@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TABELLE    -->
+    <table>
+        <caption>utenti iscritti</caption>
+        <thead>
+            <tr>
+                <th>Nome</th> 
+                <th>Cognome</th>
+                <th>Anni</th> 
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>Mario</td> dati
+                <td>Rossi</td>
+                <td>30</td> 
+            </tr> righe della tabella
+        </tbody> 
+        <tfoot> non è obbligatorio
+            <td>N utenti</td>
+            <td>2</td>
+        </tfoot>   
+    </table>
+    colspan="numero" indica quanto spazio di righe deve occupare (orizzontalmente) (se scrivo due occuperà lo spazio di 2 righe)
+    rowspan="numero" stesso di colspan ma per le colonne <br>
+    <!-- FORM    -->
+    <br><form action="">
+        <input type="text" placeholder="scritta grigia" name="" required> 
+        -è semplicemente un campo di testo. può cambiare il suo funzionamento se cambio il valore di type. 
+        -Il placeholder è la scritta di indicazione dentro l'input. 
+        -Name spiega alla macchina che tipo di dato c'è dentro, così nella parte in cui legge i dati sa già dove cercare se gli dico di cercare quel dato (inoltre se non inserisco name il form non invia i dati inseriti in quell'input). 
+        -l'attributo required rende obbligatorio quel campo e fa anche un controllo basilare.
+        -type="checkbox" è una casella di controllo. per creare una correlazione fra la checkbox e del testo si usa < label > che rappresenta un'etichetta ed è utilizzabile per qualsiasi input. 
+        ad esempio:
+        <label for="consenso">acconsento al tr. dei dati</label> for si collega con l'id su input
+        <input type="checkbox" id="consenso">
+        - input type radio : 
+        <label for="m">maschio</label>
+        <input type="radio" id="m" name="sesso">
+        <label for="f">femmina</label>
+        <input type="radio" id="f" name="sesso">
+        <label for="x">non spec.</label>
+        <input type="radio" id="x" name="sesso">
+        per far selezionare solo uno do lo stesso name a tutti.
+        - l'attributo checked dentro gli input è utilizzato per farlo di default già selezionato (ILLEGALE SUL TRATTAMENTO DEI DATI, andrebbe anche salvata la data oggi).
+
+        <br>
+        <select name="" id="">
+        -molto simile a radio, ma per funzionare ha bisogno di < option >
+        <option value="" selected>scegli</option>
+        <option value="roma">roma</option>
+        <option value="milano">milano</option>
+        per gli input i valori li mettiamo noi, mentre su select li inserisce l'utente in base a quello che sceglie. 
+        Normalmente in ogni option su value sarà indicato un valore a numero così che solo il database saprà di che tipo di dato si tratta (per non farlo modificare). 
+        < optgruop >< /optgruop > per raggruppare le option
+
+        </select>
+        <textarea name="messaggio" id="" cols="30" rows="10">
+            il campo che permettere di scrivere un messaggio più lungo. 
+            cols indica quante lettere ci sono per riga di testo
+            rows indica quante lettere ci sono per colonna di testo
+        </textarea>
+
+        <!-- button -->
+        <button>INVIA</button> 
+        -in automatico invia il form. (vedere input nelle slide)
+        -value="mostra il testo sul bottone"
+    </form>
+
+        <!-- sorgente video -->
+        <video>
+        <source> ne posso mettere di più per lo stesso video per metterli in più formati, perchè alcuni formati sono leggibili solo da alcuni dispositivi
+        vanno inseriti anche gli attributi
+        </video>
+
+        <iframe src="" frameborder="0">serve per incorporare un contenuto web (video, mappa, ecc ecc)</iframe>
+
+        <!-- contenitori generici -->
+        <div></div>
+        -è blocco
+        - 
+        <span></span>
+        è inline
+    
+        <!-- -->
+        <header></header> 
+        <footer></footer>
+        possono essere usati anche per altri contenuti all'interno della pagina (più post/video (e. you tube) nella stessa pagina, ognuno di loro all'interno può avere header e footer) 
+        <section>
+
+        </section>
+            
+
+   
+</body>
+</html>
