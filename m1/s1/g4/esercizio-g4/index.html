@@ -25,9 +25,9 @@
                 </h2>
             </div>    
             <nav>
-                <a href=""><h3>HOME</h3></a>
-                <a href=""><h3>ARTICOLI</h3></a>
-                <a href=""><h3>LAVORA CON NOI</h3></a> 
+                <a href=""><h3> HOME </h3></a>
+                <a href=""><h3> ARTICOLI </h3></a>
+                <a href=""><h3> LAVORA CON NOI </h3></a> 
             </nav>
         </div>
     </header>
@@ -110,48 +110,66 @@
                 </div>
             </section>
             <section><!-- newsletter -->
-                <div>
-                    <div>
-                        <h3>
-                            novità
-                        </h3>
-                        <P>
-                            Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:
-                        </P>
-                    </div>
-                    <div>
-                        <form onsubmit="alert('iscritto!')">
-                            <input type="email" placeholder="email" required> 
-                            <a href="#"><button type="submit">Iscriviti!</button></a>
-                        </form>
-                    </div>    
-                </div>
+                    <div class="newsletter">
+                        <div>
+                            <h3>
+                                NOVITA'
+                            </h3>
+                            <P>
+                                Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:
+                            </P>
+                        </div>
+                        <div>
+                            <fieldset>    
+                                <form onsubmit="alert('iscritto!')">
+                                    <input type="email" placeholder="inserisci l'email" required> 
+                                    <a href="#"><button type="submit">Iscriviti!</button></a>
+                                </form>
+                            </fieldset>    
+                        </div>    
+                    </div>   
             </section>
             <section><!-- articoli -->
-                <h2>Articoli Correlati</h2>
-                <article>
-                    <a href="#"><h3>Validare il codice HTML</h3></a>
-                    <p>Categoria: develop </p>
-                    <p>Data: 18-9-2020</p>
-                </article>
-                <article>
-                    <a href="#"><h3>Correggere la sintassi</h3></a>
-                    <p>Categoria: develop </p>
-                    <p>Data: 16-9-2020</p>
-                </article>
-                <article>
-                    <a href="#"><h3>Meno Kb nella pagina</h3></a>
-                    <p>Categoria: ottimizzazione </p>
-                    <p>Data: 30-9-2020</p>
-                </article>
+                <h2 class="linked-article">Articoli Correlati</h2>
+                <div class="articles-3">
+                    <article id="article-aside">
+                        <a href="#"><h3>Validare il codice HTML</h3></a>
+                        <p><i class="fas fa-tag"></i> Categoria: develop </p>
+                        <div>
+                            <p class="calendar"><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
+                        </div>    
+                    </article>
+                </div>    
+                <div class="articles-3">    
+                    <article id="article-aside">
+                        <a href="#"><h3>Correggere la sintassi</h3></a>
+                        <p><i class="fas fa-tag"></i> Categoria: develop </p>
+                        <div>
+                            <p class="calendar"><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="articles-3">
+                    <article id="article-aside">
+                        <a href="#"><h3>Meno Kb nella pagina</h3></a>
+                        <p><i class="fas fa-tag"></i> Categoria: ottimizzazione </p>
+                        <div>
+                            <p class="calendar"><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
+                        </div>
+                    </article>
+                </div>    
             </section>
         </aside>        
     </main>
     <footer><!-- footer -->
-        <h6>Blog Epicode &copy 2021</h6>
-        <p>
-            Testata online di Mario Rossi, registrata con prot. m.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. <a href="mailto">info@epicode.school</a>
-        </p>
+        <div class="titolo-footer">
+            <h6>Blog Epicode &copy 2021</h6>
+        </div>  
+        <div class="testo-footer"> 
+            <p>
+                Testata online di Mario Rossi, registrata con prot. m.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. <a href="mailto">info@epicode.school</a>
+            </p>
+        </div>    
     </footer>
 </body>
 

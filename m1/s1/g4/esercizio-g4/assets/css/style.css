@@ -39,6 +39,9 @@ header{
     margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
 }
 nav h3::before {
     content: "⇒";
@@ -51,6 +54,7 @@ nav a{
     font-weight: bold;
     color: white;
 }
+
 /* MAIN */
 main{
     margin: 2%;
@@ -110,6 +114,7 @@ table th {
   table {
     border-bottom: 2px solid cadetblue;
     margin-bottom: 30px;
+    margin: 0 auto;
 }
 caption>h4{
     font-weight: bold;
@@ -119,6 +124,7 @@ caption>h4{
 
 /* ELEMENTI NELL' ASIDE */
 aside {
+    margin-top: 50px;
     padding: 0px 20px 0px 20px;
     font-size: 1.2rem;
     line-height: 1.7rem;
@@ -126,9 +132,90 @@ aside {
 
 iframe{
     border-radius: 40px;
+    margin: 20px 0 40px 0;
 }
+.newsletter{
+    background-color: rgb(224, 223, 223);
+}
+.newsletter h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5%;
+}
+.newsletter p{
+    text-align: left;
+}
+form>input, form button{
+    border: inset 0px;
+    margin: 0 auto;
+}
+form button{
+    background-color: #3769cc;
+    color: white;
+    font-size: 1.2rem;
+    height: 100%;
+}
+fieldset{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+}
+form>input{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border-bottom: dashed grey 1.5px;
+}
+.newsletter{
+    padding: 5%;
+}
+.linked-article{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 5%;
+}
+.articles-3{
+    background-color: rgb(224, 223, 223);
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+.articles-3 i {
+    color: black;
+}
+.articles-3 p{
+    color: black;
+}
+.articles-3 a{
+    color: rgb(14, 146, 255);
+    text-decoration: underline;
+}
+.calendar{
+    text-align: end;
+}
+
 /* FOOTER */
 footer{
     margin: 2%;
     background: linear-gradient(180deg, rgba(14,113,117,1) 0%, rgba(23,113,172,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titolo-footer h6{
+    font-size: 1.1rem;
+    margin: 20px 0 20px 0;
+    color: white;
+}
+.testo-footer p{
+    font-size: 1.2rem;
+    margin: 20px 0 20px 0;
+    color: white;
+}
+.testo-footer a{
+    font-size: 1.2rem;
+    color: rgb(255, 0, 242);
+    font-weight: bold;
+    display: inline;
 }
