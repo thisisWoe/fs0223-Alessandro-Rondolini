@@ -1,0 +1,58 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/sfondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top, bottom, center;
+    background-repeat: repeat;
+}
+:root{
+    font-family: 'Poppins', sans-serif;
+}
+/* HEADER */
+#header-logo-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background: linear-gradient(180deg, rgba(14,113,117,1) 0%, rgba(23,113,172,1) 100%);
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 2%;
+}
+.logo-epicode img{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display:block
+}
+.titolo-header {
+    margin: 0 auto;
+}
+
+/* MAIN */
+main{
+    margin: 2%;
+    background-color: white;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+footer{
+    margin: 2%;
+    background: linear-gradient(180deg, rgba(14,113,117,1) 0%, rgba(23,113,172,1) 100%);
+}
