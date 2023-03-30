@@ -1,16 +1,15 @@
 /* IMPOSTAZIONI GENERALI */
 body{
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     background-image: url(../img/sfondo.png);
     background-size: cover;
     background-attachment: fixed;
-    background-position: top, bottom, center;
+    background-position: center;
     background-repeat: repeat;
 }
-:root{
-    font-family: 'Poppins', sans-serif;
-}
+
 /* HEADER */
 #header-logo-nav{
     display: flex;
