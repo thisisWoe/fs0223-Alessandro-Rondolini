@@ -4,7 +4,6 @@ body{
     display: flex;
     flex-direction: column;
     background-image: url(../img/sfondo.png);
-    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
@@ -20,12 +19,15 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.5rem;
 }
 header{
     background: linear-gradient(180deg, rgba(14,113,117,1) 0%, rgba(23,113,172,1) 100%);
     box-sizing: border-box;
     padding: 15px;
     margin: 2%;
+    box-shadow: 0 3px 3px 3px rgba(92, 92, 92, 0.733);
+
 }
 .logo-epicode img{
     width: 70%;
@@ -35,21 +37,96 @@ header{
 }
 .titolo-header {
     margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-
+nav h3::before {
+    content: "⇒";
+  }
+nav h3::after {
+    content: "⇐";
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
 /* MAIN */
 main{
     margin: 2%;
     background-color: white;
+    box-shadow: 0 3px 3px 3px rgba(92, 92, 92, 0.733);
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+}
+article>p{
+    color: rgb(175, 175, 175);
+    padding: 20px 20px 20px 20px;
+    font-size: 1.2rem;
+}
+article>section{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 0px 20px 0px 20px;
+}
+.padding-bottom{
+    padding-bottom: 20px;
+}
+ul{
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+.button{
+    background-color: rgb(216, 214, 214);
+    border-radius: 5px;
+    border: 1px inset black;
+}
+section a{
+    font-weight: bold;
+    color: rgb(131, 2, 131);
+    text-decoration: none;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
-
+table th {
+    background-color: #3769cc;
+    border: 1px solid rgb(195, 195, 195);
+    padding: 20px;
+}
+.intestazioni-tabella{
+    color: white;
+}
+  table td {
+    padding: 20px;
+    text-align: center;
+}
+  table tr:nth-of-type(even) {
+    background-color: #f0f0f1;
+}
+  table {
+    border-bottom: 2px solid cadetblue;
+    margin-bottom: 30px;
+}
+caption>h4{
+    font-weight: bold;
+    font-style: italic;
+}
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
+aside {
+    padding: 0px 20px 0px 20px;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
 
+iframe{
+    border-radius: 40px;
+}
 /* FOOTER */
 footer{
     margin: 2%;

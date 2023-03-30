@@ -34,22 +34,24 @@
     <main><!-- main (articolo)-->
         <section><!-- sezione-articolo -->    
             <article><!-- articolo -->
-                <h1>Come creare un template per i post</h1>
-                <i class="fas fa-pen-square"></i><p>di Mario Rossi -</p>
-                <i class="fas fa-clock"></i><p>pubblicato il 25-10-2020</p>
+                <h1 class="article-title">Come creare un template per i post</h1>
+                <p><i class="fas fa-pen-square"></i> di Mario Rossi - <i class="fas fa-clock"></i> pubblicato il 25-10-2020</p>
                 <section><!-- sezione testo -->
-                    <p>
+                    <p class="padding-bottom">
                         La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine.
+                    </p>
+                    <p class="padding-bottom">
                         Le varie aree saranno quindi suddivise in:
                     </p> 
                     <ul>
-                        <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
-                        <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code></li>
-                        <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
-                        <li>Formattazione del codice</li>
+                        <li>Contenuti di intestazione del tag <span class="button"><code>&lt;header&gt;</code></li></span>
+                        <li>Contenuti centrali variabili del tag <span class="button"><code>&lt;main&gt;</code></li></span>
+                        <li>Contenuti di fine pagina comuni, da inserire nel tag <span class="button"><code>&lt;footer&gt;</code></li></span>
                     </ul>
-                    <p>  
-                        Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
+                    <h3>Formattazione del codice</h3>
+                    <p class="padding-bottom">  
+                        Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <a href="#" target="_blank">selezionare con i CSS</a>. Perciò i passi saranno:
+                    </p>    
                         <ul>
                             <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
                             <li>Scrivere l'HTML dei tag esterni a quelli interni e dall'alto verso il basso</li>
@@ -58,41 +60,42 @@
                         </ul>
                 </section>
                 <section><!-- sezione tabella -->
-                    <h2>
-                        Diffusione dei CSS
-                    </h2>
                     <table>
                         <caption><h4>Diffusione dei CSS</h4></caption>
-                        <tr class="intestazioni-tabella">
-                            <th>Anno</th>
-                            <th>% di utilizzo</th>
-                            <th>Supporto browsers</th>
-                        </tr>
-                        <tr>
-                            <td>2000</td>
-                            <td>20%</td>
-                            <td>17%</td>
-                        </tr>
-                        <tr>
-                            <td>2002</td>
-                            <td>35%</td>
-                            <td>22%</td>
-                        </tr>
-                        <tr>
-                            <td>2004</td>
-                            <td>45%</td>
-                            <td>42%</td>
-                        </tr>
-                        <tr>
-                            <td>2008</td>
-                            <td>80%</td>
-                            <td>51%</td>
-                        </tr>
-                        <tr>
-                            <td>2012</td>
-                            <td>100%</td>
-                            <td>76%</td>
-                        </tr>
+                            <thead>
+                                <tr class="intestazioni-tabella">
+                                    <th>Anno</th>
+                                    <th>% di utilizzo</th>
+                                    <th>Supporto browsers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2000</td>
+                                    <td>20%</td>
+                                    <td>17%</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>35%</td>
+                                    <td>22%</td>
+                                </tr>
+                                <tr>
+                                    <td>2004</td>
+                                    <td>45%</td>
+                                    <td>42%</td>
+                                </tr>
+                                <tr>
+                                    <td>2008</td>
+                                    <td>80%</td>
+                                    <td>51%</td>
+                                </tr>
+                                <tr>
+                                    <td>2012</td>
+                                    <td>100%</td>
+                                    <td>76%</td>
+                                </tr>
+                            </tbody>    
                     </table>
                 </section>
             </article>    
@@ -103,7 +106,7 @@
                     Un test di validazione potrà essere fatto tramite il <a href="#" target="_blank">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ad essere stati dei veri developers come loro:
                 </p>
                 <div>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NqWPuzpSKPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/NqWPuzpSKPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </section>
             <section><!-- newsletter -->
