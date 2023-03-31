@@ -2,7 +2,7 @@
 /* IMPOSTAZIONI GENERALI */
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.65;
     color: #393d41;
 }
@@ -28,13 +28,13 @@ main .second-section, aside{
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    padding-bottom: 30px;
+    padding: 15% 0 15% 0;
 }
 .first-section h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 2.6rem;
-    line-height: 1.5;
-    padding: 20px 30px 10px 30px;
+    line-height: 1;
+    padding: 0px 30px 5% 30px;
     text-align: center;
     color: #25a2c3;
 }
@@ -55,7 +55,7 @@ main .second-section, aside{
     padding: 20px 40px 20px 40px;
 }
 .button-section1 {
-    margin: 0px 0 10px 0;
+    margin: 0px 0 0 0;
 }
 .button-section1 a{
     text-decoration: none;
@@ -115,6 +115,12 @@ main .second-section, aside{
 .third-section{
     margin-bottom: 70px;
 }
+#name p{
+    font-size: 1.4rem;
+}
+.sign p{
+    font-size: 1rem;
+}
 /* ELEMENTI NELL' ASIDE */
 .article-aside{
     border: inset 1px #dee1e3;
@@ -137,6 +143,7 @@ main .second-section, aside{
 }
 aside{
     margin-bottom: 70px;
+    font-size: 1.2rem;
 }
 aside a{
     text-decoration: none;
@@ -147,6 +154,7 @@ footer{
     background-color: #25a2c3;
     text-align: center;
     color: white;
+    font-size: 1.4rem;
 }
 footer h4{
     font-family: 'Montserrat', sans-serif;
@@ -164,12 +172,11 @@ footer i{
 }
 .ending{
     margin: 0px 120px 0px 120px;
-    border-top: 2px white inset;
+    border-top: 1px white outset;
     padding: 30px 0 50px 0;
+    font-size: 1.1rem;
 }
-.contacts span::after{
-    content: " ";
-}
+
 
 
 
