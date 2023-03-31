@@ -1,4 +1,4 @@
 La cartella "progetto mobile 2" contiene il progetto identico all'1 (Quello corretto), però senza rispettare la font-size della consegna. 
 In questo modo, però, la font-size risulta esattamente della stessa grandezza del mockup. Stessa cosa per qualche line-height.
 Li ho fatti entrambi non sapendo quale via fosse quella giusta. 
-GRAZIE PER AVERMI LETTO!
+GRAZIE PER AVERMI LETTO! 
