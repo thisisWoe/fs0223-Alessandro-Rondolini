@@ -1,0 +1,168 @@
+/* Your styles here */
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    color: #393d41;
+}
+/* HEADER */
+header{
+    background-color: black;
+}
+.logo-epicode img{
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    padding: 5% 0 10% 0;
+}
+/* MAIN */
+main .second-section, aside{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+    /* sezione 1 */
+.first-section{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.first-section h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+    line-height: 1.5;
+    padding: 20px 30px 10px 30px;
+    text-align: center;
+    color: #25a2c3;
+}
+.first-section p{
+    padding: 0 10% 0 10%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.first-section button{
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #f04c2f;
+    border: none;
+    border-radius: 5%;
+    padding: 20px 40px 20px 40px;
+}
+.button-section1 {
+    margin: 0px 0 10px 0;
+}
+    /* sezione 2 */
+.second-section, .third-section{
+    margin-top: 70px;
+}
+.content-div h3{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+    padding: 0px 0 15px 0;
+}
+.content-div p{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.img-div img{
+    border-radius: 100%;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+.img-div{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+    /* sezione 3 */
+.guaranteed h2, .guaranteed p{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+.guaranteed{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 60px 0 50px 0;
+    background-color: #e22d0e;
+}
+.guaranteed h2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+}
+.guaranteed p{
+    color: white;
+    font-size: 1.2rem;
+}
+.testimonials>p{
+    font-style: italic;
+    padding-bottom: 30px;
+}
+.third-section{
+    margin-bottom: 70px;
+}
+/* ELEMENTI NELL' ASIDE */
+.article-aside{
+    border: inset 1px #dee1e3;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.article-aside img{
+    width: 100%;
+}
+.article-aside h3, .article-aside p{
+    text-align: center;
+    padding-top: 20px;
+}
+.article-aside h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+}
+.article-aside p{
+    padding-bottom: 40px;
+}
+aside{
+    margin-bottom: 70px;
+}
+/* FOOTER */
+footer{
+    background-color: #25a2c3;
+    text-align: center;
+    color: white;
+}
+footer h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding: 30px 0 20px 0;
+}
+footer a{
+    color: #c8e7f0;
+}
+footer i{
+    display: inline;
+}
+.contacts{
+    padding-bottom: 30px;
+}
+.ending{
+    margin: 0px 120px 0px 120px;
+    border-top: 2px white inset;
+    padding: 30px 0 50px 0;
+}
+
+
+
+
+
+
