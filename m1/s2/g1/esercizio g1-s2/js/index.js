@@ -1,2 +1,6 @@
-alert('Usa il pop up per dare dei messaggi');
-window.alert('Sto studiando JS');
+Yes.onclick = function() {
+    window.location.href = "second-page.html";
+  };
+No.onclick = function() {
+    window.location.href = "third-page.html";
+};
