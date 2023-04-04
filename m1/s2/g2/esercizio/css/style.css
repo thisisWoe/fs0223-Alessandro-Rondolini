@@ -1,0 +1,32 @@
+.questions {
+    text-align: start;
+    font-size: 1rem;
+    padding: 1.5% 1% 3% 0;
+    color: green;
+    text-decoration: italic
+}
+ol {
+    counter-reset: list-counter 0;
+  }
+  
+  li {
+    counter-increment: list-counter;
+    margin-right: 30%;
+  }
+  
+  li::before {
+    content: counter(list-counter) ". ";
+  }
+body{
+    display: flex;
+    flex-direction: column;
+  }
+aside button{
+    display: block;
+    margin-bottom: 2%;
+    padding: 1% 0 1% 0;
+}
+aside{
+    display:flex;
+    flex-direction: column;
+}
