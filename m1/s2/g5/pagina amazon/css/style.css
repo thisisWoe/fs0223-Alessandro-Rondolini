@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    background-color: #222f3e;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px;
+}
+nav{
+    display: flex;
+    background-color: #364757;
+}
+
+nav a {
+    display: block;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+nav, header img{
+    padding: 0 38px 0 38px;
+}
+header img{
+    height: 45px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+nav a:hover {
+    border: 1px solid white;
+}
+.nav-a{
+    padding: 10px 7.5px 10px 0px;
+}
+.nav-b{
+    padding: 10px 7.5px 10px 7.5px;
+}
+
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0 38px 0 38px;
+}
+#gift-cards{
+    background-color: #f56600;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 38px;
+}
+#gift-guides{
+    background-image: url(../assets/bg-image.png);
+    background-repeat: repeat;
+}
+h1{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: white;
+    padding: 80px 0 40px 0;
+}
+div p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 60px;
+}
+/* footer */
+
+footer{
+    padding: 0 38px 0 38px;
+}
