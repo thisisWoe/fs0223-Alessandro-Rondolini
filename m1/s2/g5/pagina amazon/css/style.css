@@ -124,6 +124,7 @@ div p{
 }
 #title-section h2{
     font-size: 1.5rem;
+    font-weight: bold;
     padding: 0 30px 0 55px;
 }
 #title-section a{
@@ -135,6 +136,7 @@ div p{
  /* section 2 */
 #play-game h3{
     font-size: 1.5rem;
+    font-weight: bold;
     padding: 10px 30px 0 0px;
 }
 #play-game a{
@@ -160,6 +162,7 @@ div p{
 /* section 3*/
 #sound h3{
     font-size: 1.5rem;
+    font-weight: bold;
     padding: 10px 30px 0 0px;
 }
 #sound a{
