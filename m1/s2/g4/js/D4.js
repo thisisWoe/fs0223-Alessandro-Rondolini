@@ -202,13 +202,21 @@ Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se
 let traspType;
 switch (traspType) {
   case (massTotal < 500) :
-    
+    console.log("Ship is under loaded")
   break;
-  
-  
-
+  case (massTotal == 500) :
+    console.log("Ship is half loaded")
+  break;
+  case (massTotal > 700) :
+    console.log("Warning: Load is over 700")  
+  break;
+  case (massTotal > 900) :
+    console.log("Critical Load: Over 900")
+  break;
+  case (massTotal > 1000) :
+    console.log("DANGER! OVERLOAD ALERT: Jump ship now!")
 }
-
+console.log(traspType);
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
 */
