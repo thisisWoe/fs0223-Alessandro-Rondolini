@@ -263,10 +263,17 @@ console.log(movies2000);
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+let myMovie = movies.filter(function(i) {
+  return i.imdbID === "tt4154796";
+});
+
+console.log(myMovie);
 
 
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+
 
 
