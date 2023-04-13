@@ -104,12 +104,15 @@ changePcontent("Lorem Ipsum");
        /* ESERCIZIO 10
           Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
          */
-        let footer = document.getElementsByTagName('footer')[0];
-       const revealFooterLink = function () {
+
+        let footer = document.querySelector('footer');
+        
+        const revealFooterLink = function () {
         let aFooter = footer.querySelector('a');
         let url = aFooter.getAttribute('href');
         alert(url);
        }
+
        footer.addEventListener('click', function(){
         return revealFooterLink();
        });
@@ -119,19 +122,39 @@ changePcontent("Lorem Ipsum");
           La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
        */
    
+       const tableArea = document.getElementById('tableArea');
+       let table = tableArea.appendChild(document.createElement('table'));
+       let thead = table.appendChild(document.createElement('thead'));
+       let tBody = table.appendChild(document.createElement('tbody')); 
+
+
        const generateTable = function () {
-   
-   
-       }
-   
+        for (let i = 0; i < 5; i++) {
+            if (i === 1) {
+            let tr = thead.appendChild(document.createElement('tr'));
+            tr.appendChild(document.createElement('th')).textContent = 'Immagine';
+            tr.appendChild(document.createElement('th')).textContent = 'Nome prodotto';
+            tr.appendChild(document.createElement('th')).textContent = 'Quantità';
+            tr.appendChild(document.createElement('th')).textContent = 'Prezzo';
+        }
+            let tr = tBody.appendChild(document.createElement('tr'));
+            tr.appendChild(document.createElement('td')).textContent = 'Immagine';
+            tr.appendChild(document.createElement('td')).textContent = 'Prodotto';
+            tr.appendChild(document.createElement('td')).textContent = 'Quantità';
+            tr.appendChild(document.createElement('td')).textContent = 'Prezzo';
+        }
+    }
+
+    generateTable();
+
        /* ESERCIZIO 12
           Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
        */
+        
+        const addRow = function () {
    
-       const addRow = function () {
    
-   
-       }
+        }
    
        /* ESERCIZIO 14
          Crea una funzione che nasconda le immagini della tabella quando eseguita
