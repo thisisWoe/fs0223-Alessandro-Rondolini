@@ -70,3 +70,24 @@
     }
 
 }
+/* DESKTOP */
+
+@media screen and (min-width:1200px){
+    body{
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    nav{
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+    }
+    main, aside{
+        width: 1650px;
+        width: 80%;
+        flex-grow: 1;
+    }
+}
+
