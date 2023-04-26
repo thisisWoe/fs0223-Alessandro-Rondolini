@@ -51,6 +51,12 @@
     color: #57280b;
     background-color: #eedf8a;
     border: none;
-    padding: 10px 50px;
     border-radius: 100px;
+    text-align: center;
+    padding: 2% 12%;
+}
+.cart-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
