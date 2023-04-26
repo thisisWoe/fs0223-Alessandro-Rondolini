@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    width: 95%;
+    background-color: #fef7e2;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shop button img{
+    width: 15%;
+}
+.shop, .honey-button, .utilities-button{
+    width: 85%;
+    display: flex;
+}
+.shop{
+    justify-content: center;
+}
+.honey-button, .utilities-button{
+    justify-content: space-between;
+}
+.honey-button button, .utilities-button button{
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.shop button{
+    /* width: 22.2rem; */
+    width: 100%;
+    height: 7rem;
+    margin: 8% 0 5% 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop p{
+    margin-left: 7%;
+}
+.honey-button{
+    margin-bottom: 5%;
+}
+.utilities-button{
+    margin-bottom: 8%;
+}
+nav button{
+    background-color: #ffdf7f;
+    border: none;
+    border-radius: 100px;
+    color: #732104;
+}
