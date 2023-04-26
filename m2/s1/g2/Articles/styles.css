@@ -8,15 +8,22 @@ body{
 
 article{
     width: 95%;
-    height: 72rem;
+    height: 100%;
     background-color: #fef7e2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 40px;
 }
-article img, article h2, article p{
+article>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+article h2, article p{
     width: 90%;
 }
 article h2{
@@ -26,4 +33,10 @@ article h2{
 article p{
     font-size: 1.4rem;
     line-height: 1.8rem;
+}
+#img{
+    width: 90%;
+    max-width: 90%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }

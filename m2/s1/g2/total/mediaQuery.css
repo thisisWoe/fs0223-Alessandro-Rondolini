@@ -66,28 +66,91 @@
         line-height: 1.3rem;
     }
     article{
-        height: 50rem;
+        height: 100%;
     }
-
 }
 /* DESKTOP */
 
 @media screen and (min-width:1200px){
     body{
-        align-items: flex-end;
-        flex-wrap: wrap;
+        flex-direction: row;
     }
     nav{
-        align-self: flex-start;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
+        align-self: flex-start;
         width: 15%;
+        flex-shrink: 0;
     }
-    main, aside{
-        width: 1650px;
-        width: 80%;
-        flex-grow: 1;
+    .shop{
+        width: 90%;
+        order: 0;
     }
+    .honey-button{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .utilities-button{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100%;
+    }
+
+    .honey-button div, .utilities-button div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .honey-button button, .utilities-button button{
+        width: 90%;
+        height: 5rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    main>h1, aside h2{
+        align-self: flex-start;
+        margin-left: 2%;
+    }
+    main>div{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 95%;
+    }
+    div .product-card{
+        width: 17%;
+        border-radius: 50px;
+    }
+    .product-card .img{
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    article {
+        flex-direction: row;
+
+    }
+    #img{
+        order: 0;
+        margin-left: 2rem;
+    }
+    article>div{
+        order: 1;
+        height: 100%;
+        align-self: flex-start;
+    }
+    article h2{
+        margin: 2rem 0 2rem 2.3rem;
+    }
+
+
+
+
+
+
+
 }
 
