@@ -1,5 +1,16 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
     nav ul li:nth-child(1),nav ul li:nth-child(2),nav ul li:nth-child(3), .hero-svg-container, .star {
       display: none;
     }
   }
+
+/* LAYOUT TABLET */
+@media screen and (min-width: 576px) {
+    .logo-container{
+      margin-left: 0;
+    }
+    .nav-container{
+      justify-content: space-around;
+    }
+    
+}
