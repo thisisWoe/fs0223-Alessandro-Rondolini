@@ -1,0 +1,5 @@
+@media screen and (max-width: 500px) {
+    nav ul li:nth-child(1),nav ul li:nth-child(2),nav ul li:nth-child(3), .hero-svg-container, .star {
+      display: none;
+    }
+  }

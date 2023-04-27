@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="prove copy/mediaQuery.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--aggiungi link al reset.css -->
+    <link rel="icon" href="assets/imgs/medium.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Spectral&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Medium Clone by Andrea Di Paola</title>
+  </head>
+  <body>
+    <!-- HEADER START -->
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-              <div class="logo-container">
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 3940 610"
-                    height="25"
-                  >
-                    <path
-                      d="M594.79 308.2c0 163.76-131.85 296.52-294.5 296.52S5.8 472 5.8 308.2 137.65 11.69 300.29 11.69s294.5 132.75 294.5 296.51M917.86 308.2c0 154.16-65.93 279.12-147.25 279.12s-147.25-125-147.25-279.12S689.29 29.08 770.61 29.08s147.25 125 147.25 279.12M1050 308.2c0 138.12-23.19 250.08-51.79 250.08s-51.79-112-51.79-250.08 23.19-250.08 51.8-250.08S1050 170.09 1050 308.2M1862.77 37.4l.82-.18v-6.35h-167.48l-155.51 365.5-155.51-365.5h-180.48v6.35l.81.18c30.57 6.9 46.09 17.19 46.09 54.3v434.45c0 37.11-15.58 47.4-46.15 54.3l-.81.18V587H1327v-6.35l-.81-.18c-30.57-6.9-46.09-17.19-46.09-54.3V116.9L1479.87 587h11.33l205.59-483.21V536.9c-2.62 29.31-18 38.36-45.68 44.61l-.82.19v6.3h213.3v-6.3l-.82-.19c-27.71-6.25-43.46-15.3-46.08-44.61l-.14-445.2h.14c0-37.11 15.52-47.4 46.08-54.3m97.43 287.8c3.49-78.06 31.52-134.4 78.56-135.37 14.51.24 26.68 5 36.14 14.16 20.1 19.51 29.55 60.28 28.09 121.21zm-2.11 22h250v-1.05c-.71-59.69-18-106.12-51.34-138-28.82-27.55-71.49-42.71-116.31-42.71h-1c-23.26 0-51.79 5.64-72.09 15.86-23.11 10.7-43.49 26.7-60.45 47.7-27.3 33.83-43.84 79.55-47.86 130.93-.13 1.54-.24 3.08-.35 4.62s-.18 2.92-.25 4.39a332.64 332.64 0 0 0-.36 21.69C1860.79 507 1923.65 600 2035.3 600c98 0 155.07-71.64 169.3-167.8l-7.19-2.53c-25 51.68-69.9 83-121 79.18-69.76-5.22-123.2-75.95-118.35-161.63m532.69 157.68c-8.2 19.45-25.31 30.15-48.24 30.15s-43.89-15.74-58.78-44.34c-16-30.7-24.42-74.1-24.42-125.51 0-107 33.28-176.21 84.79-176.21 21.57 0 38.55 10.7 46.65 29.37zm165.84 76.28c-30.57-7.23-46.09-18-46.09-57V5.28L2424.77 60v6.7l1.14-.09c25.62-2.07 43 1.47 53.09 10.79 7.9 7.3 11.75 18.5 11.75 34.26v71.14c-18.31-11.69-40.09-17.38-66.52-17.38-53.6 0-102.59 22.57-137.92 63.56-36.83 42.72-56.3 101.1-56.3 168.81C2230 518.72 2289.53 600 2378.13 600c51.83 0 93.53-28.4 112.62-76.3V588h166.65v-6.66zm159.29-505.33c0-37.76-28.47-66.24-66.24-66.24-37.59 0-67 29.1-67 66.24s29.44 66.24 67 66.24c37.77 0 66.24-28.48 66.24-66.24m43.84 505.33c-30.57-7.23-46.09-18-46.09-57h-.13V166.65l-166.66 47.85v6.5l1 .09c36.06 3.21 45.93 15.63 45.93 57.77V588h166.8v-6.66zm427.05 0c-30.57-7.23-46.09-18-46.09-57V166.65L3082 212.92v6.52l.94.1c29.48 3.1 38 16.23 38 58.56v226c-9.83 19.45-28.27 31-50.61 31.78-36.23 0-56.18-24.47-56.18-68.9V166.66l-166.66 47.85V221l1 .09c36.06 3.2 45.94 15.62 45.94 57.77v191.27a214.48 214.48 0 0 0 3.47 39.82l3 13.05c14.11 50.56 51.08 77 109 77 49.06 0 92.06-30.37 111-77.89v66h166.66v-6.66zM3934.2 588v-6.67l-.81-.19c-33.17-7.65-46.09-22.07-46.09-51.43v-243.2c0-75.83-42.59-121.09-113.93-121.09-52 0-95.85 30.05-112.73 76.86-13.41-49.6-52-76.86-109.06-76.86-50.12 0-89.4 26.45-106.25 71.13v-69.87l-166.66 45.89v6.54l1 .09c35.63 3.16 45.93 15.94 45.93 57V588h155.5v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66V255.72c7-16.35 21.11-35.72 49-35.72 34.64 0 52.2 24 52.2 71.28V588h155.54v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66v-248a160.45 160.45 0 0 0-2.2-27.68c7.42-17.77 22.34-38.8 51.37-38.8 35.13 0 52.2 23.31 52.2 71.28V588z"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-              <div class="menu-container">
-                <ul class="menu">
-                  <li><a href="#">Our story</a></li>
-                  <li><a href="#">Membership</a></li>
-                  <li><a href="#">Write</a></li>
-                  <li><a href="#">Sign In</a></li>
-                  <li><a href="#" class="nav-cta">Get started</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <section class="hero">
+      <!-- NAVBAR START -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 3940 610"
+                height="25"
+              >
+                <path
+                  d="M594.79 308.2c0 163.76-131.85 296.52-294.5 296.52S5.8 472 5.8 308.2 137.65 11.69 300.29 11.69s294.5 132.75 294.5 296.51M917.86 308.2c0 154.16-65.93 279.12-147.25 279.12s-147.25-125-147.25-279.12S689.29 29.08 770.61 29.08s147.25 125 147.25 279.12M1050 308.2c0 138.12-23.19 250.08-51.79 250.08s-51.79-112-51.79-250.08 23.19-250.08 51.8-250.08S1050 170.09 1050 308.2M1862.77 37.4l.82-.18v-6.35h-167.48l-155.51 365.5-155.51-365.5h-180.48v6.35l.81.18c30.57 6.9 46.09 17.19 46.09 54.3v434.45c0 37.11-15.58 47.4-46.15 54.3l-.81.18V587H1327v-6.35l-.81-.18c-30.57-6.9-46.09-17.19-46.09-54.3V116.9L1479.87 587h11.33l205.59-483.21V536.9c-2.62 29.31-18 38.36-45.68 44.61l-.82.19v6.3h213.3v-6.3l-.82-.19c-27.71-6.25-43.46-15.3-46.08-44.61l-.14-445.2h.14c0-37.11 15.52-47.4 46.08-54.3m97.43 287.8c3.49-78.06 31.52-134.4 78.56-135.37 14.51.24 26.68 5 36.14 14.16 20.1 19.51 29.55 60.28 28.09 121.21zm-2.11 22h250v-1.05c-.71-59.69-18-106.12-51.34-138-28.82-27.55-71.49-42.71-116.31-42.71h-1c-23.26 0-51.79 5.64-72.09 15.86-23.11 10.7-43.49 26.7-60.45 47.7-27.3 33.83-43.84 79.55-47.86 130.93-.13 1.54-.24 3.08-.35 4.62s-.18 2.92-.25 4.39a332.64 332.64 0 0 0-.36 21.69C1860.79 507 1923.65 600 2035.3 600c98 0 155.07-71.64 169.3-167.8l-7.19-2.53c-25 51.68-69.9 83-121 79.18-69.76-5.22-123.2-75.95-118.35-161.63m532.69 157.68c-8.2 19.45-25.31 30.15-48.24 30.15s-43.89-15.74-58.78-44.34c-16-30.7-24.42-74.1-24.42-125.51 0-107 33.28-176.21 84.79-176.21 21.57 0 38.55 10.7 46.65 29.37zm165.84 76.28c-30.57-7.23-46.09-18-46.09-57V5.28L2424.77 60v6.7l1.14-.09c25.62-2.07 43 1.47 53.09 10.79 7.9 7.3 11.75 18.5 11.75 34.26v71.14c-18.31-11.69-40.09-17.38-66.52-17.38-53.6 0-102.59 22.57-137.92 63.56-36.83 42.72-56.3 101.1-56.3 168.81C2230 518.72 2289.53 600 2378.13 600c51.83 0 93.53-28.4 112.62-76.3V588h166.65v-6.66zm159.29-505.33c0-37.76-28.47-66.24-66.24-66.24-37.59 0-67 29.1-67 66.24s29.44 66.24 67 66.24c37.77 0 66.24-28.48 66.24-66.24m43.84 505.33c-30.57-7.23-46.09-18-46.09-57h-.13V166.65l-166.66 47.85v6.5l1 .09c36.06 3.21 45.93 15.63 45.93 57.77V588h166.8v-6.66zm427.05 0c-30.57-7.23-46.09-18-46.09-57V166.65L3082 212.92v6.52l.94.1c29.48 3.1 38 16.23 38 58.56v226c-9.83 19.45-28.27 31-50.61 31.78-36.23 0-56.18-24.47-56.18-68.9V166.66l-166.66 47.85V221l1 .09c36.06 3.2 45.94 15.62 45.94 57.77v191.27a214.48 214.48 0 0 0 3.47 39.82l3 13.05c14.11 50.56 51.08 77 109 77 49.06 0 92.06-30.37 111-77.89v66h166.66v-6.66zM3934.2 588v-6.67l-.81-.19c-33.17-7.65-46.09-22.07-46.09-51.43v-243.2c0-75.83-42.59-121.09-113.93-121.09-52 0-95.85 30.05-112.73 76.86-13.41-49.6-52-76.86-109.06-76.86-50.12 0-89.4 26.45-106.25 71.13v-69.87l-166.66 45.89v6.54l1 .09c35.63 3.16 45.93 15.94 45.93 57V588h155.5v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66V255.72c7-16.35 21.11-35.72 49-35.72 34.64 0 52.2 24 52.2 71.28V588h155.54v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66v-248a160.45 160.45 0 0 0-2.2-27.68c7.42-17.77 22.34-38.8 51.37-38.8 35.13 0 52.2 23.31 52.2 71.28V588z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <ul class="menu">
+              <li><a href="#">Our story</a></li>
+              <li><a href="#">Membership</a></li>
+              <li><a href="#">Write</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#" class="nav-cta">Get started</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+      <!-- HERO SECTION START -->
+      <section class="hero-section">
         <div class="hero-svg-container">
+          <!-- ARTWORK con "M" ripetute -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 585 462"
@@ -9244,19 +9257,1236 @@
             </g>
           </svg>
         </div>
-        <div class="hero-container">
+        <div class="hero-section-container">
           <div class="hero-title-container">
             <div class="hero-title-box">
-              <h1>Stay curious.</h1>
+              <h1>Stay courius.</h1>
               <h2>
                 Discover stories, thinking, and expertise from writers on any
                 topic.
               </h2>
-              <button class="hero-cta"><a href="#">Start reading</a></button>
+              <a href="#" class="hero-cta">Start reading</a>
             </div>
           </div>
         </div>
-        </section>
-    </header>  
-</body>
+      </section>
+      <!-- HERO SECTION END -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+      <!-- TRENDING SECTION START -->
+      <section class="trendings-section">
+        <div class="trendings-section-container">
+          <div class="trendings-section-heading">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="28"
+              height="29"
+              viewBox="0 0 28 29"
+              fill="none"
+              class="ih y"
+            >
+              <path fill="#fff" d="M0 .8h28v28H0z"></path>
+              <g opacity="0.8" clip-path="url(#trending_svg__clip0)">
+                <path fill="#fff" d="M4 4.8h20v20H4z"></path>
+                <circle cx="14" cy="14.79" r="9.5" stroke="#000"></circle>
+                <path
+                  d="M5.46 18.36l4.47-4.48M9.97 13.87l3.67 3.66M13.67 17.53l5.1-5.09M16.62 11.6h3M19.62 11.6v3"
+                  stroke="#000"
+                  stroke-linecap="round"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="trending_svg__clip0">
+                  <path
+                    fill="#fff"
+                    transform="translate(4 4.8)"
+                    d="M0 0h20v20H0z"
+                  ></path>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="trendings-section-heading-title">Trending on Medium</h3>
+          </div>
+          <div class="trendings-section-body">
+            <!-- TREND  #1   -->
+            <div class="trending-item">
+              <div class="trending-item-number">01</div>
+              <div class="trending-item-text">
+                <div class="trending-item-heading">
+                  <img src="assets/imgs/image01.jpeg" alt="author picture" />
+                  <span class="trending-item-heading-author">Tom Cooper</span>
+                </div>
+                <div class="trending-item-body">
+                  <h4>Ukraine War, 23 October 2022</h4>
+                </div>
+                <div class="trending-item-footer">
+                  <span>Oct 23 · 5 min read</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TREND  #2   -->
+            <div class="trending-item">
+              <div class="trending-item-number">02</div>
+              <div class="trending-item-text">
+                <div class="trending-item-heading">
+                  <img src="assets/imgs/image02.png" alt="author picture" />
+                  <span class="trending-item-heading-author"
+                    >Arthur Hayes in Entrepreneur's Handbook</span
+                  >
+                </div>
+                <div class="trending-item-body">
+                  <h4>Comeback</h4>
+                </div>
+                <div class="trending-item-footer">
+                  <span>Oct 26 · 24 min read</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TREND  #3  -->
+            <div class="trending-item">
+              <div class="trending-item-number">03</div>
+              <div class="trending-item-text">
+                <div class="trending-item-heading">
+                  <img src="assets/imgs/image03.jpeg" alt="author picture" />
+                  <span class="trending-item-heading-author">Tom Cooper</span>
+                  <span class="verified-author">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M15.16 8c0 .65-.46 1.14-.86 1.57-.23.25-.47.5-.56.72-.1.22-.09.55-.1.88 0 .6-.01 1.3-.48 1.78-.48.48-1.16.5-1.75.5-.32 0-.65.01-.86.1-.2.07-.46.33-.7.57-.42.41-.9.88-1.54.88s-1.12-.47-1.54-.88a2.87 2.87 0 0 0-.7-.58c-.22-.09-.54-.08-.87-.09-.59 0-1.27-.02-1.74-.5s-.48-1.17-.49-1.78c0-.33-.01-.67-.1-.88-.07-.2-.32-.47-.55-.71-.4-.44-.87-.93-.87-1.58s.46-1.14.87-1.58c.23-.24.47-.5.56-.71.09-.22.08-.55.09-.88 0-.6.02-1.3.49-1.78s1.15-.5 1.74-.5c.33 0 .66-.01.86-.1.2-.08.47-.33.7-.57.43-.41.91-.88 1.55-.88.63 0 1.12.47 1.54.88.24.24.49.48.7.58.22.09.54.08.86.09.6 0 1.27.02 1.75.5.47.48.48 1.17.49 1.78 0 .33 0 .67.09.88.08.2.33.47.56.71.4.44.86.93.86 1.58z"
+                        fill="#437AFF"
+                      ></path>
+                      <path
+                        d="M7.33 10.5c.2 0 .38.08.52.22.13.14.21.33.21.53 0 .07.03.13.07.18a.24.24 0 0 0 .35 0 .25.25 0 0 0 .07-.18c0-.2.08-.39.22-.53a.73.73 0 0 1 .52-.22h1.96c.13 0 .25-.05.34-.15a.5.5 0 0 0 .15-.35V6a.5.5 0 0 0-.15-.35.48.48 0 0 0-.34-.15H9.78c-.33 0-.64.13-.87.37-.23.23-.36.55-.36.88v2.5c0 .07-.02.13-.07.18a.24.24 0 0 1-.35 0 .25.25 0 0 1-.07-.18v-2.5c0-.33-.13-.65-.36-.88a1.21 1.21 0 0 0-.86-.37H5.37a.48.48 0 0 0-.35.15.5.5 0 0 0-.14.35v4c0 .13.05.26.14.35.1.1.22.15.35.15h1.96z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="trending-item-body">
+                  <h4>
+                    How I Learned to Love My Breasts Even Though One Is A
+                    Horcrux For Voldemort
+                  </h4>
+                </div>
+                <div class="trending-item-footer">
+                  <span>Oct 26 · 2 min read</span>
+                  <span class="star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                        fill="#FFC017"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TREND  #4   -->
+            <div class="trending-item">
+              <div class="trending-item-number">04</div>
+              <div class="trending-item-text">
+                <div class="trending-item-heading">
+                  <img src="assets/imgs/image04.png" alt="author picture" />
+                  <span class="trending-item-heading-author"
+                    >Frank Mastropolo in The Riffk</span
+                  >
+                </div>
+                <div class="trending-item-body">
+                  <h4>
+                    The Night Paul McCartney Donned a Disguise at Fillmore East
+                  </h4>
+                </div>
+                <div class="trending-item-footer">
+                  <span>Oct 22 · 3 min read</span>
+                  <span class="star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                        fill="#FFC017"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TREND  #5   -->
+            <div class="trending-item">
+              <div class="trending-item-number">05</div>
+              <div class="trending-item-text">
+                <div class="trending-item-heading">
+                  <img src="assets/imgs/image05.jpeg" alt="author picture" />
+                  <span class="trending-item-heading-author"
+                    >Frank Andrade in Towards Data Science</span
+                  >
+                </div>
+                <div class="trending-item-body">
+                  <h4>
+                    5 Python Projects to Automate Your Life: From Beginner to
+                    Advanced
+                  </h4>
+                </div>
+                <div class="trending-item-footer">
+                  <span>Oct 13 · 6 min read</span>
+                  <span class="star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                        fill="#FFC017"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- TREND  #6   -->
+            <div class="trending-item">
+              <div class="trending-item-number">06</div>
+              <div class="trending-item-text">
+                <div class="trending-item-heading">
+                  <img src="assets/imgs/image06.png" alt="author picture" />
+                  <span class="trending-item-heading-author"
+                    >Wesley Smits in JavaScript in Plain English</span
+                  >
+                </div>
+                <div class="trending-item-body">
+                  <h4>How To Make Visual Studio Code Look Amazing</h4>
+                </div>
+                <div class="trending-item-footer">
+                  <span>Oct 20 · 7 min read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TRENDING SECTION END -->
+      <!-- ARTCILES SECTION START -->
+      <!-- HO UTILIZZATO 14 ARTICOLI ANZICHÈ 7 PER POTER VISUALIZZARE IL CORRETTO FUNZIONAMENTO DELLA BARRA LATERALE DI DESTRA CON POSITION: STICKY -->
+      <section class="articles-section">
+        <div class="articles-section-container">
+          <!-- ARTCILES COLUMN START -->
+          <div class="articles-column">
+            <!-- ARTICLE #1 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image07.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author">Robert Roy Britt</span>
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">How Old is Old?</h4>
+                  <p>
+                    What we consider “old” changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 27 · 5 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Aging</a>
+                    <span class="star invisible-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image08.jpeg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #2 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image09.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author"
+                    >Taru Anniina Liikanen</span
+                  >
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    Is Taylor Swift Allowed to Speak About Fat?
+                  </h4>
+                  <p>
+                    Can you speak about your trauma if you don't look
+                    traumatized?
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 24 · 6 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Health</a>
+                    <span class="star invisible-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image10.jpeg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #3 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image11.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author"
+                    >David Rodenas, Ph. D.</span
+                  >
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    Don't Screw Up, You Will Be Found Guilty
+                  </h4>
+                  <p>
+                    Software Engineer, yours is the right to produce
+                    high-quality work at all times, also the liability.
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 15 · 5 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category"
+                      >Software Engineering</a
+                    >
+                    <span class="star">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image12.png"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #4 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image13.png"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author">Microsoft Design</span>
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">Leave No Trace</h4>
+                  <p>
+                    How product designers can break from the status quo and help
+                    our planet
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 25 · 11 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Sustainability</a>
+                    <span class="star">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image14.png"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #5 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image15.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author">Scott H. Young</span>
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    Variability, Not Repetition, is the Key to Mastery
+                  </h4>
+                  <p>
+                    Bruce Lee is reported to have said, “I fear not the man who
+                    has practiced 10,000 kicks once, but the man who has
+                    practiced one kick 10,000...
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 26 · 7 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Health</a>
+                    <span class="star">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image16.jpg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #6 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image17.png"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author"
+                    >Paul A. DeStefanoin Human Parts</span
+                  >
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    What I Overheard as an Escape Room Actor
+                  </h4>
+                  <p>
+                    Lock a group of people in a room and you'll witness some
+                    surprising confessions
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Jan 18, 2020 · 6 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category"> Experiences</a>
+                    <span class="star invisible-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image18.jpeg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #7 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image19.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author">Kim Scott</span>
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    6 Steps for Setting Measurable Goals to Avoid “Productivity
+                    Paranoia”
+                  </h4>
+                  <p>
+                    With more people working in remote and hybrid environments
+                    than ever before, company, team and individual goals must be
+                    explicit and…
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 24 · 6 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Health</a>
+                    <span class="star">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image20.jpg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #8 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image07.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author">Robert Roy Britt</span>
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">How Old is Old?</h4>
+                  <p>
+                    What we consider “old” changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 27 · 5 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Aging</a>
+                    <span class="star invisible-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image08.jpeg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #9 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image09.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author"
+                    >Taru Anniina Liikanen</span
+                  >
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    Is Taylor Swift Allowed to Speak About Fat?
+                  </h4>
+                  <p>
+                    Can you speak about your trauma if you don't look
+                    traumatized?
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 24 · 6 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Health</a>
+                    <span class="star invisible-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image10.jpeg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #10 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image11.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author"
+                    >David Rodenas, Ph. D.</span
+                  >
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    Don't Screw Up, You Will Be Found Guilty
+                  </h4>
+                  <p>
+                    Software Engineer, yours is the right to produce
+                    high-quality work at all times, also the liability.
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 15 · 5 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category"
+                      >Software Engineering</a
+                    >
+                    <span class="star">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image12.png"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #11 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image13.png"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author">Microsoft Design</span>
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">Leave No Trace</h4>
+                  <p>
+                    How product designers can break from the status quo and help
+                    our planet
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 25 · 11 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Sustainability</a>
+                    <span class="star">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image14.png"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #12 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image15.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author">Scott H. Young</span>
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    Variability, Not Repetition, is the Key to Mastery
+                  </h4>
+                  <p>
+                    Bruce Lee is reported to have said, “I fear not the man who
+                    has practiced 10,000 kicks once, but the man who has
+                    practiced one kick 10,000...
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 26 · 7 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Health</a>
+                    <span class="star">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image16.jpg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #13 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image17.png"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author"
+                    >Paul A. DeStefanoin Human Parts</span
+                  >
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    What I Overheard as an Escape Room Actor
+                  </h4>
+                  <p>
+                    Lock a group of people in a room and you'll witness some
+                    surprising confessions
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Jan 18, 2020 · 6 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category"> Experiences</a>
+                    <span class="star invisible-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image18.jpeg"
+                alt="article image cover"
+              />
+            </div>
+
+            <!-- ARTICLE #14 -->
+            <div class="article">
+              <div class="article-text">
+                <div class="article-heading">
+                  <img
+                    src="assets/imgs/image19.jpeg"
+                    alt="article author logo"
+                  />
+                  <span class="article-heading-author">Kim Scott</span>
+                </div>
+                <div class="article-body">
+                  <h4 class="article-title">
+                    6 Steps for Setting Measurable Goals to Avoid “Productivity
+                    Paranoia”
+                  </h4>
+                  <p>
+                    With more people working in remote and hybrid environments
+                    than ever before, company, team and individual goals must be
+                    explicit and…
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <div class="article-footer-text">
+                    <span>Oct 24 · 6 min read </span>
+                    <span>·</span>
+                    <a href="#" class="article-category">Health</a>
+                    <span class="star">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.4 12.77l-1.81 4.99a.63.63 0 0 1-1.18 0l-1.8-4.99a.63.63 0 0 0-.38-.37l-4.99-1.81a.62.62 0 0 1 0-1.18l4.99-1.8a.63.63 0 0 0 .37-.38l1.81-4.99a.63.63 0 0 1 1.18 0l1.8 4.99a.63.63 0 0 0 .38.37l4.99 1.81a.63.63 0 0 1 0 1.18l-4.99 1.8a.63.63 0 0 0-.37.38z"
+                          fill="#FFC017"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="bookmark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      class="ma"
+                    >
+                      <path
+                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                        fill="#292929"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <img
+                class="article-img-cover"
+                src="assets/imgs/image20.jpg"
+                alt="article image cover"
+              />
+            </div>
+            <!-- ARTCILES COLUMN END -->
+          </div>
+          <!-- SIDE COLUMN START -->
+          <aside>
+            <div class="side-column">
+              <div class="side-column-heading">
+                <h3 class="side-column-title">
+                  Discover more of what matters to you
+                </h3>
+              </div>
+              <div class="side-column-body">
+                <a href="#">Programming</a>
+                <a href="#">Data Science</a>
+                <a href="#">Technology</a>
+                <a href="#">Self Improvment</a>
+                <a href="#">Writing</a>
+                <a href="#">Relationship</a>
+                <a href="#">Machine Learning</a>
+                <a href="#">Productivity</a>
+                <a href="#">Politics</a>
+              </div>
+              <div class="side-column-footer">
+                <a href="#">Help</a>
+                <a href="#">Status</a>
+                <a href="#">Writers</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">About</a>
+                <a href="#">Knowledge</a>
+              </div>
+            </div>
+          </aside>
+          <!-- SIDE COLUMN END -->
+        </div>
+      </section>
+      <!-- ARTCILES SECTION END -->
+    </main>
+    <!-- MAIN END -->
+
+    <script>
+      // SCRIPT PER IL CAMBIO TEMA DELLA NAVBAR ATTIVATO DALLO SCROLL
+      window.addEventListener("scroll", (e) => {
+        const navbar = document.querySelector(".navbar");
+        const navCta = document.querySelector(".nav-cta");
+        e.preventDefault();
+        if (window.scrollY >= 380) {
+          navbar.classList.add("bg-white");
+          navCta.classList.add("bg-green");
+        } else {
+          navbar.classList.remove("bg-white");
+          navCta.classList.remove("bg-green");
+        }
+        // console.log(window.scrollY);
+      });
+
+      // SCRIPT PER LA VISUALIZZAZIONE RANDOMICA DELLE "M"
+      let showRandomM = setInterval(() => {
+        let allM = document.querySelectorAll("g[stroke-linecap='butt']");
+        let randomMIndex = Math.floor(Math.random() * allM.length);
+        let singleRandomM = allM[randomMIndex];
+
+        let opacity = parseInt(singleRandomM.getAttribute("opacity"));
+        opacity === 0
+          ? singleRandomM.setAttribute("opacity", 1)
+          : singleRandomM.setAttribute("opacity", 0);
+      }, 40);
+    </script>
+  </body>
 </html>
