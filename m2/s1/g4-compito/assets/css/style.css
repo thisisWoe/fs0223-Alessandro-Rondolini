@@ -239,7 +239,7 @@ ul button, .hero-button{
 }
 .single-article{
     margin-top: 6%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .aside-footer-container{
