@@ -23,9 +23,13 @@ header{
     position: fixed;
     z-index: 2;
     transition: background 300ms linear;
+    
 }
+
 .bg-yellow {
     background-color: #f2c232;
+    transition-property: background-color;
+    transition-duration: 5s;
 }
 .bg-white {
     background-color: #fff;
@@ -57,12 +61,19 @@ ul button, .hero-button{
     height: 40px;
     width: 100px;
 }
+
 .logo-container{
     margin-left: 10%;
+}
+@media screen and (min-width: 553px) {
+    .logo-container{
+      margin-left: 38px;
+    }
 }
 .menu{
     margin-right: 10%;
 }
+
 /* HERO ======================= */
 #hero{
     border-bottom: 1px solid black;
@@ -236,6 +247,7 @@ ul button, .hero-button{
     top: 110px;
     margin-top: 3.5%;
     height: 100%;
+    width: 40%;
 }
 .aside-container{
     margin-bottom: 5%;
@@ -271,4 +283,28 @@ article{
 }
 #radius{
     border-radius: 20%;
+}
+.aside-button-container button{
+    border: 1px solid rgba(230, 230, 230, 1);
+    padding: 10px 16px;
+    margin: 0 4px 8px 0;
+    border-radius: 2px;
+    color: #757575;
+    font-size: 15px;
+    background-color: white;
+}
+.aside-title{
+    font-weight: bold;
+    font-size: 13px;
+}
+.aside-heading{
+    margin-bottom: 20px;
+}
+footer a{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
 }
