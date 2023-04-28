@@ -1,0 +1,3 @@
+Nella versione mobile ho fatto delle piccole modifiche guardando il sito originale per quella larghezza.
+Per esempio sotto i 425px elimino i paragrafi e i bottoni della seconda sezione, mi sembrava più corretto fare così. 
+Grazie!
