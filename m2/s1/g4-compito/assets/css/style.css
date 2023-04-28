@@ -65,11 +65,7 @@ ul button, .hero-button{
 .logo-container{
     margin-left: 10%;
 }
-@media screen and (min-width: 553px) {
-    .logo-container{
-      margin-left: 38px;
-    }
-}
+
 .menu{
     margin-right: 10%;
 }
@@ -122,7 +118,10 @@ ul button, .hero-button{
 #hero p{
     width: 65%;
 }
-
+.m {
+    transition: 200ms ease-in;
+    opacity: 1;
+}
 /* MAIN ======================= */
 .trending-container{
     display: flex;

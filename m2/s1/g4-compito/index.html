@@ -28,9 +28,9 @@
             </div>
             <div class="menu">
                 <ul>
-                  <li><a href="#">Our story</a></li>
-                  <li><a href="#">Membership</a></li>
-                  <li><a href="#">Write</a></li>
+                  <li class="none"><a href="#">Our story</a></li>
+                  <li class="none"><a href="#">Membership</a></li>
+                  <li class="none"><a href="#">Write</a></li>
                   <li><a href="#">Sign In</a></li>
                   <li><button class="nav-button"><a href="#">Get started</a></button></li>
                 </ul>
@@ -5472,7 +5472,7 @@
         </section>
         <section class="article-aside-footer">
             <div class="second-article-container">
-                <div class="single-article">
+                <div class="single-article no-mar">
                     <article>
                         <div class="second-article-heading">
                             <img src="assets/imgs/image07.jpeg" alt="Image07">
@@ -5767,20 +5767,42 @@
     </main>
 
     <script>
-        // SCRIPT PER IL CAMBIO TEMA DELLA NAVBAR ATTIVATO DALLO SCROLL
+        //navbar
         window.addEventListener("scroll", (e) => {
-              const navbar = document.querySelector("#navbar");
-              const navCta = document.querySelector(".nav-button");
+              let navbar = document.querySelector("#navbar");
+              let navButton = document.querySelector(".nav-button");
               e.preventDefault();
               if (window.scrollY >= 350) {
                 navbar.classList.add("bg-white");
-                navCta.classList.add("bg-green");
+                navButton.classList.add("bg-green");
               } else {
                 navbar.classList.remove("bg-white");
-                navCta.classList.remove("bg-green");
+                navButton.classList.remove("bg-green");
                 navbar.classList.add("bg-yellow");
               }
             });
+            //(aggiungo la classe che imposta il background giusto a seconda della posizione dello scroll)
+
+
+
+        //hero animation
+        let animation = document.querySelectorAll('.m-svg svg g')
+
+        function selectLetter(i) {
+            return i[Math.floor(Math.random() * i.length)];
+        }
+
+
+        function animatedM() {
+            let switchTrue = selectLetter(Array.from(animation));
+            if (switchTrue.classList.contains('m')) {
+                switchTrue.classList.remove('m');
+            } else {
+                switchTrue.classList.add('m');
+            }
+        };
+        //(praticamente alterno l'aggiunta e la rimozione della classe, a seconda se la classe sia già presente o meno)
+    setInterval(animatedM, 8);
     </script>
 </body>
 
