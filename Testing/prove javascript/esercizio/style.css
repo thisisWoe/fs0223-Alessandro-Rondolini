@@ -1,0 +1,72 @@
+/* GENERAL SETTINGS */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* HEADER ======================= */
+header{
+    background-color: #f2c232;
+}
+
+#navbar{
+    border-bottom: 1px solid black;
+    background-color: #f2c232;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+ul button, .hero-button{
+    background-color: black;
+    border: none;
+    border-radius: 100em;
+}
+
+.menu button a, .hero-button a{
+    color: white;
+}
+.logo{
+    background-image: url(./assets/imgs/logo.svg);
+}
+
+/* HERO ======================= */
+#hero{
+    border-bottom: 1px solid black;
+    height: 350px;
+    position: relative;
+    z-index: 0;
+}
+#hero h1{
+    font-size: 50px;
+}
+#hero p{
+    font-size: 17px;
+}
+.hero-container{
+    display: flex;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+}
+
+/* MAIN ======================= */

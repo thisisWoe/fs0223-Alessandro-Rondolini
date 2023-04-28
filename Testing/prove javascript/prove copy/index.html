@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="mediaQuery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Medium Clone</title>
+    <title>Medium fatto</title>
 </head>
 <body>
     <header>
@@ -9268,7 +9268,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="28"
+                width="22"
                 height="29"
                 viewBox="0 0 28 29"
                 fill="none"
@@ -9294,12 +9294,12 @@
                   </clipPath>
                 </defs>
               </svg>
-              <h3 class="trendings-section-heading-title">Trending on Medium</h3>
+              <h3 class="trendings-section-heading-title">TRENDING ON MEDIUM</h3>
             </div>
             <div class="trendings-section-body">
               <!-- TREND  #1   -->
               <div class="trending-item">
-                <div class="trending-item-number">01</div>
+                <div class="trending-item-number"><p>01</p></div>
                 <div class="trending-item-text">
                   <div class="trending-item-heading">
                     <img src="assets/imgs/image01.jpeg" alt="author picture" />
@@ -9318,7 +9318,7 @@
   
               <!-- TREND  #2   -->
               <div class="trending-item">
-                <div class="trending-item-number">02</div>
+                <div class="trending-item-number"><p>02</p></div>
                 <div class="trending-item-text">
                   <div class="trending-item-heading">
                     <img src="assets/imgs/image02.png" alt="author picture" />
@@ -9339,7 +9339,7 @@
   
               <!-- TREND  #3  -->
               <div class="trending-item">
-                <div class="trending-item-number">03</div>
+                <div class="trending-item-number"><p>03</p></div>
                 <div class="trending-item-text">
                   <div class="trending-item-heading">
                     <img src="assets/imgs/image03.jpeg" alt="author picture" />
@@ -9388,7 +9388,7 @@
   
               <!-- TREND  #4   -->
               <div class="trending-item">
-                <div class="trending-item-number">04</div>
+                <div class="trending-item-number"><p>04</p></div>
                 <div class="trending-item-text">
                   <div class="trending-item-heading">
                     <img src="assets/imgs/image04.png" alt="author picture" />
@@ -9426,7 +9426,7 @@
   
               <!-- TREND  #5   -->
               <div class="trending-item">
-                <div class="trending-item-number">05</div>
+                <div class="trending-item-number"><p>05</p></div>
                 <div class="trending-item-text">
                   <div class="trending-item-heading">
                     <img src="assets/imgs/image05.jpeg" alt="author picture" />
@@ -9465,7 +9465,7 @@
   
               <!-- TREND  #6   -->
               <div class="trending-item">
-                <div class="trending-item-number">06</div>
+                <div class="trending-item-number"><p>06</p></div>
                 <div class="trending-item-text">
                   <div class="trending-item-heading">
                     <img src="assets/imgs/image06.png" alt="author picture" />
@@ -9953,38 +9953,39 @@
           </div>
           </div>
         </div>
+        <aside>
+          <div class="side-column">
+            <div class="side-column-heading">
+              <h3 class="side-column-title">
+                Discover more of what matters to you
+              </h3>
+            </div>
+            <div class="side-column-body">
+              <button><a href="#">Programming</a></button>
+              <button><a href="#">Data Science</a></button>
+              <button><a href="#">Technology</a></button>
+              <button><a href="#">Self Improvment</a></button>
+              <button><a href="#">Writing</a></button>
+              <button><a href="#">Relationship</a></button>
+              <button><a href="#">Machine Learning</a></button>
+              <button><a href="#">Productivity</a></button>
+              <button><a href="#">Politics</a></button>
+            </div>
+            <div class="side-column-footer">
+              <a href="#">Help</a>
+              <a href="#">Status</a>
+              <a href="#">Writers</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">About</a>
+              <a href="#">Knowledge</a>
+            </div>
+          </div>
+        </aside>
       </section>
-      <aside>
-        <div class="side-column">
-          <div class="side-column-heading">
-            <h3 class="side-column-title">
-              Discover more of what matters to you
-            </h3>
-          </div>
-          <div class="side-column-body">
-            <button><a href="#">Programming</a></button>
-            <button><a href="#">Data Science</a></button>
-            <button><a href="#">Technology</a></button>
-            <button><a href="#">Self Improvment</a></button>
-            <button><a href="#">Writing</a></button>
-            <button><a href="#">Relationship</a></button>
-            <button><a href="#">Machine Learning</a></button>
-            <button><a href="#">Productivity</a></button>
-            <button><a href="#">Politics</a></button>
-          </div>
-          <div class="side-column-footer">
-            <a href="#">Help</a>
-            <a href="#">Status</a>
-            <a href="#">Writers</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">About</a>
-            <a href="#">Knowledge</a>
-          </div>
-        </div>
-      </aside>
+
     </main>
 <script>
   // SCRIPT PER IL CAMBIO TEMA DELLA NAVBAR ATTIVATO DALLO SCROLL
@@ -9992,7 +9993,7 @@
         const navbar = document.querySelector(".navbar");
         const navCta = document.querySelector(".nav-cta");
         e.preventDefault();
-        if (window.scrollY >= 320) {
+        if (window.scrollY >= 260) {
           navbar.classList.add("bg-white");
           navCta.classList.add("bg-green");
         } else {

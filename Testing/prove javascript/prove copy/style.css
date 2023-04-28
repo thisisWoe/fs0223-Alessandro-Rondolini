@@ -191,7 +191,7 @@ main {
   /* border: 1px solid red; */
   border-bottom: 1px solid rgba(230, 230, 230, 1);
   margin-bottom: 25px;
-  order: 0;
+  /* order: 0; */
 }
 
 .trendings-section-container {
@@ -239,12 +239,12 @@ main {
   margin: 0 15px 30px 15px;
 }
 
-.trending-item-number {
+.trending-item-number p{
   color: rgba(230, 230, 230, 1);
-  letter-spacing: 0;
-  line-height: 0.8;
-  font-size: 30px;
-  font-weight: 500;
+  /* letter-spacing: 0;
+  line-height: 0.8; */
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .trending-item-text {
@@ -270,8 +270,8 @@ main {
 
 .trending-item-heading-author {
   font-size: 10px;
-  font-weight: 500;
-  line-height: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.808);
   margin-left: 8px;
 }
 
@@ -283,8 +283,6 @@ main {
 
 .trending-item-body h4 {
   font-size: 12px;
-  /* line-height: 20px; */
-  /* letter-spacing: 0; */
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -311,8 +309,7 @@ main {
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
-  margin: 56px 15px 0;
-  order: 2;
+  margin: 0 15px 0;
 }
 
 .articles-section-container {
@@ -322,7 +319,7 @@ main {
   display: flex;
   flex-direction: column;
   /* align-items: flex-start; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* column-gap: 30px; */
 }
 
@@ -426,7 +423,6 @@ main {
 /* SIDE COLUMN STYLES */
 aside {
   margin-left: 15px;
-  order: 1;
   /* top: 115px;
   position: sticky; */
 }
