@@ -5,96 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap G1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        .container-xs {
+            max-width: 425px;
+        }
+        .container-sm {
+            max-width: 767px;
+        }
+        .container-md {
+            max-width: 991px;
+        }
+        .container-lg {
+            max-width: 1199px;
+        }
+        .container-xl{
+            max-width: 1399px;
+        }
+        .container-xxl{
+            width: 100%;
+        }
+    </style>
   </head>
   <body>
-<!--     <div class="container">
-        <div class="row">    
-            <div class="col-12">   -->  
-                <h1 class="text-center">Pratica con il Grid System</h1>
-<!--             </div>    
-        </div>    
-    </div>     -->
-    <h2 class="text-center">Esercizio 1</h2>
-    <div class="container">
-        <div class="row mb-2">
-            <div class="col-md-4 col-sm-4 col-lg-4 bg-primary text-light text-center border border-black p-3">prova</div>
-            <div class="col-md-4 col-sm-4 col-lg-4 bg-primary text-light text-center border border-black p-3">prova</div>
-            <div class="col-md-4 col-sm-4 col-lg-4 bg-primary text-light text-center border border-black p-3">prova</div>
-        </div>
-    </div>
-    <h2 class="text-center">Esercizio 2</h2>
-    <div class="container">
-        <div class="row mb-2">
-            <div class="col-lg-4 col-sm-12 col-md-12 bg-warning text-dark text-center border border-black p-3">prova</div>
-            <div class="col-lg-4 col-sm-12 col-md-12 bg-warning text-dark text-center border border-black p-3">prova</div>
-            <div class="col-lg-4 col-sm-12 col-md-12 bg-warning text-dark text-center border border-black p-3">prova</div>
-        </div>
-    </div>
-    <h2 class="text-center">Esercizio 3</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-xxl-none d-sm-block">Small</div>
-            <div class="col-sm-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-xxl-none d-sm-block">Small</div>
-            <div class="col-sm-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-xxl-none d-sm-block">Small</div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 bg-success text-light text-center p-3 border border-black d-none d-sm-none d-lg-none d-xl-none d-xxl-none d-md-block">Medium</div>
-            <div class="col-md-4 bg-success text-light text-center p-3 border border-black d-none d-sm-none d-lg-none d-xl-none d-xxl-none d-md-block">Medium</div>
-            <div class="col-md-4 bg-success text-light text-center p-3 border border-black d-none d-sm-none d-lg-none d-xl-none d-xxl-none d-md-block">Medium</div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-sm-none d-xl-none d-xxl-none d-lg-block">Large</div>
-            <div class="col-lg-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-sm-none d-xl-none d-xxl-none d-lg-block">Large</div>
-            <div class="col-lg-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-sm-none d-xl-none d-xxl-none d-lg-block">Large</div>
-        </div>
-        <div class="row">
-            <div class="col-xl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-sm-none d-xxl-none d-xl-block">Extra Large</div>
-            <div class="col-xl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-sm-none d-xxl-none d-xl-block">Extra Large</div>
-            <div class="col-xl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-sm-none d-xxl-none d-xl-block">Extra Large</div>
-        </div>
-        <div class="row">
-            <div class="col-xxl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-sm-none d-xxl-block">Extra Extra Large</div>
-            <div class="col-xxl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-sm-none d-xxl-block">Extra Extra Large</div>
-            <div class="col-xxl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-sm-none d-xxl-block">Extra Extra Large</div>
-        </div>
-        <div class="row">
-            <div class="col-4 bg-success text-light text-center p-3 border border-black d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none d-block">Extra Small</div>
-            <div class="col-4 bg-success text-light text-center p-3 border border-black d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none d-block">Extra Small</div>
-            <div class="col-4 bg-success text-light text-center p-3 border border-black d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none d-block">Extra Small</div>
-        </div>
-    </div>
-    <h2 class="text-center">Esercizio 4</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 text-center text-light bg-danger border border-black p-3 d-none d-md-none d-sm-none d-lg-block">Colonna 1</div>
-            <div class="col-lg-8 text-center text-light bg-danger border border-black p-3 d-none d-md-none d-sm-none d-lg-block">Colonna 2</div>
-            <div class="col-lg-2 text-center text-light bg-danger border border-black p-3 d-none d-md-none d-sm-none d-lg-block">Colonna 3</div>
-        </div>
-    </div>
-    <h2 class="text-center">Esercizio 5</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 bg-info text-light text-center border border-black p-3 col-sm-12 col-md-12 ">Colonna Stretta</div>
-            <div class="col-lg-8 bg-info text-light text-center border border-black p-3 col-sm-12 col-md-12 ">Colonna Larga
-                <div class="row">    
-                    <div class="col-lg-6 bg-secondary p-3 border border-black">Colonna 1</div>
-                    <div class="col-lg-6 bg-secondary p-3 border border-black">Colonna 2</div>
+    <div id="main-container">
+        <div class="container">
+            <div class="row">    
+                <div id="excludeFirst" class="col-12">
+                    <h1 class="text-center">Pratica con il Grid System</h1>
                 </div>    
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div id="excludeSecond" class="col-3 d-flex justify-content-center">
+                    <button type="button" onclick="addRemoveBorder()" class="btn btn-dark text-light">Aggiungi/Rimuovi Bordi</button>
+                </div>
+            </div>
+            <div class="row">    
+                <div id="excludeThird" class="col-12">
+                    <h2 class="text-center">Cambia il layout della pagina da qui!</h2>
+                </div>    
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div id="excludeFourth" class="col-12 d-flex justify-content-evenly">
+                    <button id="btn-xs" type="button" class="btn btn-dark text-light">Extra-Small</button>
+                    <button id="btn-sm" type="button" class="btn btn-dark text-light">Small</button>
+                    <button id="btn-md" type="button" class="btn btn-dark text-light">Medium</button>
+                    <button id="btn-lg" type="button" class="btn btn-dark text-light">Large</button>
+                    <button id="btn-xl" type="button" class="btn btn-dark text-light">Extra-Large</button>
+                    <button id="btn-xxl" type="button" class="btn btn-dark text-light">Extra-Extra-Large</button>
+                </div>
+            </div>    
+        </div>    
+        <h2 class="text-center">Esercizio 1</h2>
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-4 col-sm-4 col-lg-4 bg-primary text-light text-center border border-black p-3">prova</div>
+                <div class="col-md-4 col-sm-4 col-lg-4 bg-primary text-light text-center border border-black p-3">prova</div>
+                <div class="col-md-4 col-sm-4 col-lg-4 bg-primary text-light text-center border border-black p-3">prova</div>
+            </div>
+        </div>
+        <h2 class="text-center">Esercizio 2</h2>
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-lg-4 col-sm-12 col-md-12 bg-warning text-dark text-center border border-black p-3">prova</div>
+                <div class="col-lg-4 col-sm-12 col-md-12 bg-warning text-dark text-center border border-black p-3">prova</div>
+                <div class="col-lg-4 col-sm-12 col-md-12 bg-warning text-dark text-center border border-black p-3">prova</div>
+            </div>
+        </div>
+        <h2 class="text-center">Esercizio 3</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-xxl-none d-sm-block">Small</div>
+                <div class="col-sm-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-xxl-none d-sm-block">Small</div>
+                <div class="col-sm-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-xxl-none d-sm-block">Small</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 bg-success text-light text-center p-3 border border-black d-none d-sm-none d-lg-none d-xl-none d-xxl-none d-md-block">Medium</div>
+                <div class="col-md-4 bg-success text-light text-center p-3 border border-black d-none d-sm-none d-lg-none d-xl-none d-xxl-none d-md-block">Medium</div>
+                <div class="col-md-4 bg-success text-light text-center p-3 border border-black d-none d-sm-none d-lg-none d-xl-none d-xxl-none d-md-block">Medium</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-sm-none d-xl-none d-xxl-none d-lg-block">Large</div>
+                <div class="col-lg-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-sm-none d-xl-none d-xxl-none d-lg-block">Large</div>
+                <div class="col-lg-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-sm-none d-xl-none d-xxl-none d-lg-block">Large</div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-sm-none d-xxl-none d-xl-block">Extra Large</div>
+                <div class="col-xl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-sm-none d-xxl-none d-xl-block">Extra Large</div>
+                <div class="col-xl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-sm-none d-xxl-none d-xl-block">Extra Large</div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-sm-none d-xxl-block">Extra Extra Large</div>
+                <div class="col-xxl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-sm-none d-xxl-block">Extra Extra Large</div>
+                <div class="col-xxl-4 bg-success text-light text-center p-3 border border-black d-none d-md-none d-lg-none d-xl-none d-sm-none d-xxl-block">Extra Extra Large</div>
+            </div>
+            <div class="row">
+                <div class="col-4 bg-success text-light text-center p-3 border border-black d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none d-block">Extra Small</div>
+                <div class="col-4 bg-success text-light text-center p-3 border border-black d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none d-block">Extra Small</div>
+                <div class="col-4 bg-success text-light text-center p-3 border border-black d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none d-block">Extra Small</div>
+            </div>
+        </div>
+        <h2 class="text-center">Esercizio 4</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 text-center text-light bg-danger border border-black p-3 d-none d-md-none d-sm-none d-lg-block">Colonna 1</div>
+                <div class="col-lg-8 text-center text-light bg-danger border border-black p-3 d-none d-md-none d-sm-none d-lg-block">Colonna 2</div>
+                <div class="col-lg-2 text-center text-light bg-danger border border-black p-3 d-none d-md-none d-sm-none d-lg-block">Colonna 3</div>
+            </div>
+        </div>
+        <h2 class="text-center">Esercizio 5</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 bg-info text-light text-center border border-black p-3 col-sm-12 col-md-12 ">Colonna Stretta</div>
+                <div class="col-lg-8 bg-info text-light text-center border border-black p-3 col-sm-12 col-md-12 ">Colonna Larga
+                    <div class="row">    
+                        <div class="col-lg-6 bg-secondary p-3 border border-black">Colonna 1</div>
+                        <div class="col-lg-6 bg-secondary p-3 border border-black">Colonna 2</div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Esercizio 6</h2>
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-lg-4 bg-dark text-light text-center p-3 d-lg-block d-none d-sm-none dmd-none">Colonna 1</div>
+                <div class="col-lg-4 offset-lg-2 bg-dark text-light text-center p-3 d-lg-block d-none d-sm-none dmd-none">Colonna 2</div>
             </div>
         </div>
     </div>
-    <h2 class="text-center">Esercizio 6</h2>
-    <div class="container mb-3">
-        <div class="row">
-            <div class="col-lg-4 bg-dark text-light text-center p-3 d-lg-block d-none d-sm-none dmd-none">Colonna 1</div>
-            <div class="col-lg-4 offset-lg-2 bg-dark text-light text-center p-3 d-lg-block d-none d-sm-none dmd-none">Colonna 2</div>
-        </div>
-    </div>
-
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        function addRemoveBorder() {
+            let borderedDivs = document.querySelectorAll(".row>div:not(#excludeFirst):not(#excludeSecond):not(#excludeThird):not(#excludeFourth)");
+            for (let i = 0; i < borderedDivs.length; i++) {
+            borderedDivs[i].classList.toggle("border");
+            }
+        }
+
+        //Extra Small
+        document.getElementById("btn-xs").addEventListener("click", function() {
+            document.getElementById("main-container").className = "container-xs";
+        });
+        //Small
+        document.getElementById("btn-sm").addEventListener("click", function() {
+            document.getElementById("main-container").className = "container-sm";
+        });
+        //Medium
+        document.getElementById("btn-md").addEventListener("click", function() {
+            document.getElementById("main-container").className = "container-md";
+        });
+        //Large
+        document.getElementById("btn-lg").addEventListener("click", function() {
+            document.getElementById("main-container").className = "container-lg";
+        });
+        //Extra Large
+        document.getElementById("btn-xl").addEventListener("click", function() {
+            document.getElementById("main-container").className = "container-xl";
+        });
+        //Extra Extra Large
+        document.getElementById("btn-xxl").addEventListener("click", function() {
+            document.getElementById("main-container").className = "container-xxl";
+        });
+
+    </script>
   </body>
 </html>
