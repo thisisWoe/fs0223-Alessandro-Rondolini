@@ -145,10 +145,24 @@
             }
         }
 
+        /* function setViewportWidth(newWidth) {
+                var viewport = document.querySelector("meta[name=viewport]");
+                viewport.setAttribute("content", "width=" + newWidth);
+            } */
+            /* function setViewportWidth(newWidth) {
+  var metaViewport = document.querySelector('meta[name="viewport"]');
+  if (metaViewport) {
+    metaViewport.setAttribute('content', 'width=' + newWidth.toString());
+    return true;
+  }
+  return false;
+} */
+
         //Extra Small
         document.getElementById("btn-xs").addEventListener("click", function() {
             document.getElementById("main-container").className = "container-xs";
         });
+        /* document.getElementById("btn-xs").addEventListener("click", setViewportWidth(500)); */
         //Small
         document.getElementById("btn-sm").addEventListener("click", function() {
             document.getElementById("main-container").className = "container-sm";
