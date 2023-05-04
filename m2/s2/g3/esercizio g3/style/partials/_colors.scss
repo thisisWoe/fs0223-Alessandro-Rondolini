@@ -1,0 +1,22 @@
+.link ul{
+    background-image: $gradientColorLogo;
+    /* Il gradiente va dal rosso (#f00) al blu (#00f) da sinistra a destra */
+    -webkit-background-clip: text;
+    /* Questa proprietà indica che il gradiente deve essere limitato alle lettere */
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .top-hero{
+    background-image: $topBackgroundHero;
+}
+.hero .top-hero{
+    background-image: $topBackgroundHero;
+}
+.hero{
+    .top-hero{
+        background-image: $topBackgroundHero;
+    }
+    .bottom-hero{
+        background-image: $bottomBackgroundHero;
+    }
+}

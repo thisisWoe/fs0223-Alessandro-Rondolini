@@ -1,0 +1,16 @@
+.link ul {
+    li {
+    margin: 10px;
+    }
+    &:last-child {
+        margin-right: 30px;
+    }
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+main{
+    margin-top: 330px;
+}

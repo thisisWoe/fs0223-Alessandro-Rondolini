@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* Reset Styles */
+/*-----------------*/
+/* Box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove text selection highlight */
+::-moz-selection {
+  background-color: transparent;
+}
+::selection {
+  background-color: transparent;
+}
+
+/* Clear floats */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Disable text resize on mobile devices */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Set default font family and font size */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+@keyframes hero-entrance {
+  0% {
+    top: 40%;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+.bottom-hero {
+  position: absolute;
+  top: 150;
+  left: 0;
+  transform: translate(0%, 8.1%);
+  opacity: 0;
+  animation: hero-entrance 1s forwards;
+}
+
+.link ul {
+  background-image: linear-gradient(144deg, rgb(156, 14, 130) 0%, rgb(243, 143, 55) 50%, rgb(11, 223, 251) 100%);
+  /* Il gradiente va dal rosso (#f00) al blu (#00f) da sinistra a destra */
+  -webkit-background-clip: text;
+  /* Questa proprietà indica che il gradiente deve essere limitato alle lettere */
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .top-hero {
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 16%, rgb(156, 14, 130) 100%);
+}
+
+.hero .top-hero {
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 16%, rgb(156, 14, 130) 100%);
+}
+
+.hero .top-hero {
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 16%, rgb(156, 14, 130) 100%);
+}
+.hero .bottom-hero {
+  background-image: linear-gradient(180deg, rgb(156, 14, 130) 37%, rgb(243, 143, 55) 77%, rgb(11, 223, 251) 100%);
+}
+
+.link ul li {
+  margin: 10px;
+}
+.link ul:last-child {
+  margin-right: 30px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+main {
+  margin-top: 330px;
+}
+
+body {
+  font-family: "Share Tech", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #000000;
+}
+nav .link ul {
+  display: flex;
+}
+nav .link ul li a {
+  font-size: 1.2rem;
+}
+nav .logo img {
+  height: 50px;
+}
+
+.hero {
+  height: 100%;
+  position: relative;
+}
+.hero .top-hero {
+  height: 50px;
+}
+.hero .bottom-hero {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  border-bottom: 2px solid #000000;
+  width: 100%;
+}
+.hero .bottom-hero .hero-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .bottom-hero .hero-img img {
+  max-height: 200px;
+  border-radius: 20px;
+}
+.hero .bottom-hero .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hero .bottom-hero .heading div h1, .hero .bottom-hero .heading div p, .hero .bottom-hero .heading div button {
+  margin-left: 10px;
+}
+.hero .bottom-hero .heading div h1 {
+  font-size: 4rem;
+}
+.hero .bottom-hero .heading div p {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

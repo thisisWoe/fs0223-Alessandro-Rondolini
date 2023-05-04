@@ -1,0 +1,53 @@
+/* Reset Styles */
+/*-----------------*/
+
+/* Box sizing */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default margin and padding */
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove list styles */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* Remove default anchor styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove text selection highlight */
+  ::selection {
+    background-color: transparent;
+  }
+  
+  /* Clear floats */
+  .clearfix::before,
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Disable text resize on mobile devices */
+  body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /* Set default font family and font size */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  

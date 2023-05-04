@@ -1,0 +1,70 @@
+@import "./partials/reset";
+@import "./mixins/mixins";
+@import "./partials/variables";
+@import "./partials/animations";
+@import "./partials/colors";
+@import "./partials/buttons";
+@import "./partials/fonts";
+@import "./partials/spacing";
+
+
+body{
+    font-family: $fontHeading;
+}
+
+nav{
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    height: $imgHeight + 20px;
+    background-color: $colorNav;
+    .link ul{
+        @include flex-row;
+        li a{
+            font-size: 1.2rem;
+        }
+    }
+    .logo img{
+        height: $imgHeight;
+    }
+}
+
+.hero {
+    height: 100%;
+    position: relative;
+    .top-hero{
+        height: 50px;
+    }
+    .bottom-hero{
+        @include flex-row;
+        justify-content: space-between;
+        height: 300px;
+        border-bottom: 2px solid $colorNav;
+        width: 100%;
+        
+        .hero-img{
+            width: 50%;
+            @include flex-row;
+            justify-content: center;
+            align-items: center;
+            img {
+                max-height: 200px;
+                border-radius: 20px;
+            }
+        }
+        .heading{
+            @include flex-column;
+            justify-content: space-around;
+            
+            div h1, div p, div button{
+                margin-left: 10px;
+            }
+            div h1{
+                font-size: 4rem;
+            }
+            div p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
