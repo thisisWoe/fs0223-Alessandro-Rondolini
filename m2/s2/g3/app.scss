@@ -1,0 +1,35 @@
+nav {
+    display: block;
+    ul {
+        display: flex;
+        li {
+            font-size: 1rem;
+        }
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+        }
+    }
+}
+
+button.primary {
+    padding: 10px;
+    background-color: aqua;
+    &:hover {
+        background-color: tomato;
+        transform: scale(1.2);
+    }
+}
+
+p.paragraph{
+    font: {
+        size: 1rem;
+        weight: bold;
+        family: 'sans-serif';
+    }
+}
+
+$main-margin-value: 20px; // punti e virgola obbligatori
+article {
+    margin-top: $main-margin-value;
+}
+

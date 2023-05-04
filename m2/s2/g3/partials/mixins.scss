@@ -1,0 +1,35 @@
+@mixin basics-styles{
+    border: 1px solid black;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+}
+
+@mixin custom-paragraph ($custom-font-size){
+    border: 1px solid black;
+    font-size: $custom-font-size;
+    letter-spacing: 0.2em;
+}
+
+@mixin very-custom-paragraph-style ($custom-font-size, $custom-letter-spacing){
+    border: 1px solid black;
+    font-size: $custom-font-size;
+    letter-spacing: $custom-letter-spacing;
+}
+
+.primary-btn {
+    @include basics-styles;
+}
+
+p.custom {
+    @include custom-paragraph(2em);
+}
+p.verycustom {
+    @include custom-paragraph(2em, 0.1em);
+}
+
+@mixin text-element($propertyType, $value) {
+    font-#{$propertyType}: $value;
+}
+p{
+    @include text-element('family','sans-serif');
+}
