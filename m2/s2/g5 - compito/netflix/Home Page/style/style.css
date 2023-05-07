@@ -16,6 +16,9 @@
   opacity: 95%;
 }
 
+#dropdown-filter button:hover {
+  background-color: #70757d !important;
+}
 #dropdown-filter ul {
   opacity: 80%;
 }
