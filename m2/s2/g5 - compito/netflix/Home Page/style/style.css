@@ -54,10 +54,8 @@ header #first-nav-col, header #second-nav-col {
   }
 }
 
-@media screen and (min-width: 576px) {
-  nav {
-    background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 100%);
-  }
+nav {
+  background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 100%);
 }
 @media screen and (max-width: 575px) {
   nav {
@@ -103,6 +101,14 @@ nav .container-fluid .row:last-child .dropdown a img {
 
 #dropdownMobile {
   left: -74px;
+}
+
+.bg-nav-animation {
+  background: linear-gradient(180deg, rgb(0, 0, 0) 1%, rgb(27, 27, 27) 100%);
+}
+
+.bg-nav-transparent {
+  background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 100%);
 }
 
 .car-button-width {

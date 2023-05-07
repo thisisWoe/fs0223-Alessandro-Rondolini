@@ -21,3 +21,16 @@ myButton.addEventListener('click', () => {
   const modal = new bootstrap.Modal(myModal);
   modal.toggle();
 });
+
+//navbar
+window.addEventListener("scroll", (e) => {
+  let navbar = document.querySelector(".navbar");
+  console.log(navbar);
+  e.preventDefault();
+  if (window.scrollY >= 56.50) {
+    navbar.classList.add("bg-nav-animation");
+  } else {
+    navbar.classList.remove("bg-nav-animation");
+    navbar.classList.add(".bg-nav-transparent");
+  }
+});
