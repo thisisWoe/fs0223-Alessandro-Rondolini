@@ -1,6 +1,3 @@
-/* @each $film in $number-of-film {
-    .card-media-{$number-of-film}
-} */
 .bg-custom {
   background-color: #1b1b1b;
   /* background-color: white; */
@@ -44,6 +41,13 @@
   border-bottom: 1px solid black !important;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
 header #first-nav-col, header #second-nav-col {
   margin-left: 24px;
   margin-right: 24px;
@@ -56,11 +60,7 @@ header #first-nav-col, header #second-nav-col {
 }
 
 nav {
-  background-image: url("../../imgs/nav-shadow.png");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: -170px;
-  background-size: 200%;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 1%, rgb(27, 27, 27) 100%);
 }
 nav .container-fluid .row:first-child a img {
   height: 25px;
@@ -144,6 +144,10 @@ nav .container-fluid .row:last-child .dropdown a img {
 
 #avatar-my-profile {
   height: 30px;
+}
+
+main {
+  margin-top: 56.5px;
 }
 
 footer {

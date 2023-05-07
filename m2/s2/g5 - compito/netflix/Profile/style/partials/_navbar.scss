@@ -7,11 +7,16 @@ header{
             margin-right: $margin-x-axes;
         }
     }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 
 nav{
-    background: linear-gradient(180deg, rgba(0,0,0,0.6286215143411702) 1%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 1%, rgba(27,27,27,1) 100%);
     .logo{
         height: $img-nav-height;
     }

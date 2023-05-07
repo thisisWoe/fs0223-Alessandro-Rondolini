@@ -1,3 +1,10 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
 header a {
   margin-left: 24px;
   margin-right: 24px;
@@ -10,7 +17,7 @@ header a {
 }
 
 nav {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6286215143) 1%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 1%, rgb(27, 27, 27) 100%);
 }
 nav .logo {
   height: 25px;
@@ -64,6 +71,10 @@ input::placeholder {
 .btn-group button:hover {
   color: white !important;
   background-color: #6e757d !important;
+}
+
+main {
+  margin-top: 56.5px;
 }
 
 .bg-custom {

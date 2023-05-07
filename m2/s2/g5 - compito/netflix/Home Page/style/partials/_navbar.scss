@@ -7,14 +7,20 @@ header{
             margin-right: $margin-x-axes;
         }
     }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 nav{
-    background-image: url('../../imgs/nav-shadow.png');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: -170px;
-    background-size: 200%;
+    @media screen and (min-width: 576px){
+        background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 100%);
+    }
+    @media screen and (max-width: 575px){
+        background: linear-gradient(180deg, rgba(0,0,0,1) 1%, rgba(27,27,27,1) 100%);;
+    }
     .container-fluid{
         .row{
             &:first-child{
