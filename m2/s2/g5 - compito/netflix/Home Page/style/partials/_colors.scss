@@ -1,0 +1,42 @@
+.bg-custom{
+    background-color: #1b1b1b;
+    /* background-color: white; */
+}
+
+.nav-link-color{
+    @include nav-items-highlights;
+}
+
+.dropdown-nav{
+    @include dropdown-nav;
+    opacity: 95%;
+}
+
+#dropdown-filter{
+    ul{
+        opacity: 80%;
+        li{
+            a:hover{
+                color: black !important;
+                font-weight: bold;
+            }
+        }
+    }
+}
+#navbarNav {
+    ul {
+        li a:hover{
+            color: white;
+        }
+    }
+}
+#secondMiniNav {
+    li a:hover{
+        color: white;
+    }
+}
+#dropdownMobile{
+    li a:hover{
+        color: black !important;
+    }
+}

@@ -1,0 +1,184 @@
+/* @each $film in $number-of-film {
+    .card-media-{$number-of-film}
+} */
+.bg-custom {
+  background-color: #1b1b1b;
+  /* background-color: white; */
+}
+
+.nav-link-color {
+  color: rgb(176, 176, 176);
+}
+
+.dropdown-nav {
+  background-color: #1b1b1b;
+  border: 1px solid white;
+  opacity: 95%;
+}
+
+#dropdown-filter ul {
+  opacity: 80%;
+}
+#dropdown-filter ul li a:hover {
+  color: black !important;
+  font-weight: bold;
+}
+
+#navbarNav ul li a:hover {
+  color: white;
+}
+
+#secondMiniNav li a:hover {
+  color: white;
+}
+
+#dropdownMobile li a:hover {
+  color: black !important;
+}
+
+header #first-nav-col, header #second-nav-col {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  header #first-nav-col, header #second-nav-col {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+
+nav {
+  background-image: url("../../imgs/nav-shadow.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -170px;
+  background-size: 200%;
+}
+nav .container-fluid .row:first-child a img {
+  height: 25px;
+}
+nav .container-fluid .row:first-child button {
+  border: 2px solid rgb(124, 124, 124);
+}
+nav .container-fluid .row:first-child div ul li a {
+  color: rgb(176, 176, 176);
+}
+nav .container-fluid .row:first-child div ul li a:hover {
+  color: black;
+  font-weight: bold;
+}
+nav .container-fluid .row:last-child .dropdown a {
+  color: rgb(176, 176, 176);
+  padding-left: 8px;
+}
+nav .container-fluid .row:last-child .dropdown a img {
+  height: 35px;
+}
+@media screen and (max-width: 1023px) {
+  nav .container-fluid .row:last-child .dropdown .dropdown-menu {
+    left: -100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav .container-fluid .row:last-child .dropdown .dropdown-menu {
+    left: -71px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  #navbarNav ul li {
+    font-size: 1rem;
+  }
+}
+
+.car-button-width {
+  width: 5%;
+}
+
+.carousel-control.active, .carousel-control:focus {
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+}
+
+main #first-filt-col {
+  padding-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  main #first-filt-col {
+    padding-left: 48px;
+  }
+}
+main #second-filt-col {
+  margin-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  main #second-filt-col {
+    margin-right: 48px;
+  }
+}
+
+/* .img-fluid{
+    @media screen and (max-width: 991px){
+        margin-top: 0;
+    }
+} */
+#carouselExampleControls button, #carouselExampleControls2 button, #carouselExampleControls3 button, #carouselExampleControls4 button, #carouselExampleControls5 button, #carouselExampleControls6 button, #carouselExampleControls7 button, #carouselExampleControls8 button, #carouselExampleControls9 button {
+  width: 24px;
+}
+@media screen and (min-width: 768px) {
+  #carouselExampleControls button, #carouselExampleControls2 button, #carouselExampleControls3 button, #carouselExampleControls4 button, #carouselExampleControls5 button, #carouselExampleControls6 button, #carouselExampleControls7 button, #carouselExampleControls8 button, #carouselExampleControls9 button {
+    width: 48px;
+  }
+}
+
+.responsive-margin-left {
+  margin-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .responsive-margin-left {
+    margin-left: 48px;
+  }
+}
+
+.responsive-padding-left {
+  padding-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .responsive-padding-left {
+    padding-left: 48px;
+  }
+}
+
+.responsive-margin-right {
+  margin-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  .responsive-margin-right {
+    margin-right: 48px;
+  }
+}
+
+.responsive-padding-right {
+  padding-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  .responsive-padding-right {
+    padding-right: 48px;
+  }
+}
+
+footer {
+  color: white;
+}
+footer i {
+  font-size: 2rem;
+}
+footer a {
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  footer a {
+    padding-right: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

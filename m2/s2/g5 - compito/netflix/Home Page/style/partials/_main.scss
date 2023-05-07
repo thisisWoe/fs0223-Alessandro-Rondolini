@@ -1,0 +1,61 @@
+.car-button-width{
+    width: 5%;
+}
+.carousel-control.active, .carousel-control:focus {
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+  }
+
+main{
+    #first-filt-col {
+        padding-left: $margin-x-axes / 2;
+        @media screen and (min-width: 768px){
+            padding-left: $margin-x-axes;
+        }
+    }
+    #second-filt-col{
+        margin-right: $margin-x-axes / 2;
+        @media screen and (min-width: 768px){
+            margin-right: $margin-x-axes;
+        }
+    }
+}
+/* .img-fluid{
+    @media screen and (max-width: 991px){
+        margin-top: 0;
+    }
+} */
+
+
+
+#carouselExampleControls button, #carouselExampleControls2 button, #carouselExampleControls3 button, #carouselExampleControls4 button,#carouselExampleControls5 button, #carouselExampleControls6 button, #carouselExampleControls7 button, #carouselExampleControls8 button, #carouselExampleControls9 button{
+    width: $margin-x-axes / 2;
+    @media screen and (min-width: 768px){
+        width: $margin-x-axes;
+    }
+}
+.responsive-margin-left{
+    margin-left: $margin-x-axes / 2;
+        @media screen and (min-width: 768px){
+            margin-left: $margin-x-axes;
+        }
+}
+.responsive-padding-left{
+    padding-left: $margin-x-axes / 2;
+        @media screen and (min-width: 768px){
+            padding-left: $margin-x-axes;
+        }
+}
+.responsive-margin-right{
+    margin-right: $margin-x-axes / 2;
+        @media screen and (min-width: 768px){
+            margin-right: $margin-x-axes;
+        }
+}
+.responsive-padding-right{
+    padding-right: $margin-x-axes / 2;
+        @media screen and (min-width: 768px){
+            padding-right: $margin-x-axes;
+        }
+}

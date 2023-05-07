@@ -1,0 +1,65 @@
+header{
+    #first-nav-col, #second-nav-col{
+        margin-left: $margin-x-axes / 2;
+        margin-right: $margin-x-axes / 2;
+        @media screen and (min-width: 768px){
+            margin-left: $margin-x-axes;
+            margin-right: $margin-x-axes;
+        }
+    }
+}
+
+nav{
+    background-image: url('../../imgs/nav-shadow.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -170px;
+    background-size: 200%;
+    .container-fluid{
+        .row{
+            &:first-child{
+                a{
+                    img{
+                        height: $img-nav-height;
+                    }
+                }
+                button{
+                    border: 2px solid rgb(124, 124, 124);
+                }
+                div ul li a {
+                    @include nav-items-highlights;
+                }
+                div ul li a:hover{
+                    @include hover-nav;
+                    font-weight: bold;
+                }
+                
+            }
+            &:last-child{
+                .dropdown{
+                    a{
+                        @include nav-items-highlights;
+                        padding-left: 8px;
+                        img{
+                            height: $img-nav-height + 10px;
+                        }
+                    }
+                    
+                    .dropdown-menu{
+                        @media screen and (max-width: 1023px){
+                            left: -100px
+                        }
+                        @media screen and (min-width: 1024px) {
+                            left: -71px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#navbarNav ul li{
+    @media screen and (max-width: 1215px){
+        font-size: 1rem;
+    }
+}
