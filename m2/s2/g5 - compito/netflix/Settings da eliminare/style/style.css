@@ -1,0 +1,75 @@
+header a {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  header a {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+
+nav {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6286215143) 1%, rgba(255, 255, 255, 0) 100%);
+}
+nav .logo {
+  height: 25px;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+input {
+  color: white;
+}
+
+input::-moz-placeholder {
+  color: white !important;
+  font-size: larger;
+}
+
+input::placeholder {
+  color: white !important;
+  font-size: larger;
+}
+
+.avatar-container {
+  /* img{
+      width: 80%;
+  } */
+}
+.avatar-container button {
+  left: 35px;
+  bottom: -5px;
+  /* top: 100; */
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+.avatar-container button:hover {
+  background-color: grey;
+}
+
+.dropdown-menu a:hover {
+  font-weight: bold;
+  color: black !important;
+}
+
+.btn-group button:hover {
+  color: white !important;
+  background-color: #6e757d !important;
+}
+
+.bg-custom {
+  background-color: #1b1b1b;
+}
+
+.bg-grey {
+  background-color: #333333;
+}/*# sourceMappingURL=style.css.map */

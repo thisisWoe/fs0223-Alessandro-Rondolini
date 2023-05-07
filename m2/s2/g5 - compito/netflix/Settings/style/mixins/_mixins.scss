@@ -1,0 +1,14 @@
+//colore testo navbar
+@mixin nav-items-highlights{
+    color: rgb(176, 176, 176);
+}
+
+@mixin hover-nav{
+    color: black;
+}
+
+@mixin dropdown-nav{
+    background-color: #1b1b1b;
+    border: 1px solid white;
+}
+
