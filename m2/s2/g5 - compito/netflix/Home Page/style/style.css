@@ -193,6 +193,17 @@ main #second-filt-col {
   }
 }
 
+/* card prova */
+#card {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.carousel-item img:hover + #card {
+  display: block;
+}
+
 footer {
   color: white;
 }

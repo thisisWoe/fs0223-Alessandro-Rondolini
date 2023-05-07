@@ -14,7 +14,6 @@ for (let i = 0; i < allCarousels.length; i++) {
 
 
 //MODAL OPEN
-/* const myModal = document.getElementById('myModal') */
 const myButton = document.getElementById('myInput');
 
 myButton.addEventListener('click', () => {
