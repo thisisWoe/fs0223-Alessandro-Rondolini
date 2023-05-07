@@ -37,8 +37,8 @@
                                   </li>
                               </ul>
                               <div class="dropdown">
-                                <button class="btn dropdown-toggle d-lg-none text-white rounded-0 border-1 border-white px-2 py-0 mt-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <!-- <span class="navbar-toggler-icon"></span> -->Sfoglia
+                                <button id="browse" class="btn dropdown-toggle d-lg-none text-white rounded-0 border-1 border-white px-2 py-0 mt-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  browse
                                 </button>
                                 <ul id="dropdownMobile" class="dropdown-menu dropdown-nav rounded-0 bg-custom bg-opacity-50">
                                   <li><a class="dropdown-item d-sm-none" href="#">Search</a></li>
@@ -124,55 +124,55 @@
                   </section>
                   <section>
                       <div class="container-fluid">
-                          <div class="row pt-1">
-                              <div class="col-12 d-flex justify-content-center d-md-block col-md-4"><!-- membership -->
+                          <div class="row border-bottom pt-1">
+                              <div class="col-12 d-flex justify-content-md-center d-md-block col-lg-4 py-2"><!-- membership -->
                                   <div>
                                       <h5 class="text-secondary">MEMBERSHIP & BILLING</h5>
-                                      <button type="button" class="btn rounded-0 px-4">Cancel Membership</button>
+                                      <button id="cancel" type="button" class="btn rounded-0 px-4">Cancel Membership</button>
                                   </div>
                               </div>
-                              <div class="col-12 d-flex justify-content-center d-md-block col-md-8"><!-- personal data -->
+                              <div class="col-12 d-flex justify-content-center d-md-block col-lg-8 py-2"><!-- personal data -->
                                   <div class="container-fluid d-flex flex-column justify-content-between h-100 pb-3">
                                       <div class="row">
-                                          <div class="col-6 d-flex align-items-center">
-                                            <p class="fw-bold">student@strive.school</p>
+                                          <div class="col-12 col-md-6 d-flex align-items-center">
+                                            <p class="fw-bold m-0 mb-xl-3">student@strive.school</p>
                                           </div>
-                                          <div class="col-6 d-flex justify-content-end align-items-center">
+                                          <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center">
                                             <a class="text-decoration-none" href="#">Change account email</a>
                                           </div>
                                       </div>
                                       <div class="row">
-                                        <div class="col-6 d-flex align-items-center">
-                                          <p class="">Password: ********</p>
+                                        <div class="col-12 col-md-6 d-flex align-items-center">
+                                          <p class=" m-0 mb-xl-3">Password: ********</p>
                                         </div>
-                                        <div class="col-6 d-flex justify-content-end align-items-center">
+                                        <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center">
                                           <a class="text-decoration-none" href="#">Change password</a>
                                         </div>
                                       </div>
                                       <div class="row border-bottom">
-                                        <div class="col-6 d-flex align-items-center">
-                                          <p class="">Phone: 321 044 1279</p>
+                                        <div class="col-12 col-md-6 d-flex align-items-center">
+                                          <p class=" m-0 mb-xl-3">Phone: 321 044 1279</p>
                                         </div>
-                                        <div class="col-6 d-flex justify-content-end align-items-center">
+                                        <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center">
                                           <a class="text-decoration-none" href="#">Change phone number</a>
                                         </div>
                                       </div>
-                                      <div class="row">
-                                        <div class="col-6 d-flex align-items-bottom">
+                                      <div class="row pt-3">
+                                        <div class="col-12 col-xl-6 d-flex align-items-bottom">
                                           <img id="paypal" class="img-fluid pe-3" src="./imgs/paypal.png" alt="paypal logo">
                                           <p class="fw-bold m-0">admin@strive.school</p>
                                         </div>
-                                        <div class="col-6 d-flex justify-content-end align-items-center">
+                                        <div class="col-12 col-xl-6 d-flex justify-content-xl-end align-items-center">
                                           <a class="text-decoration-none" href="#">Update payment info</a>
                                         </div>
                                       </div>
-                                      <div class="row border-bottom">
-                                        <div class="col-6 offset-6 d-flex justify-content-end align-items-center">
+                                      <div class="row border-bottom pb-3">
+                                        <div class="col-12 col-xl-6 offset-xl-6 d-flex justify-content-xl-end align-items-center">
                                           <a class="text-decoration-none" href="#">Billing details</a>
                                         </div>
                                       </div>
                                       <div class="row">
-                                        <div class="col-6 offset-6 d-flex flex-column align-items-end">
+                                        <div class="col-12 col-lg-8 offset-lg-4 col-xxl-6 offset-xxl-6 d-flex flex-column align-items-lg-end pt-3">
                                           <a class="text-decoration-none" href="#">Redeem gift card or promo code</a>
                                           <a class="text-decoration-none" href="#">Where to buy gift cards</a>
                                         </div>
@@ -180,33 +180,33 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="row border-top border-bottom py-2 align-items-center">
-                              <div class="col-12 d-flex justify-content-center d-md-block col-md-4">
+                          <div class="row border-bottom py-2 align-items-center">
+                              <div class="col-12 d-flex justify-content-md-center d-md-block col-lg-4">
                                 <div>
                                     <h5 class="text-secondary">PLAN DETAILS</h5>
                                 </div>
                               </div>
-                              <div class="col-12 d-flex justify-content-center d-md-block col-md-8 pe-4">
+                              <div class="col-12 d-flex justify-content-md-center d-md-block col-lg-8 m-0">
                                 <div class="row">
-                                  <div class="col-6 d-flex align-items-center">
+                                  <div class=" col-12 col-md-6 d-flex align-items-center">
                                     <p class="fw-bold m-0 pe-2">Premium</p>
                                     <img id="hd" class="img-fluid" src="./imgs/Screenshot (102).png" alt="ultra hd">
                                   </div>
-                                  <div class="col-6 d-flex justify-content-end align-items-center">
+                                  <div class=" col-12 col-md-6 d-flex justify-content-md-end align-items-center pe-4">
                                     <a class="text-decoration-none" href="#">Change plan</a>
                                   </div>
                                 </div>
                               </div>
                           </div>
                           <div class="row border-bottom py-2 align-items-start">
-                            <div class="col-12 d-md-block col-md-4">
+                            <div class="col-12 d-md-block col-lg-4">
                               <div>
                                   <h5 class="text-secondary">SETTING</h5>
                               </div>
                             </div>
-                            <div class="col-12 d-flex justify-content-center d-md-block col-md-8">
+                            <div class="col-12 d-flex justify-content-md-center d-md-block col-lg-8">
                               <div class="row">
-                                <div class="col-8 d-flex flex-column align-items-start">
+                                <div class="col-12 col-lg-8 d-flex flex-column align-items-start">
                                   <a class="text-decoration-none" href="#">Parental controls</a>
                                   <a class="text-decoration-none" href="#">Test participation</a>
                                   <a class="text-decoration-none" href="#">Manage download devices</a>
@@ -218,18 +218,18 @@
                             </div>
                           </div>
                           <div class="row py-2 align-items-center">
-                            <div class="col-12 d-md-block col-md-4">
+                            <div class="col-12 d-md-block col-lg-4">
                               <div>
                                   <h5 class="text-secondary">MY PROFILE</h5>
                               </div>
                             </div>
-                            <div class="col-12 d-flex align-items-center d-md-block col-md-8">
-                              <div class="row">
-                                <div class="col-6 d-flex align-items-center">
+                            <div class="col-12 d-flex align-items-center d-md-block col-lg-8">
+                              <div class="row me-0">
+                                <div class="col-12 col-md-6 d-flex align-items-center">
                                   <img id="avatar-my-profile" class="img-fluid pe-2" src="./imgs/kids_icon.png" alt="kids icon">
                                   <p class="m-0 fw-bold">Strive Student</p>
                                 </div>
-                                <div class="col-6 d-flex flex-column align-items-end">
+                                <div class="col-12 col-md-6 d-flex flex-column align-items-md-end">
                                   <a class="text-decoration-none" href="#">Manage profiles</a>
                                   <a class="text-decoration-none" href="#">Add profile email</a>
                                 </div>
@@ -237,16 +237,16 @@
                             </div>
                           </div>
                           <div class="row py-2">
-                            <div class="col-12 d-flex d-md-block col-md-8 offset-md-4">
+                            <div class="col-12 d-flex d-md-block col-lg-8 offset-lg-4">
                               <div class="row">
-                                <div class="col-8">
+                                <div class="col-12 col-xl-8">
                                   <div class="row">
-                                    <div class="col-8 d-flex flex-column">
+                                    <div class="col-12 col-md-8 d-flex flex-column">
                                       <a class="text-decoration-none" href="#">Language</a>
                                       <a class="text-decoration-none" href="#">Playback settings</a>
                                       <a class="text-decoration-none" href="#">subtitle appearance</a>
                                     </div>
-                                    <div class="col-4 d-flex flex-column">
+                                    <div class="col-12 col-md-4 d-flex flex-column align-items-md-end align-items-lg-start">
                                       <a class="text-decoration-none" href="#">Viewing activity</a>
                                       <a class="text-decoration-none" href="#">Ratings</a>
                                     </div>

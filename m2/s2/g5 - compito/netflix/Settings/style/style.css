@@ -39,7 +39,7 @@
   color: black !important;
 }
 
-.container-fluid div button {
+.container-fluid div #cancel {
   background-color: rgba(158, 169, 179, 0.5215686275) !important;
   border-bottom: 1px solid black !important;
 }
@@ -97,6 +97,10 @@ nav .container-fluid .row:last-child .dropdown a img {
   #navbarNav ul li {
     font-size: 1rem;
   }
+}
+
+#dropdownMobile {
+  left: -74px;
 }
 
 /* #carouselExampleControls button, #carouselExampleControls2 button, #carouselExampleControls3 button, #carouselExampleControls4 button,#carouselExampleControls5 button, #carouselExampleControls6 button, #carouselExampleControls7 button, #carouselExampleControls8 button, #carouselExampleControls9 button{

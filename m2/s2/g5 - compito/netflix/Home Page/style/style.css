@@ -94,6 +94,10 @@ nav .container-fluid .row:last-child .dropdown a img {
   }
 }
 
+#dropdownMobile {
+  left: -74px;
+}
+
 .car-button-width {
   width: 5%;
 }
