@@ -48,22 +48,11 @@ fetch('https://striveschool-api.herokuapp.com/books')
             let item = card.parentNode;
             //aggiungo nel local storage
             localStorage.setItem(`${book.title}`, JSON.stringify(`${book.price}`));
-            let saved = localStorage.getItem(`${book.title}`, `${book.price}`);
-
-            const savedJSON = localStorage.getItem(`${book.price}`);
             
-            console.log("savedJSON", savedJSON)
-
-            const savedObject = JSON.parse(savedJSON);
             let title = `${book.title}`;
             let price = `${book.price}`;
-            /* const value = savedObject[key]; */
             console.log("price", price)
             console.log("title", title)
-            
-
-            
-            
 
             // Crea i nuovi elementi p per il titolo e il prezzo
             let titleP = document.createElement('p');
@@ -71,7 +60,6 @@ fetch('https://striveschool-api.herokuapp.com/books')
             let deleteButtonContainer = document.createElement('div');
             deleteButtonContainer.classList.add('d-flex', 'align-items-center');
 
-    
             titleP.textContent = title;
             titleChartDiv.appendChild(titleP);
 
@@ -79,13 +67,10 @@ fetch('https://striveschool-api.herokuapp.com/books')
             priceChartDiv.appendChild(priceP);
 
             deleteButtonContainer.innerHTML = `
-                <button type="button" class="btn btn-danger deleteItem">Remove</button>
+                <button id="deleteItemChart" type="button" class="btn btn-danger deleteItem">Remove</button>
             `;
             buttonDeleteChart.appendChild(deleteButtonContainer);
 
-
-            let savedChartItems = localStorage.getItem(`${book.title}`);
-            console.log("savedChartItems", savedChartItems)
         })
         })
     })
@@ -108,7 +93,7 @@ keys.forEach((key) => {
     let deleteButtonContainer = document.createElement('div');
     deleteButtonContainer.classList.add('d-flex', 'align-items-center');
     deleteButtonContainer.innerHTML = `
-            <button type="button" class="btn btn-danger deleteItem">Remove</button>
+            <button id="deleteItemChart" type="button" class="btn btn-danger deleteItem">Remove</button>
         `;
     buttonDeleteChart.appendChild(deleteButtonContainer);
 });
