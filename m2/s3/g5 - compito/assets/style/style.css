@@ -1,0 +1,33 @@
+header {
+  overflow: hidden;
+}
+header nav .container-fluid {
+  background-color: #0e060e;
+  border-bottom: 4px solid #34474e;
+}
+header nav .container-fluid .navbar-brand img {
+  max-height: 100px;
+}
+header #hero-section {
+  height: 600px;
+  opacity: 20%;
+}
+header #loadingBar {
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.modal-content {
+  border: #34474e 3px solid !important;
+}
+
+.modal-header {
+  border-bottom: #34474e 3px solid !important;
+}
+
+.modal-footer {
+  border-top: #34474e 3px solid !important;
+}/*# sourceMappingURL=style.css.map */

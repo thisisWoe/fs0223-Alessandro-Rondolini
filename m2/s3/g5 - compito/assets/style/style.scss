@@ -1,0 +1,41 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+
+
+
+header{
+    overflow: hidden;
+    nav{
+        .container-fluid  {
+            background-color: #0e060e;
+            border-bottom: 4px solid #34474e;
+            .navbar-brand{
+                img{
+                    max-height: 100px;
+                }
+            }
+        }
+    }
+    #hero-section{
+        height: 600px;
+        opacity: 20%;
+    };
+    #loadingBar{
+        width: 100%;
+    }
+}
+
+.card img{
+    width: 100%;
+}
+
+.modal-content, {
+    border: #34474e 3px solid !important; 
+}
+.modal-header{
+    border-bottom: #34474e 3px solid !important;
+}
+.modal-footer{
+    border-top: #34474e 3px solid !important;
+}
