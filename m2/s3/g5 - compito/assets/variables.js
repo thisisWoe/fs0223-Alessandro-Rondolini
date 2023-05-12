@@ -12,5 +12,6 @@ let oldDelete = document.getElementById('old-delete')
 let quantityHeroImages;
 let scroller;
 
-let loadingBar = document.getElementById('loadingBar');
-
+let loadingBar = document.getElementById('progressBar');
+let contentLength;
+let reader;

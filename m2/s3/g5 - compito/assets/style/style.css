@@ -5,14 +5,29 @@ header nav .container-fluid {
   background-color: #0e060e;
   border-bottom: 4px solid #34474e;
 }
+header nav .container-fluid ul li a:hover {
+  color: #c948b7 !important;
+  font-weight: bold;
+  font-size: larger;
+}
+header nav .container-fluid ul li a {
+  transition: 0.1s;
+}
+header nav .container-fluid .navbar-brand {
+  overflow: hidden;
+}
 header nav .container-fluid .navbar-brand img {
   max-height: 100px;
+  transition: transform 0.3s;
+}
+header nav .container-fluid .navbar-brand img:hover {
+  transform: scale(1.15);
 }
 header #hero-section {
   height: 600px;
   opacity: 20%;
 }
-header #loadingBar {
+header #progressBar {
   width: 100%;
 }
 
@@ -30,4 +45,12 @@ header #loadingBar {
 
 .modal-footer {
   border-top: #34474e 3px solid !important;
+}
+
+.card, #boff-container button {
+  transition: transform 0.3s;
+}
+
+.card:hover, #boff-container button:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */

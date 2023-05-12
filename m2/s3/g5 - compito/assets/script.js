@@ -7,7 +7,9 @@ const getProducts = function () {
     .then((res) => {
       console.log(".then ~ res", res)
       if (res.ok) {
-        return res.json()
+          contentLength = res.headers.get('Content-Length');
+          console.log(".then ~ contentLength", contentLength)
+          return res.json()
       } else {
         throw new Error('Request execution error')
       }
@@ -21,7 +23,7 @@ const getProducts = function () {
         let colTemplate = 
         `
             <div class="col-12 col-lg-4 mb-2">
-                <div class="card rounded-5">
+                <div class="card rounded-5 mb-5">
                     <img class="rounded-top-5" src="${object.imageUrl}" alt="nft-img">
                     <div class="card-body">
                         <h5 class="card-title">${object.name}</h5>
@@ -45,6 +47,8 @@ const getProducts = function () {
         
         
     })
+        loadingBarAnimation()
+
         //animazione hero
         quantityHeroImages = document.querySelectorAll('#hero-section img');
         scroller = document.querySelector('#hero-section');
@@ -71,111 +75,60 @@ const getProducts = function () {
     })
     }
 
+
+
+
+//al caricamento della pagina    
 window.onload = () => {
     getProducts()
-    loadingBarAnimation()
   }
 
-
 const loadingBarAnimation = function () {
-    /* fetch(DATABASE_URL, {
-        headers: {
-        "Authorization": apiKey
-        }
-    }) */
     fetch(DATABASE_URL, {
-        headers: {
+      headers: {
         "Authorization": apiKey
-        }})
-    .then((res) => {
-      console.log(".then ~ res", res)
-      if (res.ok) {
-        return res.json()
-      } else {
-        throw new Error('Request execution error')
       }
     })
-    .then(function(response) {
-    let resx = response.headers;
-    console.log(".then ~ resx", resx)
-    let contentLength = response.headers.get('Content-Length');
-    let totalBytes = parseInt(contentLength, 10);
-    let bytesDownloaded = 0;
-    let reader = response.body.getReader();
-
-    return new ReadableStream({
-        start(controller) {
-        function push() {
-            reader.read().then(({done, value}) => {
-            if (done) {
-                controller.close();
-                return;
-            }
-            bytesDownloaded += value.length;
-            let percentComplete = (bytesDownloaded / totalBytes) * 100;
-            loadingBar.value = percentComplete;
-            push();
-            });
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Errore durante l\'esecuzione della richiesta');
         }
-        push();
-        }
-    });
-    })
-    .then(function(stream) {
-    return new Response(stream).text();
-    })
-    .then(function(data) {
-        // qui puoi elaborare i dati ricevuti dall'API
-        })
-        .catch(function(error) {
-        // qui puoi gestire gli errori della richiesta
-        })
-        .finally(function() {
-        // nasconde l'indicatore di caricamento quando il caricamento è terminato
-        loadingBar.style.display = 'none';
-        });
-}
-  /* const loadingBarAnimation = function () {}
-    let loadingBar = document.getElementById('loadingBar');
-
-    fetch('https://api.example.com/data')
-        .then(function(response) {
-        let contentLength = response.headers.get('Content-Length');
-        let totalBytes = parseInt(contentLength, 10);
+        return res;
+      })
+      .then(function (response) {
+        const totalBytes = parseInt(response.headers.get('Content-Length'), 10);
         let bytesDownloaded = 0;
-        let reader = response.body.getReader();
-
+        const reader = response.body.getReader();
+  
         return new ReadableStream({
-            start(controller) {
+          start(controller) {
             function push() {
-                reader.read().then(({done, value}) => {
+              reader.read().then(({ done, value }) => {
                 if (done) {
-                    controller.close();
-                    return;
+                  controller.close();
+                  return;
                 }
                 bytesDownloaded += value.length;
-                let percentComplete = (bytesDownloaded / totalBytes) * 100;
+                const percentComplete = (bytesDownloaded / totalBytes) * 100;
                 loadingBar.value = percentComplete;
+                progressLabel.textContent = `${Math.round(percentComplete)}% - LOADED`;
                 push();
-                });
+              });
             }
             push();
-            }
+          }
         });
-        })
-        .then(function(stream) {
+      })
+      .then(function (stream) {
         return new Response(stream).text();
-        })
-        .then(function(data) {
-        // qui puoi elaborare i dati ricevuti dall'API
-        })
-        .catch(function(error) {
-        // qui puoi gestire gli errori della richiesta
-        })
-        .finally(function() {
-        // nasconde l'indicatore di caricamento quando il caricamento è terminato
+      })
+      .then(function (data) {
+      })
+      .catch(function (error) {
+        console.error(error);
+      })
+      .finally(function () {
         loadingBar.style.display = 'none';
-        });
+      });
+  };
   
-
- */

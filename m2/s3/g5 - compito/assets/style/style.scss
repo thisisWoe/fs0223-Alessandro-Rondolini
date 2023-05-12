@@ -10,9 +10,22 @@ header{
         .container-fluid  {
             background-color: #0e060e;
             border-bottom: 4px solid #34474e;
+            ul li a:hover{
+                color: #c948b7 !important;
+                font-weight: bold;
+                font-size: larger;
+            }
+            ul li a{
+                transition: 0.1s;
+            }
             .navbar-brand{
+                overflow: hidden;
                 img{
                     max-height: 100px;
+                    transition: transform 0.3s;
+                }
+                img:hover{
+                    transform: scale(1.15);
                 }
             }
         }
@@ -21,7 +34,7 @@ header{
         height: 600px;
         opacity: 20%;
     };
-    #loadingBar{
+    #progressBar{
         width: 100%;
     }
 }
@@ -29,6 +42,7 @@ header{
 .card img{
     width: 100%;
 }
+
 
 .modal-content, {
     border: #34474e 3px solid !important; 
@@ -38,4 +52,10 @@ header{
 }
 .modal-footer{
     border-top: #34474e 3px solid !important;
+}
+.card, #boff-container button{
+    transition: transform 0.3s;
+}
+.card:hover, #boff-container button:hover{
+    transform: scale(1.05);
 }
