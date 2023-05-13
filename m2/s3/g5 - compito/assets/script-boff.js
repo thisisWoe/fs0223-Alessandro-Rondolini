@@ -15,10 +15,9 @@ if (productId) {
     })
         .then((res) => {
           if (res.ok) {
-            confirm('Are you sure you want to delete');
             location.assign('/g5%20-%20compito/index.html')
           } else {
-            throw new Error("Problem in event deletion")
+            throw new Error("Problem in NFT deletion")
           }
         })
         .catch((err) => {
@@ -34,7 +33,7 @@ if (productId) {
         if (res.ok) {
           return res.json()
         } else {
-          throw new Error("Error in retrieving event")
+          throw new Error("Error in retrieving NFT")
         }
       })
       .then((product) => {
@@ -59,7 +58,6 @@ if (productId) {
 const productForm = document.getElementById('product-form')
 productForm.addEventListener('submit', function (e) {
     e.preventDefault()
-    console.log('sending data')
 
     let nameInput = document.getElementById('name')
     let descriptionInput = document.getElementById('description')
@@ -85,11 +83,9 @@ productForm.addEventListener('submit', function (e) {
     })
       .then((res) => {
         if (res.ok) {
-          alert(productId ? 'EVENTO MODIFICATO!' : 'EVENTO CREATO!')
           location.assign('/g5%20-%20compito/index.html')
         } else {
-          alert('ERRORE NEL SALVATAGGIO')
-          throw new Error('ERRORE NEL SALVATAGGIO')
+          throw new Error('Saving Error')
         }
       })
       .catch((err) => {
@@ -102,3 +98,4 @@ reset.addEventListener('click', (event) => {
     event.preventDefault();
     productForm.reset();
 })
+

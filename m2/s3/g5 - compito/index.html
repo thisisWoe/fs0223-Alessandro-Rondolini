@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="./assets/style/style.css">
     </head>
     <body class="bg-black">
-        <header>
-            <nav class="navbar navbar-expand-lg py-0">
+        <header class="position-relative">
+            <nav class="navbar navbar-expand-lg py-0 position-fixed">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">
                         <img src="./assets/imgs/logo.png" alt="logo">
@@ -30,18 +30,27 @@
                     </div>
                 </div>
             </nav>
-            <progress id="progressBar" value="0" max="100"></progress>
-            <span id="progressLabel">0%</span>
+            <div id="progress">
+                <progress id="progressBar" value="0" max="100"></progress>
+                <span id="progressLabel">0%</span>
+            </div>
             <!-- <div>
                 <progress id="progressBar" value="0" max="100"></progress>
                 <span id="progressLabel">0%</span>
             </div> -->
-              
-            <section id="hero-section" class="d-flex justify-content-start position-relative">
-                <!-- <h1 id="animateMe" class="text-white position-absolute">
-                    Titolo
-                </h1> -->
-            </section>
+            <div class="position-relative">
+                <div class="position-absolute">
+                    <h1 id="h1Hero" title="xBlur_" class="text-white glitch">
+                        xBlur_
+                    </h1>
+                    <p class="text-white italic">
+                        Buy, trade and create your own collectibles. <br>
+                        Web 3.0's best marketplace for nft!
+                    </p>
+                </div>
+                <section id="hero-section" class="d-flex justify-content-start position-relative">
+                </section>
+            </div>
         </header>
         <main>
             <div class="container-fluid">
@@ -54,7 +63,8 @@
                 </div>
             </div>
         </main>
-
+        <div id="modalContainer">
+        </div>
 
 
 
