@@ -20,10 +20,9 @@ let reader;
 let keys = [];
 console.log("keys", keys)
 let cartBodyText = document.querySelector('.offcanvas-body');
-
-
 let value = [];
-let addToCart = () => {
+//inizio funzione vecchia
+/* let addToCart = () => {
     for (let key in localStorage){
         if (localStorage.getItem(key) !== null){
             value.push(localStorage.getItem(key));
@@ -31,17 +30,64 @@ let addToCart = () => {
     }
     value.forEach((string, index) => {
         let parsedObject = JSON.parse(string);
+        console.log("value.forEach ~ parsedObject", parsedObject)
         value[index] = parsedObject;
-        cartBodyText.innerHTML = 
+        let cartItem = document.createElement('div');
+        cartItem.innerHTML = 
         `
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between mb-3 pb-1 border-bottom">
                 <span class="cart-item-name text-white italic">${parsedObject.name}</span>
                 <span class="cart-item-name italic text-success">${parsedObject.price}</span>
                 <button class="btn btn-danger px-0 py-1">Remove</button>
             <div>
         `
+        cartBodyText.appendChild(cartItem);
     })
     return value;
 };
-addToCart();
-console.log("value", value)
+addToCart(); */
+//fine funzione vecchia
+//prova scomposizione addtocart
+function addToCart(item) {
+    localStorage.setItem(item.id, JSON.stringify(item));
+}
+/* addToCart(); */
+function removeFromCart(itemId) {
+    localStorage.removeItem(itemId);
+    renderCartItems();
+}
+function getCartItems() {
+    let items = [];
+    for (let key in localStorage){
+      if (localStorage.getItem(key) !== null){
+        items.push(JSON.parse(localStorage.getItem(key)));
+      }
+    }
+    return items;
+}
+function renderCartItems() {
+    let items = getCartItems();
+    let cartBodyText = document.querySelector('.offcanvas-body');
+    cartBodyText.innerHTML = "";
+    items.forEach(item => {
+      let cartItem = document.createElement('div');
+      cartItem.innerHTML = `
+        <div class="d-flex justify-content-between mb-3 pb-1 border-bottom">
+          <span class="cart-item-name text-white italic">${item.name}</span>
+          <span class="cart-item-name italic text-success">${item.price}</span>
+          <button class="btn btn-danger px-0 py-1" data-id="${item.id}">Remove</button>
+        </div>
+      `;
+      cartBodyText.appendChild(cartItem);
+    });
+
+    let removeButtons = document.querySelectorAll('.btn-danger');
+    removeButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      let itemId = button.dataset.id;
+      console.log("button.addEventListener ~ itemId", itemId)
+      removeFromCart(itemId);
+    });
+  });
+  }
+//fine prova scomposizione addtocart

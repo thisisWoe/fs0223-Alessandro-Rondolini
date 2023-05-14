@@ -91,7 +91,10 @@ const getProducts = function () {
             };
             let itemId = currentItem.id;
             localStorage.setItem(itemId, JSON.stringify(currentItem));
+            addToCart(currentItem);
+            renderCartItems();
           });
+          
         });
         const cards = document.querySelectorAll('.card');
         function getAllLocalStorageKeys() {
@@ -151,7 +154,7 @@ const getProducts = function () {
 //al caricamento della pagina    
 window.onload = () => {
     getProducts();
-    
+    renderCartItems()
   }
 
 const loadingBarAnimation = function () {
