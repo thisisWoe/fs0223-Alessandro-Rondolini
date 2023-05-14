@@ -18,11 +18,19 @@ if (productId) {
             //location.assign('/g5%20-%20compito/index.html')
             location.assign('./index.html');
           } else {
+            const alertDiv = document.createElement('div');
+            alertDiv.classList.add('alert', 'alert-danger');
+            alertDiv.textContent = 'Problem in NFT deletion';
+            document.querySelector('main').insertBefore(alertDiv, document.getElementById('boff-container'));
             throw new Error("Problem in NFT deletion")
           }
         })
         .catch((err) => {
           console.log(err)
+          const alertDiv = document.createElement('div');
+          alertDiv.classList.add('alert', 'alert-danger');
+          alertDiv.textContent = err.message;
+          document.querySelector('main').insertBefore(alertDiv, document.getElementById('boff-container'));
         })
     })
 
@@ -34,6 +42,10 @@ if (productId) {
         if (res.ok) {
           return res.json()
         } else {
+          const alertDiv = document.createElement('div');
+          alertDiv.classList.add('alert', 'alert-danger');
+          alertDiv.textContent = 'Error in retrieving NFT';
+          document.querySelector('main').insertBefore(alertDiv, document.getElementById('boff-container'));
           throw new Error("Error in retrieving NFT")
         }
       })
@@ -50,6 +62,10 @@ if (productId) {
       })
       .catch((error) => {
         console.log(error)
+        const alertDiv = document.createElement('div');
+        alertDiv.classList.add('alert', 'alert-danger');
+        alertDiv.textContent = error.message;
+        document.querySelector('main').insertBefore(alertDiv, document.getElementById('boff-container'));
       })
   } else {
 
@@ -108,11 +124,19 @@ productForm.addEventListener('submit', function (e) {
           //location.assign('/g5%20-%20compito/index.html')
           location.assign('./index.html');
         } else {
+          const alertDiv = document.createElement('div');
+          alertDiv.classList.add('alert', 'alert-danger');
+          alertDiv.textContent = 'Saving Error';
+          document.querySelector('main').insertBefore(alertDiv, document.getElementById('boff-container'));
           throw new Error('Saving Error')
         }
       })
       .catch((err) => {
         console.log(err)
+        const alertDiv = document.createElement('div');
+        alertDiv.classList.add('alert', 'alert-danger');
+        alertDiv.textContent = err.message;
+        document.querySelector('main').insertBefore(alertDiv, document.getElementById('boff-container'));
       })
   })
 

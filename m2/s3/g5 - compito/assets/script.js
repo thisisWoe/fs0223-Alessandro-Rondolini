@@ -11,6 +11,10 @@ const getProducts = function () {
           console.log(".then ~ contentLength", contentLength)
           return res.json()
       } else {
+        const alertDiv = document.createElement('div');
+        alertDiv.classList.add('alert', 'alert-danger');
+        alertDiv.textContent = 'Request execution error';
+        document.getElementById('progress').appendChild(alertDiv);
         throw new Error('Request execution error')
       }
     })
@@ -115,6 +119,7 @@ const getProducts = function () {
             }
           })
         }
+        
         getAllLocalStorageKeys();
         checkIfCardIsInLocalStorageKeys(cards, keys);
         
@@ -144,6 +149,10 @@ const getProducts = function () {
     })
     .catch((error) => {
       console.log(error)
+      const alertDiv = document.createElement('div');
+      alertDiv.classList.add('alert', 'alert-danger');
+      alertDiv.textContent = error.message;
+      document.getElementById('progress').appendChild(alertDiv);
     })
     }
 
@@ -164,10 +173,19 @@ const loadingBarAnimation = function () {
       }
     })
       .then((res) => {
-        if (!res.ok) {
+        /* if (!res.ok) {
           throw new Error('Error during request execution');
         }
-        return res;
+        return res; */
+        if (res.ok) {
+          return res;
+        } else {
+          const alertDiv = document.createElement('div');
+          alertDiv.classList.add('alert', 'alert-danger');
+          alertDiv.textContent = 'Request execution error';
+          document.getElementById('progress').appendChild(alertDiv);
+          throw new Error('Error during request execution');
+        }
       })
       .then(function (response) {
         const totalBytes = parseInt(response.headers.get('Content-Length'), 10);
@@ -200,6 +218,10 @@ const loadingBarAnimation = function () {
       })
       .catch(function (error) {
         console.error(error);
+        const alertDiv = document.createElement('div');
+        alertDiv.classList.add('alert', 'alert-danger');
+        alertDiv.textContent = error.message;
+        document.getElementById('progress').appendChild(alertDiv);
       })
       .finally(function () {
         loadingBar.style.display = 'none';

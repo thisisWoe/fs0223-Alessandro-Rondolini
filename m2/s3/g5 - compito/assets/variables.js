@@ -69,17 +69,20 @@ function renderCartItems() {
     let items = getCartItems();
     let cartBodyText = document.querySelector('.offcanvas-body');
     cartBodyText.innerHTML = "";
+    let totalPrice = 0;
     items.forEach(item => {
       let cartItem = document.createElement('div');
       cartItem.innerHTML = `
         <div class="d-flex justify-content-between mb-3 pb-1 border-bottom">
           <span class="cart-item-name text-white italic">${item.name}</span>
-          <span class="cart-item-name italic text-success">${item.price}</span>
+          <span class="cart-item-price italic text-success">${item.price}</span>
           <button class="btn btn-danger px-0 py-1" data-id="${item.id}">Remove</button>
         </div>
       `;
       cartBodyText.appendChild(cartItem);
+      totalPrice += parseFloat(item.price);
     });
+    totalDiv.innerHTML = `TOTAL: ${totalPrice.toFixed(2)} ETH</strong>`;
 
     let removeButtons = document.querySelectorAll('.btn-danger');
     removeButtons.forEach((button) => {
@@ -88,6 +91,10 @@ function renderCartItems() {
       console.log("button.addEventListener ~ itemId", itemId)
       removeFromCart(itemId);
     });
-  });
-  }
+  }); 
+}
+let totalDiv = document.createElement('div');
+totalDiv.classList.add('align-self-end', 'text-white', 'fw-bold');
+let cartFooter = document.querySelector('.cart-footer');
+cartFooter.appendChild(totalDiv);
 //fine prova scomposizione addtocart

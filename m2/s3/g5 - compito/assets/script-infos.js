@@ -7,6 +7,10 @@ fetch(DATABASE_URL + '/' + productId, {
         if (res.ok) {
           return res.json()
         } else {
+          const alertDiv = document.createElement('div');
+            alertDiv.classList.add('alert', 'alert-danger');
+            alertDiv.textContent = 'Problem find product informations';
+            document.querySelector('main').appendChild(alertDiv);
           throw new Error("Problem find product informations")
         }
     })
@@ -36,4 +40,8 @@ fetch(DATABASE_URL + '/' + productId, {
     })
     .catch((err) => {
       console.log(err)
+      const alertDiv = document.createElement('div');
+      alertDiv.classList.add('alert', 'alert-danger');
+      alertDiv.textContent = err.message;
+      document.querySelector('main').appendChild(alertDiv);
     })
