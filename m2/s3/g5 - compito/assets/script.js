@@ -134,13 +134,14 @@ const getProducts = function () {
         let itemWidth = 600;
         console.log(".then ~ itemWidth", itemWidth)
 
-        let totalWidth = itemWidth * (quantityHeroImages.length - 2.5);
+        /* let totalWidth = itemWidth * (quantityHeroImages.length - 2.5); */
+        let totalWidth = itemWidth * (quantityHeroImages.length - (quantityHeroImages.length / 3.3));
         console.log(".then ~ totalWidth", totalWidth)
         
         let pos = 0;
         setInterval(function() {
         pos += 1;
-        if (pos > (totalWidth - 1600)) {
+        if (pos > (totalWidth/*  - 1600 */)) {
             pos = 0;
             scroller.style.transform = 'translateX(' + (-pos) + 'px)';
         }

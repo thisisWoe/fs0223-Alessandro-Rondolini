@@ -58,7 +58,7 @@ if (productId) {
         document.getElementById('description').value = product.description
         document.getElementById('brand').value = product.brand
         document.getElementById('price').value = product.price
-        document.getElementById('imageURL').value = product.imageUrl
+        document.getElementById('imageUrl').value = product.imageUrl
       })
       .catch((error) => {
         console.log(error)
@@ -97,18 +97,34 @@ productForm.addEventListener('submit', function (e) {
         let errorMessageElement = inputElement.nextElementSibling;
         errorMessageElement.classList.remove('d-none');
         console.log("errorMessageElement", errorMessageElement)
+        return;
+      } else {
+        let inputElement = document.getElementById(prop);
+        let errorMessageElement = inputElement.nextElementSibling;
+        errorMessageElement.classList.add('d-none');
       }
     }
-    const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+    const urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
     if (!urlRegex.test(newProduct.imageUrl)){
       let validationUrl = document.getElementById('imageUrlError');
       validationUrl.classList.remove('d-none');
       e.preventDefault();
+      return;
+    } else {
+      let validationUrl = document.getElementById('productImageUrlError');
+      validationUrl.classList.add('d-none');
+      console.log("validationUrl", validationUrl)
     }
+
+
     if(newProduct.price <= 0){
       let validationPrice = document.getElementById('moreZeroPriceError');
       validationPrice.classList.remove('d-none');
       e.preventDefault();
+      return;
+    } else {
+      let validationPrice = document.getElementById('moreZeroPriceError');
+      validationPrice.classList.add('d-none');
     }
 
     fetch(productId ? DATABASE_URL + '/' + productId : DATABASE_URL, {
@@ -124,10 +140,10 @@ productForm.addEventListener('submit', function (e) {
           //location.assign('/g5%20-%20compito/index.html')
           location.assign('./index.html');
         } else {
-          const alertDiv = document.createElement('div');
+          /* const alertDiv = document.createElement('div');
           alertDiv.classList.add('alert', 'alert-danger');
           alertDiv.textContent = 'Saving Error';
-          document.querySelector('main').insertBefore(alertDiv, document.getElementById('boff-container'));
+          document.querySelector('main').insertBefore(alertDiv, document.getElementById('boff-container')); */
           throw new Error('Saving Error')
         }
       })

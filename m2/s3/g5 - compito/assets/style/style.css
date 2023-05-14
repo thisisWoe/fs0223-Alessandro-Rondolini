@@ -40,19 +40,39 @@ header div.position-relative #hero-section {
   height: 600px;
   opacity: 20%;
 }
+@media screen and (max-width: 991px) {
+  header div.position-relative #hero-section {
+    height: 300px;
+  }
+}
 header div.position-relative div.position-absolute {
   z-index: 1;
   left: 20px;
   top: 100px;
 }
+@media screen and (max-width: 991px) {
+  header div.position-relative div.position-absolute {
+    top: 66.6666666667px;
+  }
+}
 header div.position-relative div.position-absolute h1 {
   font-size: 12rem;
+}
+@media screen and (max-width: 991px) {
+  header div.position-relative div.position-absolute h1 {
+    font-size: 6rem;
+  }
 }
 header div.position-relative div.position-absolute h1:hover {
   transform: scale(0.8);
 }
 header div.position-relative div.position-absolute p {
   font-size: 2rem;
+}
+@media screen and (max-width: 991px) {
+  header div.position-relative div.position-absolute p {
+    font-size: 1rem;
+  }
 }
 header #progress {
   margin-top: 114px;
