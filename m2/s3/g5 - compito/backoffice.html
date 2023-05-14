@@ -23,10 +23,6 @@
                                 <a class="nav-link text-white active" aria-current="page" href="./index.html">Home</a>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
                     </div>
                 </div>
             </nav>
@@ -37,17 +33,18 @@
                   <div class="col-12 col-md-8 text-center">
                     <h2 class="text-white">Listing New Product</h2>
                     <form class="mt-5 text-start" id="product-form">
-                      <div class="mb-3">
+                      <div class="mb-3 validation">
                         <label for="name" class="form-label text-white">NFT Name</label>
                         <input
                           type="text"
                           class="form-control"
                           id="name"
                           aria-describedby="namefield"
-                          required
+                          
                         />
+                        <span id="productNameError" class="error-message text-danger d-none">Product name field cannot be empty.</span>
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-3 validation">
                         <label for="description" class="form-label text-white"
                           >Description</label
                         >
@@ -56,10 +53,11 @@
                           class="form-control"
                           id="description"
                           aria-describedby="descriptionfield"
-                          required
+                          
                         />
+                        <span id="productDescriptionError" class="error-message text-danger d-none">Product description field cannot be empty.</span>
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-3 validation">
                         <label for="brand" class="form-label text-white"
                           >Brand</label
                         >
@@ -68,30 +66,33 @@
                           class="form-control"
                           id="brand"
                           aria-describedby="descriptionfield"
-                          required
+                          
                         />
+                        <span id="productBrandError" class="error-message text-danger d-none">Product brand field cannot be empty.</span>
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-3 validation">
                         <label for="imageURL" class="form-label text-white"
                           >imageURL</label
                         >
                         <input
                           type="text"
                           class="form-control"
-                          id="imageURL"
+                          id="imageUrl"
                           aria-describedby="descriptionfield"
-                          required
+                          
                         />
+                        <span id="productImageUrlError" class="error-message text-danger d-none">Product imageURL field cannot be empty.</span>
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-3 validation">
                         <label for="price" class="form-label text-white">Price</label>
                         <input
                           type="number"
                           class="form-control"
                           id="price"
                           aria-describedby="pricefield"
-                          required
+                          
                         />
+                        <span id="productPriceError" class="error-message text-danger d-none">Product price field cannot be empty.</span>
                       </div>
                       <button type="submit" class="btn btn-primary" id="save-button">
                         CREATE NFT

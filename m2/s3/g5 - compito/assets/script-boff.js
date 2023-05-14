@@ -63,7 +63,7 @@ productForm.addEventListener('submit', function (e) {
     let descriptionInput = document.getElementById('description')
     let brandInput = document.getElementById('brand')
     let priceInput = document.getElementById('price')
-    let imgUrlInput = document.getElementById('imageURL')
+    let imgUrlInput = document.getElementById('imageUrl')
 
     let newProduct = {
       name: nameInput.value,
@@ -71,6 +71,16 @@ productForm.addEventListener('submit', function (e) {
       brand: brandInput.value,
       price: priceInput.value,
       imageUrl: imgUrlInput.value,
+    }
+
+    //validazione campi
+    for (prop in newProduct) {
+      if (!newProduct[prop]) {
+        let inputElement = document.getElementById(prop);
+        let errorMessageElement = inputElement.nextElementSibling;
+        errorMessageElement.classList.remove('d-none');
+        console.log("errorMessageElement", errorMessageElement)
+      }
     }
 
     fetch(productId ? DATABASE_URL + '/' + productId : DATABASE_URL, {
