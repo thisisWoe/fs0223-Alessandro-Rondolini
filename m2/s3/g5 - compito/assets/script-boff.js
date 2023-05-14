@@ -15,7 +15,8 @@ if (productId) {
     })
         .then((res) => {
           if (res.ok) {
-            location.assign('/g5%20-%20compito/index.html')
+            //location.assign('/g5%20-%20compito/index.html')
+            location.assign('./index.html');
           } else {
             throw new Error("Problem in NFT deletion")
           }
@@ -82,6 +83,15 @@ productForm.addEventListener('submit', function (e) {
         console.log("errorMessageElement", errorMessageElement)
       }
     }
+    const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+    if (!urlRegex.test(newProduct.imageUrl)){
+      let validationUrl = document.getElementById('imageUrlError');
+      validationUrl.classList.remove('d-none');
+    }
+    if(newProduct.price <= 0){
+      let validationPrice = document.getElementById('moreZeroPriceError');
+      validationPrice.classList.remove('d-none');
+    }
 
     fetch(productId ? DATABASE_URL + '/' + productId : DATABASE_URL, {
         method: productId ? 'PUT' : 'POST',
@@ -93,7 +103,8 @@ productForm.addEventListener('submit', function (e) {
     })
       .then((res) => {
         if (res.ok) {
-          location.assign('/g5%20-%20compito/index.html')
+          //location.assign('/g5%20-%20compito/index.html')
+          location.assign('./index.html');
         } else {
           throw new Error('Saving Error')
         }
