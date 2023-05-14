@@ -22,16 +22,18 @@ const getProducts = function () {
     data.forEach((object) => {
         let colTemplate = 
         `
-            <div class="col-12 col-lg-4 mb-2">
+            <div class="col-12 col-lg-4 mb-2 cardParent">
                 <div class="card rounded-5 mb-5">
                     <img class="rounded-top-5" src="${object.imageUrl}" alt="nft-img">
                     <div class="card-body">
                         <h5 class="card-title">${object.name}</h5>
                         <p class="card-text italic truncate">${object.description}</p>
                         <p class="card-text">${object.brand}</p>
-                        <p class="card-text">${object.price} ETH</p>
+                        <p class="card-text price">${object.price} ETH</p>
+                        <span class="d-none">${object._id}</span>
                         <a id="moreInfoButton" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moreInfos${object._id}">More Info</a>
-                        <a href="./backoffice.html?productId=${object._id}" class="btn btn-primary">Edit</a>
+                        <a href="./backoffice.html?productId=${object._id}" class="btn btn-warning">Edit</a>
+                        <a id="buyButton-${object._id}" class="btn btn-success">Buy <i class="fas fa-cart-plus"></i></a>
                     </div>
                 </div>
             </div>
@@ -72,6 +74,48 @@ const getProducts = function () {
         //fine prova modal
         
     })
+        //inizio carrello
+        let buyButtons = document.querySelectorAll('[id^="buyButton-"]');
+        buyButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            let targetCard = button.closest('.card').closest('.col-12');
+            let name = targetCard.querySelector('.card-title').textContent;
+            let price = targetCard.querySelector('.card-text.price').textContent;
+            let id = button.id.split('-')[1];
+            targetCard.classList.add('d-none');
+            document.getElementById('object-container').appendChild(targetCard);
+            let currentItem = {
+              name: name,
+              price: price,
+              id: id
+            };
+            let itemId = currentItem.id;
+            localStorage.setItem(itemId, JSON.stringify(currentItem));
+          });
+        });
+        const cards = document.querySelectorAll('.card');
+        function getAllLocalStorageKeys() {
+          for (let i = 0; i < localStorage.length; i++) {
+            keys.push(localStorage.key(i));
+          }
+          return keys;
+        }
+        
+        function checkIfCardIsInLocalStorageKeys() {
+          cards.forEach((card) => {
+            let id = card.querySelector('span').textContent;
+            console.log("cards.forEach ~ id", id)
+            if (keys.includes(id)) {
+              let singleCard = card.closest('.cardParent');
+              singleCard.classList.add('d-none');
+              document.getElementById('object-container').appendChild(singleCard);
+            }
+          })
+        }
+        getAllLocalStorageKeys();
+        checkIfCardIsInLocalStorageKeys(cards, keys);
+        
+        //fine carrello
         loadingBarAnimation()
 
         //animazione hero
@@ -102,10 +146,12 @@ const getProducts = function () {
 
 
 
+    
 
 //al caricamento della pagina    
 window.onload = () => {
-    getProducts()
+    getProducts();
+    
   }
 
 const loadingBarAnimation = function () {

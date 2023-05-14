@@ -9,6 +9,10 @@ header nav {
   width: 100%;
   z-index: 2;
   height: 114px;
+  /* .cart a:hover{
+      color: #c948b7 !important;
+      transform: scale(1.15);
+  } */
 }
 header nav .container-fluid {
   background-color: #0e060e;

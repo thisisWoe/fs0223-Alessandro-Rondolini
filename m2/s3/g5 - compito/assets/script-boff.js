@@ -87,10 +87,12 @@ productForm.addEventListener('submit', function (e) {
     if (!urlRegex.test(newProduct.imageUrl)){
       let validationUrl = document.getElementById('imageUrlError');
       validationUrl.classList.remove('d-none');
+      e.preventDefault();
     }
     if(newProduct.price <= 0){
       let validationPrice = document.getElementById('moreZeroPriceError');
       validationPrice.classList.remove('d-none');
+      e.preventDefault();
     }
 
     fetch(productId ? DATABASE_URL + '/' + productId : DATABASE_URL, {
