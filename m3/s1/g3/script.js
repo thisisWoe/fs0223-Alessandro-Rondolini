@@ -79,3 +79,87 @@ var Lavoratore = /** @class */ (function (_super) {
 }(LavoratoreTasseApplicate));
 var marioRossi = new Lavoratore(10000);
 console.log("🚀 ~ file: script.ts:78 ~ marioRossi:", marioRossi);
+var Madre = /** @class */ (function () {
+    function Madre(nome, cognome) {
+        this.nome = nome;
+        this.cognome = cognome;
+    }
+    return Madre;
+}());
+var Figlio = /** @class */ (function (_super) {
+    __extends(Figlio, _super);
+    function Figlio(nome, cognome, dentiDaLatte) {
+        var _this = _super.call(this, nome, cognome) || this;
+        _this.dentiDaLatte = dentiDaLatte;
+        return _this;
+    }
+    return Figlio;
+}(Madre));
+var Veicolo = /** @class */ (function () {
+    function Veicolo(velocità) {
+        this.velocità = velocità;
+    }
+    Object.defineProperty(Veicolo.prototype, "frena", {
+        get: function () {
+            return this.velocità = 0;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Veicolo;
+}());
+var Auto = /** @class */ (function (_super) {
+    __extends(Auto, _super);
+    function Auto(brand, velocità) {
+        var _this = _super.call(this, velocità) || this;
+        /* super.frena; */
+        _this.brand = brand;
+        return _this;
+    }
+    Object.defineProperty(Auto.prototype, "frena", {
+        set: function (diquanto) {
+            this.velocità = diquanto;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Auto.prototype.accelera = function () {
+        return this.velocità = 300;
+    };
+    return Auto;
+}(Veicolo));
+var Camion = /** @class */ (function (_super) {
+    __extends(Camion, _super);
+    function Camion(ruote, brand, velocità) {
+        var _this = _super.call(this, brand, velocità) || this;
+        _this.ruote = ruote;
+        return _this;
+    }
+    return Camion;
+}(Auto));
+;
+var audi = new Auto('audi', 100);
+console.log("🚀 ~ file: script.ts:129 ~ audi:", audi);
+console.log("🚀 ~ file: script.ts:129 ~ audi:", audi.frena = 50);
+console.log("🚀 ~ file: script.ts:129 ~ audi:", audi);
+var cane = {
+    razza: 'cane',
+    zampe: 4,
+    verso: function () {
+        console.log('bau');
+    }
+};
+var Gatto = /** @class */ (function () {
+    function Gatto(razza, zampe) {
+        this.razza = razza;
+        this.zampe = zampe;
+    }
+    Gatto.prototype.verso = function () {
+        var prova1 = 'bau';
+        return prova1;
+    };
+    return Gatto;
+}());
+var gatto = new Gatto('si', 3);
+console.log("🚀 ~ file: script.ts:173 ~ gatto:", gatto);
+console.log("🚀 ~ file: script.ts:172 ~ gatto:", gatto.verso());

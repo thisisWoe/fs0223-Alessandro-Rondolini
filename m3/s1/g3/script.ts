@@ -82,3 +82,93 @@ class Lavoratore extends LavoratoreTasseApplicate {
 
 let marioRossi = new Lavoratore(10000)
 console.log("🚀 ~ file: script.ts:78 ~ marioRossi:", marioRossi)
+
+
+
+class Madre {
+    nome: string;
+    cognome: string;
+    constructor(nome: string, cognome:string){
+        this.nome = nome;
+        this.cognome = cognome;
+    }
+}
+
+class Figlio extends Madre {
+    dentiDaLatte: string;
+    constructor(nome: string, cognome:string, dentiDaLatte:string){
+        super(nome, cognome);
+        this.dentiDaLatte = dentiDaLatte;
+    }
+}
+
+abstract class Veicolo{
+    protected velocità: number;
+    constructor(velocità:number){
+        this.velocità = velocità;
+    }
+    abstract accelera():void;
+    get frena():number{
+       return this.velocità = 0;
+    }
+}
+
+class Auto extends Veicolo {
+    brand: string;
+    constructor(brand: string, velocità:number){
+        super(velocità);
+        /* super.frena; */
+        this.brand = brand;
+    }
+    set frena(diquanto:number) {
+        this.velocità = diquanto;
+    }
+    accelera(): number {
+        return this.velocità = 300;
+    }
+}
+
+class Camion extends Auto {
+    ruote: number;
+    constructor(ruote: number, brand: string, velocità:number){
+        super(brand, velocità);
+        this.ruote = ruote;
+    }
+};
+
+let audi = new Auto('audi', 100)
+console.log("🚀 ~ file: script.ts:129 ~ audi:", audi)
+console.log("🚀 ~ file: script.ts:129 ~ audi:", audi.frena = 50)
+console.log("🚀 ~ file: script.ts:129 ~ audi:", audi)
+
+
+interface Animale{
+    razza: string;
+    zampe: number;
+    verso:() => void;
+}
+
+let cane: Animale = {
+    razza: 'cane',
+    zampe: 4,
+    verso:() => {
+        console.log('bau');
+    }
+}
+
+class Gatto implements Animale{
+    razza: string;
+    zampe: number;
+    constructor(razza: string, zampe: number){
+        this.razza = razza;
+        this.zampe = zampe;
+    }
+    verso():string {
+        let prova1 = 'bau';
+        return prova1;
+    }
+}
+
+let gatto = new Gatto('si', 3);
+console.log("🚀 ~ file: script.ts:173 ~ gatto:", gatto)
+console.log("🚀 ~ file: script.ts:172 ~ gatto:", gatto.verso())
