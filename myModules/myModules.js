@@ -1,16 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CallAuth = exports.Call = exports.Qall = exports.Q = void 0;
+exports.CallAuth = exports.Call = exports.Q = void 0;
 var Q = function (selector) {
     var element = document.querySelector(selector);
     return element !== null ? element : null;
 };
 exports.Q = Q;
-var Qall = function (selectors) {
-    var elements = document.querySelectorAll(selectors);
-    return elements.length ? Array.from(elements) : null;
-};
-exports.Qall = Qall;
+/* export const Qall: Function = (selectors: string): Element[] | null => {
+  const elements = document.querySelectorAll(selectors);
+  return elements.length ? Array.from(elements) : null;
+}; */
 var Call = function (url) {
     return fetch(url)
         .then(function (response) {

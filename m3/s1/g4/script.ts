@@ -30,10 +30,21 @@ abstract class CapoAbbigliamento {
         this.quantita = quantita;
         this.saldo= saldo;
     }
-    abstract mostraPrezzo():void;
+    abstract get mostraPrezzo():string;
 }
 
 
+class NewCapo extends CapoAbbigliamento {
+  protected prezzoScontato: string;
+  constructor(capo: string, codprod: number, collezione: string, colore: string, disponibile: string, id: number, modello: number, prezzoivaesclusa: number, prezzoivainclusa: number, quantita: number, saldo: number){
+      super(capo, codprod, collezione, colore, disponibile, id, modello, prezzoivaesclusa, prezzoivainclusa, quantita, saldo)
+      this.prezzoScontato = this.mostraPrezzo
+  }
+  get mostraPrezzo():string {
+      let prezzoScontato: number = (this.prezzoivainclusa / 100) * this.saldo;
+      return `Il prezzo scontato del capo è ${(this.prezzoivainclusa - prezzoScontato).toFixed(2)}€`;
+  }
+}
 
 
 fetch('./Abbigliamento.json')
@@ -49,19 +60,7 @@ fetch('./Abbigliamento.json')
 })
 .then(data => {
   console.log("🚀 ~ file: script.ts:15 ~ data:", data)
-  let capiAbbigliamento:CapoAbbigliamento[] = [];
-
-  class NewCapo extends CapoAbbigliamento {
-    prezzoScontato: string;
-    constructor(capo: string, codprod: number, collezione: string, colore: string, disponibile: string, id: number, modello: number, prezzoivaesclusa: number, prezzoivainclusa: number, quantita: number, saldo: number){
-        super(capo, codprod, collezione, colore, disponibile, id, modello, prezzoivaesclusa, prezzoivainclusa, quantita, saldo)
-        this.prezzoScontato = this.mostraPrezzo()
-    }
-    mostraPrezzo():string {
-        let prezzoScontato: number = (this.prezzoivainclusa / 100) * this.saldo;
-        return `Il prezzo scontato del capo è ${(this.prezzoivainclusa - prezzoScontato).toFixed(2)}€`;
-    }
-  }
+  let capiAbbigliamento:NewCapo[] = [];
 
   data.forEach((capoSingolo: NewCapo) => {
         let newCapoSingolo = new NewCapo(
@@ -79,10 +78,20 @@ fetch('./Abbigliamento.json')
         )
         capiAbbigliamento.push(newCapoSingolo);
     })
-    console.log("🚀 ~ file: script.ts:68 ~ capiAbbigliamento.forEach ~ capiAbbigliamento:", capiAbbigliamento)
+    console.log(capiAbbigliamento)
     
     const numeriPari:number[] = [0, 2, 4]
     numeriPari.forEach((num) => {
-        console.log(capiAbbigliamento[num].prezzoScontato)
+        console.log(capiAbbigliamento[num].mostraPrezzo)
     })
 })
+
+
+
+/* import { Q } from '../../../myModules/myModules';
+
+
+let body:HTMLBodyElement = Q('body');
+console.log("🚀 ~ file: script.ts:94 ~ body:", body)
+
+ */
