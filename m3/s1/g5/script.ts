@@ -304,7 +304,7 @@ console.log("🚀 ~ file: script.ts:149 ~ firstUser.getNumeroChiamate:", firstUs
 console.log("🚀 ~ file: script.ts:151 ~ secondUser.getNumeroChiamate:", secondUser.getNumeroChiamate)
 console.log("🚀 ~ file: script.ts:153 ~ thirdUser.getNumeroChiamate:", thirdUser.getNumeroChiamate)
 
-//azzero il registro delle chiamate
+//azzero il registro delle chiamate (è commentato per l'interafaccia html)
 /* firstUser.azzeraChiamate();
 secondUser.azzeraChiamate();
 thirdUser.azzeraChiamate(); */
