@@ -1,4 +1,3 @@
-/* import 'bootstrap'; */
 var Smartphone = /** @class */ (function () {
     function Smartphone() {
         this.carica = 10; //metto un credito iniziale, potevo anche inserirlo come parametro
