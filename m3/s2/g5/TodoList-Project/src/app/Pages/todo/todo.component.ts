@@ -9,6 +9,8 @@ import { TodosService } from 'src/app/todos.service';
 })
 export class TodoComponent implements OnInit {
   todos: Todo[] = [];
+  singleTodo:Todo = new Todo('',false);
+
   constructor(private todoSvc: TodosService){}
 
   ngOnInit(){
@@ -19,6 +21,14 @@ export class TodoComponent implements OnInit {
       this.todos = todosResponse;
     })
   }
-
-
+  deleteTodo(id? :number){
+    this.todoSvc.deleteTodo(id)
+    .then(res => {
+      this.getTodos();
+    })
+  }
+  createTodo(){
+    this.todoSvc.addTodo(this.singleTodo)
+    .then(res => console.log(res));
+  }
 }

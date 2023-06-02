@@ -1,1 +1,12 @@
 <p>{{todos | json}}</p>
+<main>
+  <div class="todos-container" *ngFor="let singleTodo of todos">
+    <div class="card-todo">
+      <p>Task:</p>
+      <h3>{{singleTodo.title}}</h3>
+      <button>Mark as completed</button>
+    </div>
+
+
+  </div>
+</main>
