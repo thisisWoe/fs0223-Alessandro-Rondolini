@@ -1,19 +1,29 @@
 {
   "todos": [
     {
-      "title": "Giocare",
-      "completed": false,
-      "id": 3
-    },
-    {
       "title": "giocare a calcetto",
-      "completed": false,
+      "completed": true,
       "id": 4
     },
     {
       "title": "Finire il progetto in tempo",
-      "completed": false,
+      "completed": true,
       "id": 5
+    },
+    {
+      "title": "bestemmiare",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "title": "ciao",
+      "completed": true,
+      "id": 7
+    },
+    {
+      "title": "si",
+      "completed": true,
+      "id": 8
     }
   ]
 }

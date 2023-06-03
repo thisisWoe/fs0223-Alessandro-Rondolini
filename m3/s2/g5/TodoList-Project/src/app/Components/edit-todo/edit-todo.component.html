@@ -1,8 +1,11 @@
-<div #editContainer [ngClass]="myClassesEdit" class="edit-todo-container">
+<!-- <div #editContainer [ngClass]="myClassesEdit" class="edit-todo-container">
   <form class="myFormEdit">
     <span class="close-modal">Press ESC to close this modal</span>
-    <input type="text" class="form-control" placeholder="{{singleTodo.title}}" name="title">
+    <input [(ngModel)]="singleTodo.title" type="text" class="form-control" placeholder="Edit Task Name" name="title">
     <p>{{singleTodo.title}}</p>
-    <button type="button" class="create-button">Crea</button>
+    <button (click)="updateTodo()" type="button" class="create-button">Crea</button>
   </form>
-</div>
+</div> -->
+<input type="text">
+<!-- <div #editContainer [ngClass]="myClassesEdit" class="edit-todo-container">
+ -->

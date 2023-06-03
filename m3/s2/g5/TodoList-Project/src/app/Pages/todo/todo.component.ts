@@ -1,3 +1,4 @@
+import { Router, RouterModule } from '@angular/router';
 import { Component, OnInit, ElementRef, ViewChild, Output, EventEmitter } from '@angular/core';
 import { EditTodoComponent } from 'src/app/Components/edit-todo/edit-todo.component';
 import { Todo } from 'src/app/Models/todo';
@@ -20,7 +21,9 @@ export class TodoComponent implements OnInit {
   }
   getTodos() {
     this.todoSvc.getTodos().then(todosResponse => {
-      this.todos = todosResponse;
+      const onlyFalseTodos = todosResponse.filter(todo => todo.completed === false);
+      this.todos = onlyFalseTodos;
+      console.log("🚀 ~ file: todo.component.ts:26 ~ this.todoSvc.getTodos ~ this.todos:", this.todos)
     })
   }
   deleteTodo(id? :number){
@@ -36,11 +39,13 @@ export class TodoComponent implements OnInit {
   handleTodoCreated() {
     this.getTodos();
   }
-  getSingleTodo(id? : number){
+  markAsCompleted(id? : number){
     this.todoSvc.getSingleTodo(id!)
       .then(res => {
         console.log(res);
-        this.childComponent.visualizeFormEdit();//apro la modale
+        res.completed = true;
+        this.todoSvc.editTodo(res)
+        this.getTodos()
       })
   }
 }

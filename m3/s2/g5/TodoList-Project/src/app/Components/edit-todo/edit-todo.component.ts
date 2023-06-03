@@ -12,37 +12,25 @@ export class EditTodoComponent {
   singleTodo:Todo = new Todo('',false);
   myClassesEdit = {
     'form-container': true,
-    'display-n': true,
+    'display-n': false,
   }
-  /* @Input() transferData!: string; */
-  /* @ViewChild('editContainer', { read: ElementRef }) editContainer!: ElementRef; */
 
   constructor(private todoSvc: TodosService, private router: ActivatedRoute){}
-
-  /* ngOnInit(){
-    this.myClassesEdit['display-n'] = false;
-    this.router.paramMap.subscribe((params: ParamMap) => {
-      const id = params.get('id');
-      if (id) {
-        this.todoSvc.getSingleTodo(+id)
+  markAsCompleted(){
+    this.router.params.subscribe((params: any)=> {
+      const todoId = params.id;
+      this.todoSvc.getSingleTodo(todoId)
       .then(res => {
         this.singleTodo = res;
+        this.singleTodo.completed = true;
+        this.todoSvc.editTodo(this.singleTodo)
+        this.todoSvc.getTodos();
       })
-      }
     })
-  } */
+  }
 
-  @HostListener('click') visualizeFormEdit() {
-    this.myClassesEdit['display-n'] = false;
-    /* this.router.paramMap.subscribe((params: ParamMap) => {
-      const id = params.get('id');
-      if (id) {
-        this.todoSvc.getSingleTodo(+id)
-      .then(res => {
-        this.singleTodo = res;
-      })
-      }
-    })
-    console.log(this.transferData); */
+  updateTodo(){
+    this.todoSvc.editTodo(this.singleTodo)
+    .then(res => console.log(res));
   }
 }

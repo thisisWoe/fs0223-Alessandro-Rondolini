@@ -6,17 +6,17 @@ import { EditTodoComponent } from './Components/edit-todo/edit-todo.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path:'todo',
     component: TodoComponent
   },
   {
     path:'completed',
     component: CompletedComponent
   },
-/*   {
-    path:'edit/:id',
+  {
+    path:'edit/update/:id',
     component: EditTodoComponent
-  }, */
+  },
 ];
 
 @NgModule({
