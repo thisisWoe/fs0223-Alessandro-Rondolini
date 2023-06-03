@@ -1,4 +1,4 @@
-main{
+/* main{
   background-color: black;
   div.todos-container{
     div.card-todo{
@@ -33,6 +33,69 @@ main{
         background-color: green;
         color: white;
         border: 1px solid white;
+      }
+    }
+    div.card-todo:hover{
+      background-color: purple;
+      transform: scale(1.05);
+      h3{
+        font-weight: bold;
+      }
+    }
+  }
+}
+ */
+
+main{
+  background-color: black;
+  height: 100%;
+  div.todos-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    div.card-todo{
+      border: 1px solid white;
+      border-radius: 20px;
+      background-color: black;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin: 10px 0;
+      p{
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: white;
+      }
+      h3{
+        font-size: 2rem;
+        color: white;
+        word-wrap: break-word;
+        margin: 0 5px;
+      }
+      button{
+        font-size: 0.8rem;
+        border: 1 px solid black;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      button:hover{
+        background-color: green;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      a{
+        color: white;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 100%;
+      }
+      a:hover{
+        background-color: red;
+        cursor: pointer;
       }
     }
     div.card-todo:hover{

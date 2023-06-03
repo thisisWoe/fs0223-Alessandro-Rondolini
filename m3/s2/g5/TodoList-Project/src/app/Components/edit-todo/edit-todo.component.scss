@@ -1,0 +1,20 @@
+.form-container{
+  position: relative;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  border: 1px solid white;
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.display-n{
+  display: none;
+}
+
+.display-b{
+  display: block;
+}

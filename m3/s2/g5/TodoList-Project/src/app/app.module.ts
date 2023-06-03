@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { TodoComponent } from './Pages/todo/todo.component';
 import { CompletedComponent } from './Pages/completed/completed.component';
 import { HeaderComponent } from './Components/header/header.component';
+import { FormsModule } from '@angular/forms';
+import { AddTodoComponent } from './Components/add-todo/add-todo.component';
+import { EditTodoComponent } from './Components/edit-todo/edit-todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponent,
     CompletedComponent,
-    HeaderComponent
+    HeaderComponent,
+    AddTodoComponent,
+    EditTodoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

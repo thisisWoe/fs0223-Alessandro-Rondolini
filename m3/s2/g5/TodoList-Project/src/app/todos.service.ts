@@ -35,4 +35,8 @@ export class TodosService {
       method: 'DELETE'
     }).then(res => res.json())
   }
+
+  getSingleTodo(id:number):Promise<Todo>{
+    return fetch(this.apiLink + '/' + id,).then(res => res.json());
+  }
 }
