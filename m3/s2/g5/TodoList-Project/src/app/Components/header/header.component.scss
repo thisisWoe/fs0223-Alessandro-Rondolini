@@ -1,5 +1,5 @@
 header{
-  background: linear-gradient(15deg, rgb(91, 213, 250) 4%, rgba(155, 5, 219, 0.955) 47%);
+  background: linear-gradient(15deg, rgb(91, 213, 250) 4%, #9b05dbf4 47%);
   border-bottom: 1px solid black;
   nav{
     display: flex;
@@ -28,6 +28,21 @@ header{
       justify-content: center;
       li:first-child{
         margin-right: 20px;
+      }
+      li{
+        a{
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+        a:hover{
+          color: #9b05dbf4;
+          border: 1px solid white;
+          border-radius: 10px;
+          padding: 5px;
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
       }
     }
   }

@@ -11,8 +11,8 @@
       "id": 5
     },
     {
-      "title": "bestemmiare ",
-      "completed": false,
+      "title": "bestemmiare con Angular",
+      "completed": true,
       "id": 6
     },
     {
@@ -74,6 +74,16 @@
       "title": "more task",
       "completed": false,
       "id": 21
+    },
+    {
+      "title": "mangiare tantissimo",
+      "completed": false,
+      "id": 22
+    },
+    {
+      "title": "incazzarsi con css alle 23.28",
+      "completed": false,
+      "id": 23
     }
   ]
 }
