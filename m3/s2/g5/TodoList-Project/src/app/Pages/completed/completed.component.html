@@ -1,1 +1,12 @@
-<p>completed works!</p>
+<main>
+  <div class="todos-container">
+    <div class="card-todo" *ngFor="let singleTodo of completedTodos">
+      <p>Task:</p>
+      <h3>{{singleTodo.title}}</h3>
+      <div>
+        <button type="button" (click)="markAsNotCompleted(singleTodo.id)">Mark as not completed</button>
+      </div>
+    </div>
+  </div>
+</main>
+

@@ -6,7 +6,7 @@ import { EditTodoComponent } from './Components/edit-todo/edit-todo.component';
 
 const routes: Routes = [
   {
-    path:'todo',
+    path:'',
     component: TodoComponent
   },
   {
@@ -14,7 +14,7 @@ const routes: Routes = [
     component: CompletedComponent
   },
   {
-    path:'edit/update/:id',
+    path:'edit/:id',
     component: EditTodoComponent
   },
 ];

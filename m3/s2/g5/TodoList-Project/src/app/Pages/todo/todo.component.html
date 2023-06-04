@@ -1,18 +1,14 @@
 <app-add-todo (todoCreated)="handleTodoCreated()"></app-add-todo>
-<!-- <app-edit-todo></app-edit-todo> -->
 <main>
   <div class="todos-container">
     <div class="card-todo" *ngFor="let singleTodo of todos">
-      <p *ngIf="!singleTodo.completed">Task:</p>
+      <p>Task:</p>
       <h3>{{singleTodo.title}}</h3>
       <div>
         <button type="button" (click)="markAsCompleted(singleTodo.id)">Mark as completed</button>
-        <a (click)="deleteTodo(singleTodo.id)"><i class="bi bi-trash3-fill"></i></a>
-        <a><i class="bi bi-pencil-square"></i></a>
+        <a (click)="deleteTodo(singleTodo.id)" class="red"><i class="bi bi-trash3-fill"></i></a>
+        <a [routerLink]="'/edit/' + singleTodo.id" class="yellow"><i class="bi bi-pencil-square"></i></a>
       </div>
     </div>
   </div>
 </main>
-<!-- <a [routerLink]="['/edit',singleTodo.id]" (click)="getSingleTodo(singleTodo.id)"><i class="bi bi-pencil-square"></i></a>
- -->
-<!--  <a (click)="getSingleTodo(singleTodo.id)"><i class="bi bi-pencil-square"></i></a> -->

@@ -12,7 +12,7 @@ import { TodosService } from 'src/app/todos.service';
 export class TodoComponent implements OnInit {
   todos: Todo[] = [];
   singleTodo:Todo = new Todo('',false);
-  @ViewChild(EditTodoComponent) childComponent!: EditTodoComponent;
+  /* @ViewChild(EditTodoComponent) childComponent!: EditTodoComponent; */
 
   constructor(private todoSvc: TodosService){}
 

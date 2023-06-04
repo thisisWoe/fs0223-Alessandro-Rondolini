@@ -13,15 +13,25 @@ export class CompletedComponent implements OnInit {
   constructor(private todoSvc: TodosService){}
 
   ngOnInit(){
-    this.getTodos();
+    this.getTrueTodos();
   }
-  getTodos() {
+  getTrueTodos() {
     this.todoSvc.getTodos().then(todosResponse => {
-      todosResponse.forEach((falseBoolTodo) => {
-        if(falseBoolTodo.completed === true){
-          this.completedTodos.push(falseBoolTodo);
-        }
-      })
+      const onlyTrueTodos = todosResponse.filter(todo => todo.completed === true);
+      this.completedTodos = onlyTrueTodos;
+      console.log("🚀 ~ file: completed.component.ts:22 ~ CompletedComponent ~ this.todoSvc.getTodos ~ this.completedTodos:", this.completedTodos)
     })
   }
+  markAsNotCompleted(id? : number){
+    this.todoSvc.getSingleTodo(id!)
+      .then(res => {
+        console.log(res);
+        res.completed = false;
+        this.todoSvc.editTodo(res)
+        this.getTrueTodos()
+      })
+  }
+
+
+
 }

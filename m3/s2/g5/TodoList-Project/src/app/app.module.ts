@@ -9,6 +9,7 @@ import { HeaderComponent } from './Components/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { AddTodoComponent } from './Components/add-todo/add-todo.component';
 import { EditTodoComponent } from './Components/edit-todo/edit-todo.component';
+import { ProgressBarComponent } from './Components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EditTodoComponent } from './Components/edit-todo/edit-todo.component';
     CompletedComponent,
     HeaderComponent,
     AddTodoComponent,
-    EditTodoComponent
+    EditTodoComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
