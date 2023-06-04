@@ -9,20 +9,23 @@ import { TodosService } from 'src/app/todos.service';
 })
 export class CompletedComponent implements OnInit {
   completedTodos: Todo[] = [];
-
+  isLoading: boolean = false;
   constructor(private todoSvc: TodosService){}
 
   ngOnInit(){
     this.getTrueTodos();
   }
   getTrueTodos() {
+    this.isLoading = true;
     this.todoSvc.getTodos().then(todosResponse => {
       const onlyTrueTodos = todosResponse.filter(todo => todo.completed === true);
       this.completedTodos = onlyTrueTodos;
       console.log("🚀 ~ file: completed.component.ts:22 ~ CompletedComponent ~ this.todoSvc.getTodos ~ this.completedTodos:", this.completedTodos)
+      this.isLoading = false;
     })
   }
   markAsNotCompleted(id? : number){
+    this.isLoading = true;
     this.todoSvc.getSingleTodo(id!)
       .then(res => {
         console.log(res);
@@ -30,6 +33,9 @@ export class CompletedComponent implements OnInit {
         this.todoSvc.editTodo(res)
         this.getTrueTodos()
       })
+  }
+  onShowProgressBarChange(show: boolean) {
+    this.isLoading = show;
   }
 
 

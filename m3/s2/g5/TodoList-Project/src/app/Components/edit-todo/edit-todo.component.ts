@@ -10,28 +10,26 @@ import { TodosService } from 'src/app/todos.service';
 })
 export class EditTodoComponent implements OnInit {
   singleTodo:Todo = new Todo('',false);
-
+  isLoading: boolean = false;
   dataLoaded:boolean = false;
-  /* myClassesEdit = {
-    'form-container': true,
-    'display-n': false,
-  } */
 
   constructor(private todoSvc: TodosService, private router: ActivatedRoute, private route: Router){}
   ngOnInit(){
+    this.isLoading = true;
     this.router.params.subscribe(params => {
       const id = params['id'];
       this.todoSvc.getSingleTodo(id)
       .then(res => {
         this.singleTodo = res;
+        this.isLoading = false;
         this.dataLoaded = true;
         console.log("🚀 ~ file: edit-todo.component.ts:29 ~ EditTodoComponent ~ ngOnInit ~ res:", this.singleTodo)
       })
-      // Utilizza l'id come necessario nel tuo componente
       console.log('Id:', id);
     });
   }
   editThisTodo(){
+    this.isLoading = true;
     this.todoSvc.editTodo(this.singleTodo)
     .then(res => {
       console.log("🚀 ~ file: edit-todo.component.ts:40 ~ EditTodoComponent ~ res:", res)
@@ -40,5 +38,8 @@ export class EditTodoComponent implements OnInit {
   }
   navigateToHome(){
     this.route.navigate(['/'])
+  }
+  onShowProgressBarChange(show: boolean) {
+    this.isLoading = show;
   }
 }

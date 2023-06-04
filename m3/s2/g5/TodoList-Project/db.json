@@ -2,7 +2,7 @@
   "todos": [
     {
       "title": "giocare a calcetto",
-      "completed": true,
+      "completed": false,
       "id": 4
     },
     {
@@ -11,8 +11,8 @@
       "id": 5
     },
     {
-      "title": "bestemmiare",
-      "completed": true,
+      "title": "bestemmiare ",
+      "completed": false,
       "id": 6
     },
     {
@@ -21,9 +21,59 @@
       "id": 7
     },
     {
-      "title": "si",
+      "title": "uaaaaa",
       "completed": false,
       "id": 8
+    },
+    {
+      "title": "finire e collegare la progress bar",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "title": "ciao",
+      "completed": false,
+      "id": 10
+    },
+    {
+      "title": "prova",
+      "completed": false,
+      "id": 11
+    },
+    {
+      "title": "daje",
+      "completed": false,
+      "id": 12
+    },
+    {
+      "title": "ciao2",
+      "completed": false,
+      "id": 13
+    },
+    {
+      "title": "hey",
+      "completed": false,
+      "id": 14
+    },
+    {
+      "title": "try",
+      "completed": false,
+      "id": 15
+    },
+    {
+      "title": "new try",
+      "completed": false,
+      "id": 18
+    },
+    {
+      "title": "nuova task",
+      "completed": false,
+      "id": 20
+    },
+    {
+      "title": "more task",
+      "completed": false,
+      "id": 21
     }
   ]
 }

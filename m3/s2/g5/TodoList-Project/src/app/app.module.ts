@@ -26,7 +26,7 @@ import { ProgressBarComponent } from './Components/progress-bar/progress-bar.com
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProgressBarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

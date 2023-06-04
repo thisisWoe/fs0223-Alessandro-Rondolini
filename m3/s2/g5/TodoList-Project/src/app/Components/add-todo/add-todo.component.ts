@@ -1,6 +1,8 @@
 import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { Todo } from 'src/app/Models/todo';
+import { TodoComponent } from 'src/app/Pages/todo/todo.component';
 import { TodosService } from 'src/app/todos.service';
+import { ProgressBarComponent } from '../progress-bar/progress-bar.component';
 
 @Component({
   selector: 'app-add-todo',
@@ -18,8 +20,9 @@ export class AddTodoComponent {
 
   @Output() todoCreated = new EventEmitter<void>();
 
-  constructor(private todoSvc: TodosService){}
+  constructor(private todoSvc: TodosService, private todoComp: TodoComponent){}
   createTodo(){
+    this.todoComp.isLoading = true;
     this.todoSvc.addTodo(this.singleTodo)
     .then(res =>
       this.todoCreated.emit());

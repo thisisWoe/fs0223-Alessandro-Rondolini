@@ -3,6 +3,7 @@ import { Component, OnInit, ElementRef, ViewChild, Output, EventEmitter } from '
 import { EditTodoComponent } from 'src/app/Components/edit-todo/edit-todo.component';
 import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
+import { ProgressBarComponent } from 'src/app/Components/progress-bar/progress-bar.component';
 
 @Component({
   selector: 'app-todo',
@@ -12,6 +13,7 @@ import { TodosService } from 'src/app/todos.service';
 export class TodoComponent implements OnInit {
   todos: Todo[] = [];
   singleTodo:Todo = new Todo('',false);
+  isLoading: boolean = false;
   /* @ViewChild(EditTodoComponent) childComponent!: EditTodoComponent; */
 
   constructor(private todoSvc: TodosService){}
@@ -20,13 +22,16 @@ export class TodoComponent implements OnInit {
     this.getTodos();
   }
   getTodos() {
+    this.isLoading = true;
     this.todoSvc.getTodos().then(todosResponse => {
       const onlyFalseTodos = todosResponse.filter(todo => todo.completed === false);
       this.todos = onlyFalseTodos;
       console.log("🚀 ~ file: todo.component.ts:26 ~ this.todoSvc.getTodos ~ this.todos:", this.todos)
+      this.isLoading = false;
     })
   }
   deleteTodo(id? :number){
+    this.isLoading = true;
     this.todoSvc.deleteTodo(id)
     .then(res => {
       this.getTodos();
@@ -40,6 +45,7 @@ export class TodoComponent implements OnInit {
     this.getTodos();
   }
   markAsCompleted(id? : number){
+    this.isLoading = true;
     this.todoSvc.getSingleTodo(id!)
       .then(res => {
         console.log(res);
@@ -47,5 +53,8 @@ export class TodoComponent implements OnInit {
         this.todoSvc.editTodo(res)
         this.getTodos()
       })
+  }
+  onShowProgressBarChange(show: boolean) {
+    this.isLoading = show;
   }
 }

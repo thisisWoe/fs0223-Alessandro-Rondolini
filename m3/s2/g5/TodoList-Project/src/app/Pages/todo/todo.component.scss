@@ -49,6 +49,12 @@
 main{
   background-color: black;
   height: 100%;
+  p.message{
+    color: white;
+    font-size: 2rem;
+    margin: 20px 0;
+    text-align: center;
+    }
   div.todos-container{
     display: flex;
     justify-content: space-evenly;

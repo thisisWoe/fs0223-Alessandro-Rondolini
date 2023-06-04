@@ -1,6 +1,9 @@
 <app-add-todo (todoCreated)="handleTodoCreated()"></app-add-todo>
+<app-progress-bar (showProgressBarChange)="onShowProgressBarChange($event)" *ngIf="isLoading"></app-progress-bar>
 <main>
+  <p class="message" *ngIf="!isLoading">Oh! You have {{todos.length}} tasks to complete!</p>
   <div class="todos-container">
+    <p class="message" *ngIf="todos.length === 0">Oooops! Your life is boring, you have no tasks to complete :(</p>
     <div class="card-todo" *ngFor="let singleTodo of todos">
       <p>Task:</p>
       <h3>{{singleTodo.title}}</h3>
