@@ -1,6 +1,4 @@
-import { AfterViewInit, Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { TodoComponent } from 'src/app/Pages/todo/todo.component';
-import { EditTodoComponent } from '../edit-todo/edit-todo.component';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { TodosService } from 'src/app/todos.service';
 
 @Component({

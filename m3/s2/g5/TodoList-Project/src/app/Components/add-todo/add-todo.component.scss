@@ -35,6 +35,23 @@ form{
   justify-content: space-evenly;
   span{
     color: white;
+    font-size: 1.5rem;
+  }
+  input{
+    line-height: 3rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: #c0c0c0;
+  }
+  button{
+    padding: 20px;
+    border-radius: 35px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #c0c0c0;
+  }
+  button:hover{
+    background-color: greenyellow;
   }
 }
 
@@ -44,8 +61,9 @@ form{
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(15deg, rgba(32,244,0,1) 0%, rgb(0, 0, 0) 26%);
-  border: 1px solid white;
+  /* background: linear-gradient(15deg, rgba(32,244,0,1) 0%, rgb(0, 0, 0) 26%); */
+  background-color: black;
+  border: 5px solid greenyellow;
   height: 500px;
   width: 500px;
   border-radius: 25px;

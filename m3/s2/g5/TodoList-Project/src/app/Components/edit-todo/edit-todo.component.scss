@@ -26,17 +26,18 @@
   input{
     line-height: 3rem;
     font-size: 2rem;
-    border-radius: 25px;
+    border-radius: 10px;
+    background-color: #c0c0c0;
   }
   button{
     padding: 20px;
     border-radius: 35px;
     font-size: 1.5rem;
     cursor: pointer;
-    background-color: bisque;
+    background-color: #c0c0c0;
   }
   button:hover{
-    background: linear-gradient(15deg, rgba(255,228,196,1) 4%, rgba(94,43,116,0.9545869373139881) 47%);
+    background: linear-gradient(15deg, #c0c0c0 4%, rgba(94,43,116,0.9545869373139881) 47%);
     color: white;
   }
 }

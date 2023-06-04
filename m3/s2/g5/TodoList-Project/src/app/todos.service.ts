@@ -12,9 +12,6 @@ export class TodosService {
 
   getTodos():Promise<Todo[]>{
     return fetch(this.apiLink).then(res => res.json());
-    /* return fetch(this.apiLink).then(res => {
-      return res.json();
-    }); */
   }
 
   addTodo(todo:Todo):Promise<Todo>{

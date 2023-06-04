@@ -2,7 +2,6 @@ import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { Todo } from 'src/app/Models/todo';
 import { TodoComponent } from 'src/app/Pages/todo/todo.component';
 import { TodosService } from 'src/app/todos.service';
-import { ProgressBarComponent } from '../progress-bar/progress-bar.component';
 
 @Component({
   selector: 'app-add-todo',

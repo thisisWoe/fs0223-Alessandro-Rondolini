@@ -31,12 +31,12 @@
       "id": 9
     },
     {
-      "title": "ciao",
+      "title": "rivoglio una vita Epicode :')",
       "completed": false,
       "id": 10
     },
     {
-      "title": "prova",
+      "title": "pensare di essere bravo dopo Javascript 3 e poi arriva angular <3",
       "completed": false,
       "id": 11
     },
@@ -44,11 +44,6 @@
       "title": "daje",
       "completed": false,
       "id": 12
-    },
-    {
-      "title": "ciao2",
-      "completed": false,
-      "id": 13
     },
     {
       "title": "hey",
@@ -61,7 +56,7 @@
       "id": 15
     },
     {
-      "title": "new try",
+      "title": "new try ",
       "completed": false,
       "id": 18
     },
@@ -84,6 +79,36 @@
       "title": "incazzarsi con css alle 23.28",
       "completed": false,
       "id": 23
+    },
+    {
+      "title": "Smettere di best...arrabbiarsi",
+      "completed": false,
+      "id": 24
+    },
+    {
+      "title": "Andare a ballare invece che programmare di sabato sera",
+      "completed": false,
+      "id": 25
+    },
+    {
+      "title": "Giocare a fifa",
+      "completed": false,
+      "id": 26
+    },
+    {
+      "title": "Prendere 10 al compito <3",
+      "completed": false,
+      "id": 27
+    },
+    {
+      "title": "Salvare il mondo",
+      "completed": false,
+      "id": 28
+    },
+    {
+      "title": "Parlare con i piani alti per far smettere di piovere",
+      "completed": false,
+      "id": 29
     }
   ]
 }

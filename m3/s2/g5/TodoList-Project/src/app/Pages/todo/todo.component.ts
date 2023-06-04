@@ -1,9 +1,6 @@
-import { Router, RouterModule } from '@angular/router';
-import { Component, OnInit, ElementRef, ViewChild, Output, EventEmitter } from '@angular/core';
-import { EditTodoComponent } from 'src/app/Components/edit-todo/edit-todo.component';
+import { Component, OnInit } from '@angular/core';
 import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
-import { ProgressBarComponent } from 'src/app/Components/progress-bar/progress-bar.component';
 
 @Component({
   selector: 'app-todo',
@@ -14,7 +11,6 @@ export class TodoComponent implements OnInit {
   todos: Todo[] = [];
   singleTodo:Todo = new Todo('',false);
   isLoading: boolean = false;
-  /* @ViewChild(EditTodoComponent) childComponent!: EditTodoComponent; */
 
   constructor(private todoSvc: TodosService){}
 

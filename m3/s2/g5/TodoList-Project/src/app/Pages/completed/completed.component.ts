@@ -37,7 +37,4 @@ export class CompletedComponent implements OnInit {
   onShowProgressBarChange(show: boolean) {
     this.isLoading = show;
   }
-
-
-
 }
