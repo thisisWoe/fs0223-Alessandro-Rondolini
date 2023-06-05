@@ -40,10 +40,17 @@ export class MainComponent  implements OnInit {
 
     let totLikes = this.likedPhotos.length;
 
-    const subject = new Subject<number>();
-    subject.subscribe((value:number):any => {
+    this.photoSvc.mySubject.subscribe((value:number) => {
       console.log('Received value:', value);
     });
-    subject.next(totLikes);
+    this.photoSvc.mySubject.next(totLikes);
+    if (totLikes === 4){
+      console.log('Flusso di valori completato');
+      this.photoSvc.mySubjectControl.subscribe((value:boolean) => {
+        console.log("🚀 ~ file: main.component.ts:50 ~ MainComponent ~ this.photoSvc.mySubjectControl.subscribe ~ value:", value)
+      });
+      this.photoSvc.mySubject.complete()
+      this.photoSvc.mySubjectControl.next(true)
+    }
   }
 }
