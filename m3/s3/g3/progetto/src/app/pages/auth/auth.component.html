@@ -9,6 +9,7 @@
  -->
   json-server db.json -m ./node_modules/json-server-auth
   json-server-auth db.json
+  "backend": "json-server-auth -w db.json"  <!-- in package json -->
   npm run backend
 
   creo componente auth + il suo service + il suo module + il suo interceptor + il suo guard (*can activate (forse anche cancactivatechild))
