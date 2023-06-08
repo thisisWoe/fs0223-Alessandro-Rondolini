@@ -9,8 +9,10 @@
  -->
   json-server db.json -m ./node_modules/json-server-auth
   json-server-auth db.json
+  npm run backend
 
   creo componente auth + il suo service + il suo module + il suo interceptor + il suo guard (*can activate (forse anche cancactivatechild))
+  <!-- ng g guard eventualepagina/nome --functional false -->
     - nell'interc:  puoi implementare la logica dell'interceptor. Ad esempio, puoi gestire l'aggiunta dell'header di autenticazione a tutte
       le richieste HTTP in uscita.
       Per utilizzarlo, devi registrarlo nel tuo modulo principale (app.module.ts) o in un modulo specifico.

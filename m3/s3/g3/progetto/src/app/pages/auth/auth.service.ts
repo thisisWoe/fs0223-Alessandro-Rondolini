@@ -73,7 +73,7 @@ export class AuthService {
   //e salvato nel localStorage. Viene anche impostato un timer per eseguire automaticamente il logout quando il
   //token di accesso scade.
   login(data:{email:string, password:string}){
-    return this.http.post<AuthData>(this.loginUrl,data).pipe(tap(data => {
+    return this.http.post<AuthData>(this.loginUrl, data).pipe(tap(data => {
       this.authSubject.next(data);//invio lo user al subject
       localStorage.setItem('user', JSON.stringify(data));//salvo lo user per poterlo recuperare se si ricarica la pagina
 

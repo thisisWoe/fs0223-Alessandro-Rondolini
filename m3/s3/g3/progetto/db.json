@@ -1,3 +1,18 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "asfasdf@gsdf.it",
+      "password": "$2a$10$3qfzlFf.pcgzUeLt9Mskz.cpmEK5ukN/oLvrST2l4DiVBaPG/gkkW",
+      "name": "mario",
+      "surname": "rossi",
+      "id": 1
+    },
+    {
+      "email": "ciao@gmail.it",
+      "password": "$2a$10$vbSCZK5tgn07TNCQvzIxgO4KejW82LqUsnVAQaPcXp1Obue2B6QvO",
+      "name": "mario",
+      "surname": "rossi",
+      "id": 2
+    }
+  ]
 }

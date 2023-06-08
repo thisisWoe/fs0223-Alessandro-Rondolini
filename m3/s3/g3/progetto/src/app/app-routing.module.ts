@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
-  { path: 'todo', loadChildren: () => import('./pages/todo/todo.module').then(m => m.TodoModule) },
+  /* { path: '', redirectTo: 'paginachevgoliocomeprincipale', pathMatch: 'full'}, */
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+  /* { path: 'todo', loadChildren: () => import('./pages/todo/todo.module').then(m => m.TodoModule) },
   { path: 'completed', loadChildren: () => import('./pages/completed/completed.module').then(m => m.CompletedModule) },
   { path: 'register', loadChildren: () => import('./pages/auth/register/register.module').then(m => m.RegisterModule) },
-  { path: 'login', loadChildren: () => import('./pages/auth/login/login.module').then(m => m.LoginModule) }
+  { path: 'login', loadChildren: () => import('./pages/auth/login/login.module').then(m => m.LoginModule) } */
 ];
 
 @NgModule({
