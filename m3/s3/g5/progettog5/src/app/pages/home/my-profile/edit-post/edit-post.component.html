@@ -1,0 +1,11 @@
+<p>edit-post works!</p>
+<form>
+  <input type="text" class="form-control" name="title" [(ngModel)]="post.title">+
+  <div>
+    <img src="{{post.image}}" alt="">
+    <input type="text" class="form-control" name="image" [(ngModel)]="post.image">
+  </div>
+  <p>Created by: {{post.createdBy_name}}</p>
+  <p>Creation Date: {{post.createdAt}}</p>
+  <button class="btn btn-primary" (click)="editMyPost()">Crea Post</button>
+</form>

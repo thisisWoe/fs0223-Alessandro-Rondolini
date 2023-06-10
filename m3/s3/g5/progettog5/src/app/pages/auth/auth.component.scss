@@ -1,0 +1,122 @@
+div{
+  width: 100%;
+  height: 100%;
+  background-image: url(./../../../assets/UakL0sDP_4x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  div.log-in{
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.832);
+    width: 20%;
+    height: 400px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px white;
+    animation: fade-in-in 3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    button{
+      height: 40px;
+      width: 100px;
+    }
+    h2{
+      color: white;
+      font-size: 2rem;
+    }
+    p{
+      color: white;
+      font-size: 1rem;
+    }
+  }
+  div.sign-up{
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.832);
+    width: 20%;
+    height: 400px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px white;
+    animation: fade-in-up 3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    button{
+      height: 40px;
+      width: 100px;
+    }
+    h1{
+      color: white;
+      font-size: 2rem;
+    }
+    p{
+      color: white;
+      font-size: 1rem;
+    }
+  }
+  div.hero{
+    background: rgba(0, 0, 0, 0.832);
+    width: 40%;
+    height: 300px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    animation: fade-in-translate 3s linear;
+  }
+    h3{
+      color: white;
+      font-size: 3rem;
+      line-height: 7rem;
+      font-style: italic;
+    }
+  }
+
+
+  @keyframes fade-in-translate {
+    0% {
+      opacity: 0;
+      transform: translateY(-1000px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-500px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes fade-in-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(-250px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateX(500px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(250px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

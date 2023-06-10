@@ -1,0 +1,22 @@
+<p>my-profile works!</p>
+<button [routerLink]="['editPost']">EDIT POST</button>
+<button [routerLink]="['editProfile']">EDIT MY INFOS</button>
+<div>my infos</div>
+<div>your id: #{{userLogged.user.id}}</div>
+<div>name: {{userLogged.user.name}}</div>
+<div>surname: {{userLogged.user.surname}}</div>
+<div>email: {{userLogged.user.email}}</div>
+<button (click)="logout()">logout</button>
+<div>your posts</div>
+<div *ngFor="let post of allDisplayablePosts">
+  <div *ngIf="post.createdBy_id === userLogged.user.id">
+    <div>
+      <img src="{{post.image}}" alt="image">
+    </div>
+    <div>{{post.title}}</div>
+    <div>{{post.createdBy_name}}</div>
+    <div>{{post.createdAt}}</div>
+    <button (click)="deleteTargetPost(post.id)">elimina</button>
+    <button [routerLink]="'editPost/' + post.id">edit</button>
+  </div>
+</div>

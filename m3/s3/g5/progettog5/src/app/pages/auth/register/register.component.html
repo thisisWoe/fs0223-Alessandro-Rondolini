@@ -1,0 +1,89 @@
+<!-- <form>
+
+  <input class="form-control" type="email" placeholder="email"
+  name="email" [(ngModel)]="newUserData.email">
+
+  <input class="form-control" type="password" placeholder="password"
+  name="password" [(ngModel)]="newUserData.password">
+
+  <input class="form-control" type="text" placeholder="Name"
+  name="name" [(ngModel)]="newUserData.name">
+
+  <input class="form-control" type="text" placeholder="surname"
+  name="surname" [(ngModel)]="newUserData.surname">
+
+  <button
+  (click)="register()"
+  class="btn btn-primary"
+  >Registrati</button>
+
+
+</form> -->
+
+<div [@fadeInAnimation]>
+  <h1>Sign Up</h1>
+  <form [formGroup]="formRegister" (ngSubmit)="register()">
+    <mat-form-field appearance="outline" color="primary">
+      <mat-label>es: prova@email.com</mat-label>
+      <input
+      type="email"
+      matInput
+      formControlName="email"
+      >
+      <mat-hint>Email</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>es: 1234@Qwerty</mat-label>
+        <input
+        type="password"
+        matInput
+        formControlName="password"
+        >
+        <mat-hint>Password</mat-hint>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>es: Mario</mat-label>
+          <input
+          type="text"
+          matInput
+          formControlName="name"
+          >
+          <mat-hint>Name</mat-hint>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>es: Rossi</mat-label>
+          <input
+          type="text"
+          matInput
+          formControlName="surname"
+          >
+          <mat-hint>Surname</mat-hint>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+<!-- <div *ngIf="showError">
+  <div>{{textError}}</div>
+</div> -->
+
+
+<!-- <div class="example-container">
+  <mat-form-field>
+    <mat-label>Enter your email</mat-label>
+    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+</div>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput placeholder="Placeholder">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field> -->
+

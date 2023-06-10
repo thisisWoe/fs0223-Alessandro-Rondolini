@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "email": "asdasdas@asdas.it",
+      "password": "$2a$10$lfrlUFxVAfqcl/0ixEIBTOh1PYpBVO0OrLn9Tkr.Ih5/zpSGD3Xuu",
+      "name": "ujyfvhgv",
+      "surname": "hjkgvkuggv",
+      "id": 1
+    },
+    {
+      "email": "nuovo@gmail.it",
+      "password": "$2a$10$pD54/JRcyZhBFXsodJnw7.Gu5.JO6q8EjAJVB.qceBrh8XoD3UolG",
+      "name": "uyguyg",
+      "surname": "kugiug",
+      "id": 2
+    },
+    {
+      "email": "asdasd@fasdasd.it",
+      "password": "$2a$10$1vtCuUPKoVJx5lymS.u.A.SQKBWSeUwbYtg.dgq.pIycUrbPGBFgK",
+      "name": "kugyfvugfv",
+      "surname": "gvkhghvkugv",
+      "id": 3
+    },
+    {
+      "email": "sdfsdfs@fsdfsd.it",
+      "password": "$2a$10$coBsZdYvTsHn9vs3Trexqeye/Ky9y7r8xW6I02Q0Tugax2PW0P4Q6",
+      "name": "yhgcfygc",
+      "surname": "khgckhgc",
+      "id": 4
+    },
+    {
+      "email": "sdfsdf@sd.itwe",
+      "password": "$2a$10$WOiC/S9IpXnOZqKNcm2i7.2yjD/Em8LEeJyC5PtPsO8pW0pfB4hSi",
+      "name": "jhvjlhvujvh",
+      "surname": "jhvjhvvuhj",
+      "id": 5
+    },
+    {
+      "email": "sdfsdf@gmail.com",
+      "password": "$2a$10$CzWhirWDLdakxCXprH6XxuAJMfT47Mc96XCgeKoNFi2Fq.IguuxJu",
+      "name": "jhvjlhvujvh",
+      "surname": "jhvjhvvuhj",
+      "id": 6
+    },
+    {
+      "email": "sadasd@gmail.it",
+      "password": "$2a$10$wboVPrWPhJqr3oyq.chFsezBkpQKDejaD7ZbQlLaqHz9.leCKyz5C",
+      "name": "uyfuf",
+      "surname": "kuyfkuytfv",
+      "id": 7
+    },
+    {
+      "email": "sdf@asdfas.it",
+      "password": "$2a$10$/mHn3i5q5v/.8oVP8KZVMuDYqu.jHd.o/ezOjQkxLvrBSeCHs4pDW",
+      "name": "jhvujhvujh",
+      "surname": "jhvljhvbliuhb",
+      "id": 8
+    },
+    {
+      "email": "asdasd@gmail.com",
+      "password": "$2a$10$fUTt3RROhDG3G9gb4ajsFuOHiACVl760ro8enI0vXSRq6ZM8hkF.i",
+      "name": "hgcfvyhjktgcgv",
+      "surname": "hgkcvhgc",
+      "id": 9
+    },
+    {
+      "email": "asdasd@asdasd.it",
+      "password": "$2a$10$arTN1YJ1mE5oLdGwhZR2N.WvgkUEoUkg/bb8fdUmUU2hkeRv17vmm",
+      "name": "yutftygv",
+      "surname": "jhvjhvjkvh",
+      "id": 10
+    },
+    {
+      "email": "nuovo@dasda.it",
+      "password": "$2a$10$AA/Z0wdJqbDrIXml/tE72O5Z7FyUSxxqKHeX/A42XKd2u8P.1/rcK",
+      "name": "ujhvujkhvujk",
+      "surname": "ujhvlujv",
+      "id": 11
+    },
+    {
+      "email": "alessandro@admin.com",
+      "password": "$2a$10$aAeJonRiwQfurJ07pS.TSuOfsMVfzqJdomzmTNxhDr3tQukKgW.Vu",
+      "name": "alessandro",
+      "surname": "rondolini",
+      "id": 12
+    },
+    {
+      "email": "prova@admin.com",
+      "password": "$2a$10$rx5LluJ4g4pkm8ygKRFMYe18SZBoeI1HIUN1.uHJbEFYOvVsh5uaC",
+      "name": "asdasd",
+      "surname": "asdasd",
+      "id": 13
+    },
+    {
+      "email": "alessandro@admincom",
+      "password": "$2a$10$cBwP7ypkdW9PoawXTfgtM.sVYkmGA..wS4Xfqr5PFv0L1fhJz6DCW",
+      "name": "asdasdsa",
+      "surname": "asdasdasd",
+      "id": 14
+    },
+    {
+      "email": "elon@admin.com",
+      "password": "$2a$10$sSrq7neFhNBbmjc9u6cogONHzQqF.eW8nubgG2x3x5gzTiz/ig7Uy",
+      "name": "elon",
+      "surname": "musk",
+      "id": 15
+    },
+    {
+      "email": "vittoria@prova.com",
+      "password": "$2a$10$k77wb60e8r0.HoxXee3oSuCyqhLC1ZLrlSwlyD3YdlRVXCS4fy3u.",
+      "name": "vittoria",
+      "surname": "rossi",
+      "id": 16
+    }
+  ],
+  "posts": [
+    {
+      "id": 2,
+      "title": "Cyperpunk Landscape",
+      "image": "https://i.postimg.cc/43Ls7gHy/1.png",
+      "createdBy_id": 12,
+      "createdBy_name": "alessandro rondolini",
+      "createdAt": "Sat Jun 10 2023 23:20:51 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 3,
+      "title": "Landscape 2.0",
+      "image": "https://i.postimg.cc/Hn7XSMJy/2.png",
+      "createdBy_id": 12,
+      "createdBy_name": "alessandro rondolini",
+      "createdAt": "Sun Jun 11 2023 01:09:32 GMT+0200 (Ora legale dell’Europa centrale)"
+    }
+  ]
+}

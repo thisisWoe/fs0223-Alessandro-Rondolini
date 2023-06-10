@@ -1,0 +1,55 @@
+<div class="scrolling">
+  <div *ngFor="let post of allDisplayablePosts">
+<!--     <div class="card">
+      <div>
+        <img src="{{post.image}}" alt="image">
+      </div>
+      <div>{{post.title}}</div>
+      <div>{{post.createdBy_name}}</div>
+      <div>{{post.createdAt}}</div>
+    </div> -->
+    <mat-card class="post-card">
+      <mat-card-header>
+        <mat-card-title>{{post.title}}</mat-card-title>
+        <mat-card-subtitle>{{post.createdBy_name}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{post.image}}" alt="post image">
+      <mat-card-content>
+        <p>
+          {{post.createdAt | date: 'fullDate' }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<div class="profile-container">
+  <button mat-fab
+          cdkDrag
+          matTooltip="You can move me everywhere!"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+          color="primary"
+          id="userSettings"
+          [routerLink]="['myProfile']">
+    {{userLogged.user.name | json | slice:1:-1 }}
+  </button>
+</div>
+<div class="rest-container">
+  <button mat-raised-button color="primary" [routerLink]="['addPost']">
+    Create New Post!
+  </button>
+  <p>Important NEWS: We are moving to Web 3.0! We're creating our own Metaverse</p>
+</div>
+
+<!-- <button [routerLink]="['addPost']">ADD POST</button> -->
+<!-- <button [routerLink]="['myProfile']">MY PROFILE</button><br> -->
+<!-- <button (click)="logout()">logout</button>
+{{userLogged.user.name | json | slice:1:-1 }}
+<div>posts</div>
+
+<div class="example-box" cdkDrag>
+  Drag me around
+</div> -->

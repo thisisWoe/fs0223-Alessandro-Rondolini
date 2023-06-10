@@ -1,0 +1,9 @@
+<p>add-post works!</p>
+<form>
+  <input type="text" class="form-control" name="title" [(ngModel)]="newPost.title">
+  <input type="text" class="form-control" name="image" [(ngModel)]="newPost.image">
+  <input type="text" class="form-control" name="createdBy" [(ngModel)]="userLogged.user.id" readonly placeholder="Created by {{userLogged.user.name}}">
+  <p>Created by: {{userLogged.user.name}} {{userLogged.user.surname}}</p>
+  <p>Creation Date: {{ nowTime | date:'fullDate' }}</p>
+  <button class="btn btn-primary" (click)="createMyPost(newPost)">Crea Post</button>
+</form>
