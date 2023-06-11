@@ -111,6 +111,27 @@
       "name": "vittoria",
       "surname": "rossi",
       "id": 16
+    },
+    {
+      "email": "prova@prova.prova",
+      "password": "$2a$10$5R3ttaDk3poRPYGHaaGYcOVknXMrDN1fG2hROVEkkyvCS/wBaHCrm",
+      "name": "prova",
+      "surname": "prova",
+      "id": 17
+    },
+    {
+      "email": "mario@admin.com",
+      "password": "$2a$10$j1FZu1ikB.R6egHi2DbgkO/nT9qfpaxJ5K8mS5KDJYAtlz4h9/s.a",
+      "name": "Mario",
+      "surname": "Rossi",
+      "id": 18
+    },
+    {
+      "email": "vittoria@admin.com",
+      "password": "$2a$10$7muPtgysjbPHbTj35n9cAeW.E7HzlFrmkqmzsEbd685GkM/2PzxnS",
+      "name": "Vittoria",
+      "surname": "Rossi",
+      "id": 19
     }
   ],
   "posts": [
@@ -124,11 +145,75 @@
     },
     {
       "id": 3,
-      "title": "Landscape 2.0",
+      "title": "Futuristic Landscape",
       "image": "https://i.postimg.cc/Hn7XSMJy/2.png",
       "createdBy_id": 12,
       "createdBy_name": "alessandro rondolini",
       "createdAt": "Sun Jun 11 2023 01:09:32 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 4,
+      "title": "Futuristic Hospital",
+      "image": "https://i.postimg.cc/NjRwZJwd/3.png",
+      "createdBy_id": 12,
+      "createdBy_name": "alessandro rondolini",
+      "createdAt": "Sun Jun 11 2023 20:17:24 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 5,
+      "title": "My new NFT!",
+      "image": "https://i.postimg.cc/T19pSTNd/8.png",
+      "createdBy_id": 12,
+      "createdBy_name": "alessandro rondolini",
+      "createdAt": "Sun Jun 11 2023 22:23:19 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 6,
+      "title": "Another NFT added to my collection",
+      "image": "https://i.postimg.cc/pVYhyBWw/12.png",
+      "createdBy_id": 12,
+      "createdBy_name": "alessandro rondolini",
+      "createdAt": "Sun Jun 11 2023 22:26:56 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 7,
+      "title": "I think it is beautiful !",
+      "image": "https://i.postimg.cc/9MQ5Rcwk/4.png",
+      "createdBy_id": 12,
+      "createdBy_name": "alessandro rondolini",
+      "createdAt": "Sun Jun 11 2023 22:28:00 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 8,
+      "title": "My New Home!! ",
+      "image": "https://i.postimg.cc/bN7hCX4G/5.png",
+      "createdBy_id": 18,
+      "createdBy_name": "Mario Rossi",
+      "createdAt": "Sun Jun 11 2023 23:44:01 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 9,
+      "title": "Holidaaaays :)",
+      "image": "https://i.postimg.cc/vmMdyrYb/6.png",
+      "createdBy_id": 18,
+      "createdBy_name": "Mario Rossi",
+      "createdAt": "Sun Jun 11 2023 23:44:27 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 10,
+      "title": "This place is awesome!",
+      "image": "https://i.postimg.cc/V6ZyX2jk/7.png",
+      "createdBy_id": 18,
+      "createdBy_name": "Mario Rossi",
+      "createdAt": "Sun Jun 11 2023 23:45:11 GMT+0200 (Ora legale dell’Europa centrale)"
+    },
+    {
+      "id": 11,
+      "title": "Best library in the world! :)",
+      "image": "https://i.postimg.cc/VNRPkJvM/8.png",
+      "createdBy_id": 19,
+      "createdBy_name": "Vittoria Rossi",
+      "createdAt": "Sun Jun 11 2023 23:46:01 GMT+0200 (Ora legale dell’Europa centrale)"
     }
   ]
 }

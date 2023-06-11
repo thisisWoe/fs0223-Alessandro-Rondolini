@@ -1,0 +1,17 @@
+Alcune note:
+- da navigare in full-screen: ho voluto dare precedenza a logica, implementazione (più studio) di Angular Material e varie prove extra programma didattico piuttosto che curare il responsive (giuro che so usare alla perfezione sia Media Query che Bootstrap, ma dopo un mese intero (lo scorso) a fare solo questo ho voluto cambiare priorità)
+- i post si creano dal bottone nella home, si editano e si eliminano dal profilo (ho implementato che solo il creatore può modificare i propri post e nel suo profilo può visualizzare i post pubblicati da lui). Infatti vorrei far notare che utilizzando gli observable ho trasportato i dati dell'utente in giro per qualsiasi funzionalità mi servissero e inoltre le interfacce dei post sono un pò più strutturate rispetto a quelle degli esercizi dei giorni scorsi.
+- il profilo con più post da visualizzare è:
+email: alessandro@admin.com
+password: password
+- quando editi un post o lo crei vedi la preview in tempo reale ;) !!
+- ho usato sia form reattivi (parte auth) che template driven (parte home)
+- il deploy è stato eseguito correttamente, ma per visualizzare tutte le funzionalità della pagina va fatto partire json-server-auth (credo sia normale, ma metto le mani avanti non sapendolo)
+- se creerai un nuovo profilo dovrai creare un nuovo post per editare e cancellare.
+- ho gestito gli errori con quel tips che ci avevi lasciato tu, ma ho modificato un pò la logica per vederli a schermo e in modo che indicassero specificamente l'errore nella compilazione del form.
+- la guard funziona perfettamente.
+- da notare la scritta che cambia a seconda dell'utente nella navbar e nel "pallino" in basso a destra (SPOSTABILE e apribile con un doppio click). Il "pallino" serve anche per accedere al profilo.
+
+PS. i BehaviourSubject sono incredibili!!!
+
+Grazie della lettura Mike!

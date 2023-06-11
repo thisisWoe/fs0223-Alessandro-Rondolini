@@ -3,7 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { EditPostRoutingModule } from './edit-post-routing.module';
 import { EditPostComponent } from './edit-post.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 @NgModule({
@@ -13,7 +18,13 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     EditPostRoutingModule,
-    FormsModule
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class EditPostModule { }

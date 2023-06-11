@@ -1,28 +1,9 @@
-<!-- <form>
-
-  <input class="form-control" type="email" placeholder="email"
-  name="email" [(ngModel)]="newUserData.email">
-
-  <input class="form-control" type="password" placeholder="password"
-  name="password" [(ngModel)]="newUserData.password">
-
-  <input class="form-control" type="text" placeholder="Name"
-  name="name" [(ngModel)]="newUserData.name">
-
-  <input class="form-control" type="text" placeholder="surname"
-  name="surname" [(ngModel)]="newUserData.surname">
-
-  <button
-  (click)="register()"
-  class="btn btn-primary"
-  >Registrati</button>
-
-
-</form> -->
-
 <div [@fadeInAnimation]>
   <h1>Sign Up</h1>
   <form [formGroup]="formRegister" (ngSubmit)="register()">
+    <div class="errors" *ngIf="showError">
+      <p>{{textError}}</p>
+    </div>
     <mat-form-field appearance="outline" color="primary">
       <mat-label>es: prova@email.com</mat-label>
       <input
@@ -67,9 +48,6 @@
     </form>
   </div>
 
-<!-- <div *ngIf="showError">
-  <div>{{textError}}</div>
-</div> -->
 
 
 <!-- <div class="example-container">

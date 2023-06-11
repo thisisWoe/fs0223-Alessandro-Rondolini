@@ -1,11 +1,41 @@
-<p>edit-post works!</p>
-<form>
-  <input type="text" class="form-control" name="title" [(ngModel)]="post.title">+
-  <div>
-    <img src="{{post.image}}" alt="">
-    <input type="text" class="form-control" name="image" [(ngModel)]="post.image">
-  </div>
-  <p>Created by: {{post.createdBy_name}}</p>
-  <p>Creation Date: {{post.createdAt}}</p>
-  <button class="btn btn-primary" (click)="editMyPost()">Crea Post</button>
-</form>
+<div class="container">
+  <mat-card class="post-card"  color="primary">
+    <mat-card-header>
+      <mat-card-title>
+        {{post.title}}
+      </mat-card-title>
+      <mat-card-subtitle>{{post.createdBy_name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{post.image}}" alt="post image">
+    <mat-card-content>
+      <p>
+        {{post.createdAt | date: 'fullDate' }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <form (ngSubmit)="editMyPost()">
+    <mat-form-field appearance="outline">
+      <mat-label>{{post.title}}</mat-label>
+      <input
+        [(ngModel)]="post.title"
+        name="title"
+        matInput
+        type="text">
+      <mat-hint>Insert your new title</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>{{post.image}}</mat-label>
+      <input
+        [(ngModel)]="post.image"
+        name="image"
+        matInput
+        type="text">
+      <mat-hint>Insert your new image link</mat-hint>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+
+</div>

@@ -1,0 +1,28 @@
+mat-card{
+  background-color: purple;
+  margin: 10px auto;
+  width: 40%;
+  mat-card-header{
+    color: white;
+  }
+  mat-card-content{
+    color: white;
+    font-style: italic;
+  }
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mat-form-field{
+    margin: 10px;
+    mat-hint{
+      color: #a91546;
+    }
+  }
+}
+
+div.container{
+  display: flex;
+}

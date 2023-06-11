@@ -1,0 +1,78 @@
+mat-card.example-card{
+  margin-top: 10px;
+  background-color: purple;
+  mat-card-header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    div.infos{
+      mat-card-title{
+        color: white;
+      }
+    }
+    div.logout{
+      position: absolute;
+      right: 20px;
+      color: white;
+      button{
+        background-color: red;
+      }
+    }
+  }
+  mat-card-content{
+    margin: 20px;
+    mat-grid-list{
+      box-shadow: 0px 0px 15px 5px #000000;
+      border-radius: 25px;
+      mat-grid-tile{
+        background-color: #E91E63;
+        /* border-radius: 25px; */
+      }
+      mat-grid-tile:hover{
+        background-color: #a91546;
+        cursor: pointer;
+      }
+      mat-grid-tile.start{
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+      }
+      mat-grid-tile.end{
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+    }
+    h4{
+      color: rgb(151, 151, 151);
+    }
+    p{
+      color: white;
+
+    }
+  }
+}
+
+div.scrolling{
+  margin-top: 10px;
+  overflow-y: scroll;
+  height: 533px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  mat-card.post-card{
+    background-color: purple;
+    width: 400px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    mat-card-title{
+      Color: white;
+    }
+  }
+  mat-card.post-card:hover{
+    background-color: #E91E63;
+    transform: scale(1.05);
+  }
+}

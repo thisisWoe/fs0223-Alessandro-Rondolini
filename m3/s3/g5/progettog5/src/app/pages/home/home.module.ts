@@ -9,6 +9,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 
@@ -30,7 +32,8 @@ import { EditProfileComponent } from './my-profile/edit-profile/edit-profile.com
     MatButtonModule,
     DragDropModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ]
 })
 export class HomeModule { }

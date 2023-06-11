@@ -1,6 +1,9 @@
 <div [@fadeInAnimation]>
   <h1>Login</h1>
   <form [formGroup]="formLogin" (ngSubmit)="login()">
+    <div class="errors" *ngIf="showError">
+      <p>{{textError}}</p>
+    </div>
     <mat-form-field appearance="outline" color="primary">
       <mat-label>es: prova@email.com</mat-label>
       <input
@@ -25,9 +28,6 @@
     </form>
   </div>
 
-  <div *ngIf="showError">
-    <div>{{textError}}</div>
-  </div>
   <!-- <form>
 
     <input class="form-control" type="email" placeholder="email"

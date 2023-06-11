@@ -14,6 +14,7 @@ import { HeaderComponent } from './components/header/header.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,6 @@ import { HeaderComponent } from './components/header/header.component';
     HttpClientModule,
     MatIconModule,
     MatToolbarModule,
-
   ],
   providers: [
     {

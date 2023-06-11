@@ -1,9 +1,48 @@
-<p>add-post works!</p>
-<form>
-  <input type="text" class="form-control" name="title" [(ngModel)]="newPost.title">
-  <input type="text" class="form-control" name="image" [(ngModel)]="newPost.image">
-  <input type="text" class="form-control" name="createdBy" [(ngModel)]="userLogged.user.id" readonly placeholder="Created by {{userLogged.user.name}}">
-  <p>Created by: {{userLogged.user.name}} {{userLogged.user.surname}}</p>
-  <p>Creation Date: {{ nowTime | date:'fullDate' }}</p>
-  <button class="btn btn-primary" (click)="createMyPost(newPost)">Crea Post</button>
+<form (ngSubmit)="createMyPost(newPost)" [@fadeInAnimation]>
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input
+        [(ngModel)]="newPost.title"
+        name="title"
+        matInput
+        type="text"
+        (input)="handleTitleInputChange($event)">
+      <mat-hint>Insert your title</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Image Url</mat-label>
+      <input
+        [(ngModel)]="newPost.image"
+        name="image"
+        matInput
+        type="text"
+        (input)="handleImageInputChange($event)">
+      <mat-hint>Insert your image link</mat-hint>
+    </mat-form-field>
+  </div>
+  <div>
+    <p>Created by: {{userLogged.user.name}} {{userLogged.user.surname}}</p>
+    <p>Creation Date: {{ nowTime | date:'fullDate' }}</p>
+  </div>
+
+  <button mat-raised-button color="primary" type="submit">Create!</button>
 </form>
+
+<!-- preview -->
+<p class="prewiew">Preview:</p>
+<div class="container-preview">
+  <mat-card class="post-card"  color="primary">
+    <mat-card-header>
+      <mat-card-title>
+        {{getTitle}}
+      </mat-card-title>
+      <mat-card-subtitle>{{userLogged.user.name}} {{userLogged.user.surname}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="getSrc" alt="Image Url not valid!">
+    <mat-card-content>
+      <p>{{ nowTime | date:'fullDate' }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

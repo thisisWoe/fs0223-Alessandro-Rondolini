@@ -1,22 +1,77 @@
-<p>my-profile works!</p>
-<button [routerLink]="['editPost']">EDIT POST</button>
-<button [routerLink]="['editProfile']">EDIT MY INFOS</button>
-<div>my infos</div>
-<div>your id: #{{userLogged.user.id}}</div>
-<div>name: {{userLogged.user.name}}</div>
-<div>surname: {{userLogged.user.surname}}</div>
-<div>email: {{userLogged.user.email}}</div>
-<button (click)="logout()">logout</button>
-<div>your posts</div>
-<div *ngFor="let post of allDisplayablePosts">
-  <div *ngIf="post.createdBy_id === userLogged.user.id">
-    <div>
-      <img src="{{post.image}}" alt="image">
+<mat-card class="example-card" [@fadeInAnimation]>
+  <mat-card-header>
+    <div class="logout">
+      <button mat-raised-button (click)="logout()">LOGOUT</button>
     </div>
-    <div>{{post.title}}</div>
-    <div>{{post.createdBy_name}}</div>
-    <div>{{post.createdAt}}</div>
-    <button (click)="deleteTargetPost(post.id)">elimina</button>
-    <button [routerLink]="'editPost/' + post.id">edit</button>
+    <div class="infos">
+      <mat-card-title>Your Profile</mat-card-title>
+      <mat-card-subtitle>Personal Informations</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-grid-list cols="4" rowHeight="3:1">
+      <mat-grid-tile class="start">
+        <div>
+          <h4>Email</h4>
+          <p>{{userLogged.user.email}}</p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div>
+          <h4>Id</h4>
+          <p>#{{userLogged.user.id}}</p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div>
+          <h4>Name</h4>
+          <p>{{userLogged.user.name}}</p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile class="end">
+        <div>
+          <h4>Surname</h4>
+          <p>{{userLogged.user.surname}}</p>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+<!--   <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions> -->
+</mat-card>
+<div class="scrolling">
+<!--   <button [routerLink]="['editPost']">EDIT POST</button>
+  <button [routerLink]="['editProfile']">EDIT MY INFOS</button> -->
+  <div *ngFor="let post of allDisplayablePosts">
+    <div *ngIf="post.createdBy_id === userLogged.user.id">
+      <mat-card class="post-card"  color="primary">
+        <mat-card-header>
+          <mat-card-title>{{post.title}}</mat-card-title>
+          <mat-card-subtitle>{{post.createdBy_name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{post.image}}" alt="post image">
+        <mat-card-content>
+          <p>
+            {{post.createdAt | date: 'fullDate' }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="deleteTargetPost(post.id)">DELETE</button>
+          <button mat-button [routerLink]="'editPost/' + post.id">EDIT</button>
+        </mat-card-actions>
+      </mat-card>
+<!--       <div>
+        <img src="{{post.image}}" alt="image">
+      </div>
+      <div>{{post.title}}</div>
+      <div>{{post.createdBy_name}}</div>
+      <div>{{post.createdAt}}</div>
+      <button (click)="deleteTargetPost(post.id)">elimina</button>
+      <button [routerLink]="'editPost/' + post.id">edit</button> -->
+    </div>
   </div>
 </div>
+
+

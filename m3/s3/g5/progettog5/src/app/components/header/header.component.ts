@@ -1,6 +1,7 @@
 import { HomeService } from './../../pages/home/home.service';
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { filter } from 'rxjs';
 import { IAuthData } from 'src/app/pages/auth/interfaces/iauth-data';
 import { IuserData } from 'src/app/pages/auth/interfaces/iuser-data';
 
@@ -26,14 +27,20 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router: Router, private HomeService: HomeService){
   }
-  ngOnInit(): void {
+  ngOnInit() {
+    this.catchUser();
+    console.log(this.userName);
+
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        if(event.url.includes('home')){
-          this.isInHomePage = true;
-        }
-        this.catchUser()
+        this.catchUser();
         this.userName = this.userLogged.user.name;
+        console.log(this.userName);
+        if(this.userName !== null){
+          this.isInHomePage = true;
+        } else {
+          this.isInHomePage = false;
+        }
       }
     });
   }

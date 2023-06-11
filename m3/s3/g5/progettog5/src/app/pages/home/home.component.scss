@@ -10,8 +10,20 @@ div.scrolling{
     mat-card{
       background-color: #E91E63;
       margin-bottom: 10px;
+      mat-card-title{
+        color: white;
+      }
+      mat-card-subtitle{
+        color: rgb(172, 172, 172);
+      }
       img{
         height: 360px;
+      }
+      mat-card-content{
+        p{
+          color: white;
+          font-style: italic;
+        }
       }
     }
   }
